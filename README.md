@@ -70,43 +70,58 @@
 * Kria KV260 Vision AI Starter Kit : 제품 기능, 상세 사양, 액세서리, 주문 정보를 제공합니다.
 
 ### 🚀 Getting Started
-* Kria KV260 Vision AI Starter Kit Product Brief : KV260 스타터 키트의 주요 기능과 사양을 빠르게 요약한 문서입니다.
+* Kria KV260 Vision AI Starter Kit Product Brief
+   * KV260 스타터 키트의 주요 기능과 사양을 빠르게 요약한 문서입니다.
 
-* Smart Camera Accelerated Application : 키트 개봉 후 바로 실행 가능한 AMD 제공 스마트 카메라 가속 애플리케이션 실행 절차를 단계별로 안내합니다.
+* Smart Camera Accelerated Application
+   * 키트 개봉 후 바로 실행 가능한 AMD 제공 스마트 카메라 가속 애플리케이션 실행 절차를 단계별로 안내합니다.
 
-* Kria SOM Adventure Map : Out-of-the-box 설정부터 고급 평가 및 제품 개발까지 Kria SOM 관련 문서를 체계적으로 안내하는 개발 여정 가이드입니다.
+* Kria SOM Adventure Map
+   * Out-of-the-box 설정부터 고급 평가 및 제품 개발까지 Kria SOM 관련 문서를 체계적으로 안내하는 개발 여정 가이드입니다.
 
 ### 📘 Documentation
 
-* Kria KV260 Vision AI Starter Kit User Guide (UG1089) : KV260 Vision AI Starter Kit의 기능 전반을 설명합니다. 
-* AMD Kria K26 SOM을 대상으로 설계 및 평가 시 참고하는 핵심 가이드입니다.
+* Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+   * KV260 Vision AI Starter Kit의 기능 전반을 설명합니다. 
+   * AMD Kria K26 SOM을 대상으로 설계 및 평가 시 참고하는 핵심 가이드입니다.
 
-* Kria KV260 Vision AI Starter Kit Data Sheet (DS986) : 하드웨어, 소프트웨어, 규정 준수(Compliance) 관련
-* KV260 스타터 키트의 주요 사양을 정리한 데이터시트입니다.
+* Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+   * 하드웨어, 소프트웨어, 규정 준수(Compliance) 관련
+   * KV260 스타터 키트의 주요 사양을 정리한 데이터시트입니다.
 
 ### 🧩 Designs & Applications
 
-* Kria App Store : AMD Kria SOM 제품용 사전 빌드된 애플리케이션 목록을 제공합니다.
+* Kria App Store
+   * AMD Kria SOM 제품용 사전 빌드된 애플리케이션 목록을 제공합니다.
 
-* Kria KV260 Vision AI Starter Kit Accelerated Applications : KV260 가속 애플리케이션의 Quick Start, 커스터마이징 튜토리얼, HW/SW 아키텍처 설명을 포함합니다.
+* Kria KV260 Vision AI Starter Kit Accelerated Applications
+   * KV260 가속 애플리케이션의 Quick Start, 커스터마이징 튜토리얼, HW/SW 아키텍처 설명을 포함합니다.
 
-* Kria SOM GitHub Landing Page : 애플리케이션 개발, Ubuntu®, 부트 펌웨어 등 Kria SOM 관련 GitHub 리소스를 모아둔 허브 페이지입니다.
+* Kria SOM GitHub Landing Page
+   * 애플리케이션 개발, Ubuntu®, 부트 펌웨어 등 Kria SOM 관련 GitHub 리소스를 모아둔 허브 페이지입니다.
 
-* Kria SOM & Starter Kits – Wiki Page : Kria Production SOM 및 Starter Kit에 대한 문서, 사전 빌드 이미지, 펌웨어 업데이트, GitHub 링크를 제공합니다.
+* Kria SOM & Starter Kits – Wiki Page
+   * Kria Production SOM 및 Starter Kit에 대한 문서, 사전 빌드 이미지, 펌웨어 업데이트, GitHub 링크를 제공합니다.
 
 ### 🛠 Board Files (Hardware Design)
 
-* Kria KV260 Starter Kit Carrier Card Schematic (XTP682) : KV260 Vision 캐리어 카드 회로도(PDF) 및 README 포함
+* Kria KV260 Starter Kit Carrier Card Schematic (XTP682)
+   * KV260 Vision 캐리어 카드 회로도(PDF) 및 README 포함
 
-* Kria KV260 Starter Kit Carrier Card Schematic Source (XTP683) : KV260 Vision 캐리어 카드 회로도 원본 (OrCAD) 및 README 포함
+* Kria KV260 Starter Kit Carrier Card Schematic Source (XTP683)
+   * KV260 Vision 캐리어 카드 회로도 원본 (OrCAD) 및 README 포함
 
-* Kria KV260 Starter Kit Carrier Card PCB Layout (XTP681) : KV260 Vision 캐리어 카드 PCB 레이아웃 (Allegro) 및 README 포함
+* Kria KV260 Starter Kit Carrier Card PCB Layout (XTP681)
+   * KV260 Vision 캐리어 카드 PCB 레이아웃 (Allegro) 및 README 포함
 
-* Kria KV260 Starter Kit Carrier Card BOM (XTP713) : KV260 Vision 캐리어 카드 부품 BOM (Excel) 및 README 포함
+* Kria KV260 Starter Kit Carrier Card BOM (XTP713)
+   * KV260 Vision 캐리어 카드 부품 BOM (Excel) 및 README 포함
 
-* Kria KV260 Starter Kit Carrier Card 3D CAD Model (XTP679) : 기구 및 열 설계를 위한 KV260 Starter Kit 3D CAD 모델 (.STP)
+* Kria KV260 Starter Kit Carrier Card 3D CAD Model (XTP679)
+   * 기구 및 열 설계를 위한 KV260 Starter Kit 3D CAD 모델 (.STP)
 
-* Kria KV260 Starter Kit Vivado Board File : 최신 KV260 Vivado™ Board File 다운로드를 위한 Xilinx Board Store GitHub 페이지 링크
+* Kria KV260 Starter Kit Vivado Board File
+   * 최신 KV260 Vivado™ Board File 다운로드를 위한 Xilinx Board Store GitHub 페이지 링크
 
 ### 🧑‍💻 Support & Community Resources
 
