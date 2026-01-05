@@ -136,14 +136,49 @@
 * AMD Kria Starter Kit Training Videos & Tutorials
   * Kria SOM 및 KV260 Vision AI Starter Kit 학습을 위한
 
+---
+
+## 🎓 Using Accelerated Applications with the Vision AI Starter Kit & Kria SOM
+
+### Course Description
+* 이 과정은 Kria™ System-on-Module (SOM) 및
+* AMD Kria KV260 Vision AI Starter Kit을 처음 접하는 사용자를 대상으로 합니다.
+
+* 복잡한 설치 과정이나 FPGA 지식 없이, Out-of-the-box 상태에서 바로 Vision AI 가속 애플리케이션을 실행하고 활용할 수 있도록 구성되어 있습니다.
+
+* 본 과정은 Kria SOM 기반 개발 흐름을 이해하고,
+* KV260 Vision AI Starter Kit을 활용한 스마트 카메라 및 AI Box 가속 애플리케이션을 직접 실행·커스터마이징하며
+* 벤치마킹까지 수행하는 것을 목표로 합니다.
+
+### 🎯 Course Focus
+* 본 교육 과정은 다음 항목에 중점을 둡니다:
+   * Kria SOM 개요 및 Vision AI Starter Kit 시작 방법 이해
+   * Vision AI Starter Kit에서 Smart Camera 가속 애플리케이션 실행
+   * Vision AI Starter Kit에서 AI Box 가속 애플리케이션 실행
+   * AI 모델 커스터마이징 및 성능 벤치마킹 수행
+
+### 📺 Vision AI Starter Kit Training Videos
+#### 1️⃣ Getting Started with the Kria SOM and Vision AI Starter Kit
+   * https://youtu.be/wi88mkQ1ERE
+   * Kria SOM 및 Vision AI Starter Kit 전반에 대한 개요 제공
+   * KV260 Starter Kit을 빠르게 시작하기 위한 기본 가이드
+
+#### 2️⃣ Using the Smart Camera Accelerated Application with the Vision AI Starter Kit
+   * https://youtu.be/-PiFqdjvBg0
+   * Smart Camera 가속 애플리케이션 개요
+   * 개발 환경 설정 및 애플리케이션 실행 방법
+   * AI 모델 커스터마이징 방법
+   * 성능 벤치마킹 데이터 생성 방법
+
+#### 3️⃣ Using the AI Box Accelerated Application with the Vision AI Starter Kit
+   * https://youtu.be/Ga3dbzconDU
+   * AI Box 가속 애플리케이션 개요
+   * 개발 환경 설정 및 애플리케이션 실행 방법
+   * AI 모델 커스터마이징 방법
+   * 성능 벤치마킹 데이터 생성 방법
 
 
 
 
 
 
-
-
-
-
-공식 교육 영상 및 튜토리얼을 제공합니다.
