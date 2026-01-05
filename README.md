@@ -141,11 +141,8 @@
 ## 🎓 Using Accelerated Applications with the Vision AI Starter Kit & Kria SOM
 
 ### Course Description
-* 이 과정은 Kria™ System-on-Module (SOM) 및
-* AMD Kria KV260 Vision AI Starter Kit을 처음 접하는 사용자를 대상으로 합니다.
-
+* 이 과정은 Kria™ System-on-Module (SOM) 및 AMD Kria KV260 Vision AI Starter Kit을 처음 접하는 사용자를 대상으로 합니다.
 * 복잡한 설치 과정이나 FPGA 지식 없이, Out-of-the-box 상태에서 바로 Vision AI 가속 애플리케이션을 실행하고 활용할 수 있도록 구성되어 있습니다.
-
 * 본 과정은 Kria SOM 기반 개발 흐름을 이해하고,
 * KV260 Vision AI Starter Kit을 활용한 스마트 카메라 및 AI Box 가속 애플리케이션을 직접 실행·커스터마이징하며
 * 벤치마킹까지 수행하는 것을 목표로 합니다.
