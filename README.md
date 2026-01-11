@@ -9,11 +9,11 @@
 
 * The main functional difference is that KV260 rev2 enables auto focus for IAS sensors
 
-* Kria KV260 Vision AI Starter Kit Revision 2.0
+## Kria KV260 Vision AI Starter Kit Revision 2.0
 <img width="691" height="491" alt="001" src="https://github.com/user-attachments/assets/d349cdd4-17a8-447b-a702-3c9bd77eb736" />
 <img width="607" height="561" alt="rev2 0" src="https://github.com/user-attachments/assets/c34380e0-311d-4993-8f48-e9077cb27b63" />
 
-* Kria KV260 Vision AI Starter Kit Revision 1.0
+## Kria KV260 Vision AI Starter Kit Revision 1.0
 <img width="607" height="561" alt="rev1 0" src="https://github.com/user-attachments/assets/ef6a50dd-0576-4fb9-8e52-5f7010d4a007" />
 
 
