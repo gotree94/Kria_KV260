@@ -1,5 +1,52 @@
 # KV260 BRAM AXI ILA 테스트 프로젝트
 
+---
+
+##🔧 권장 방법: Vivado GUI에서 직접 실행
+### 1단계: Vivado 실행
+```
+시작 메뉴 → Xilinx Design Tools → Vivado 2022.2
+```
+
+### 2단계: TCL 스크립트 실행
+```
+Vivado 메뉴: Tools → Run Tcl Script...
+→ create_project.tcl 선택 → OK
+```
+
+### 3단계: 빌드
+```
+Flow Navigator (왼쪽 패널) → Generate Bitstream 클릭
+→ 완료까지 대기 (10~30분)
+```
+
+### 4단계: XSA 파일 생성
+```
+File → Export → Export Hardware...
+→ ☑ Include bitstream 체크
+→ Next → Finish
+```
+
+### 🖥️ 또는 Vivado TCL Console에서 직접 실행
+- Vivado 실행 후 하단 Tcl Console 창에서:
+```tcl
+cd C:/Users/Administrator/Desktop/kv260_bram_ila/01.KRIA_BRAM_ILA/vivado
+source create_project.tcl
+source build_all.tcl
+```
+
+### ⚠️ build.bat 사용 시
+- 배치 파일을 사용하려면 VIVADO_PATH를 실제 경로로 수정해야 합니다:
+```batch
+REM build.bat 파일의 7번째 줄 수정
+set VIVADO_PATH=C:\Xilinx\Vivado\2022.2\bin\vivado.bat
+```
+- Vivado 설치 경로가 다르면 (예: D드라이브) 해당 경로로 변경하세요.
+
+
+---
+
+
 ## 📋 개요
 
 이 프로젝트는 Xilinx Kria KV260 Vision AI Starter Kit에서 AXI BRAM Controller를 사용하여 BRAM에 데이터를 읽고 쓰는 테스트 애플리케이션입니다. System ILA를 통해 AXI 버스 트랜잭션을 실시간으로 디버깅할 수 있습니다.
