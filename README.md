@@ -9,6 +9,9 @@
 
 <img width="691" height="491" alt="001" src="https://github.com/user-attachments/assets/d349cdd4-17a8-447b-a702-3c9bd77eb736" />
 
+<img width="607" height="561" alt="som-board" src="https://github.com/user-attachments/assets/96d2ffea-3a3a-458a-8d4d-b17ccff4581d" />
+
+
 ## 제품 기능
 ### 비전 지원
   * 다중 카메라 지원: 최대 8개의 인터페이스
