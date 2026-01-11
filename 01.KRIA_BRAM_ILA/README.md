@@ -1,26 +1,27 @@
 # KV260 BRAM AXI ILA 테스트 프로젝트
 
 ---
+## 프로젝트 생성 및 준비 작업
 
-## 🔧 권장 방법: Vivado GUI에서 직접 실행
-### 1단계: Vivado 실행
+### 🔧 권장 방법: Vivado GUI에서 직접 실행
+#### 1단계: Vivado 실행
 ```
 시작 메뉴 → Xilinx Design Tools → Vivado 2022.2
 ```
 
-### 2단계: TCL 스크립트 실행
+#### 2단계: TCL 스크립트 실행
 ```
 Vivado 메뉴: Tools → Run Tcl Script...
 → create_project.tcl 선택 → OK
 ```
 
-### 3단계: 빌드
+#### 3단계: 빌드
 ```
 Flow Navigator (왼쪽 패널) → Generate Bitstream 클릭
 → 완료까지 대기 (10~30분)
 ```
 
-### 4단계: XSA 파일 생성
+#### 4단계: XSA 파일 생성
 ```
 File → Export → Export Hardware...
 → ☑ Include bitstream 체크
