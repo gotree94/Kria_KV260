@@ -64,7 +64,7 @@ kv260_bram_ila/
 시작 메뉴 → Xilinx Design Tools → Vivado 2022.2
 ```
 
-##### 2단계: TCL 스크립트 실행
+##### 2단계: TCL 스크립트 실행 : Wrapper 작업 등에 대해서 질문이 나오며 OK로 진행
 ```
 Vivado 메뉴: Tools → Run Tcl Script...
 → create_project.tcl 선택 → OK
