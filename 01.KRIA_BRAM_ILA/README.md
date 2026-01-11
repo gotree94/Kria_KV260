@@ -2,7 +2,7 @@
 
 ---
 
-##🔧 권장 방법: Vivado GUI에서 직접 실행
+## 🔧 권장 방법: Vivado GUI에서 직접 실행
 ### 1단계: Vivado 실행
 ```
 시작 메뉴 → Xilinx Design Tools → Vivado 2022.2
