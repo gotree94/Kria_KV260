@@ -1,4 +1,4 @@
-<img width="607" height="561" alt="rev1 0" src="https://github.com/user-attachments/assets/0a677bb0-2b40-4e25-b384-ede172669f8d" /># Kria KV260 Vision AI 스타터 키트
+# Kria KV260 Vision AI 스타터 키트
 
 * https://www.amd.com/ko/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html
 * https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/index.html
@@ -11,10 +11,9 @@
 
 * Kria KV260 Vision AI Starter Kit Revision 2.0
 <img width="691" height="491" alt="001" src="https://github.com/user-attachments/assets/d349cdd4-17a8-447b-a702-3c9bd77eb736" />
-<img width="1571" height="1477" alt="rev2 0" src="https://github.com/user-attachments/assets/c34380e0-311d-4993-8f48-e9077cb27b63" />
+<img width="607" height="561" alt="rev2 0" src="https://github.com/user-attachments/assets/c34380e0-311d-4993-8f48-e9077cb27b63" />
 
 * Kria KV260 Vision AI Starter Kit Revision 1.0
-<img width="607" height="561" alt="som-board" src="https://github.com/user-attachments/assets/96d2ffea-3a3a-458a-8d4d-b17ccff4581d" />
 <img width="607" height="561" alt="rev1 0" src="https://github.com/user-attachments/assets/ef6a50dd-0576-4fb9-8e52-5f7010d4a007" />
 
 
