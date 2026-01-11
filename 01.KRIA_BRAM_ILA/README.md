@@ -15,6 +15,9 @@ Vivado 메뉴: Tools → Run Tcl Script...
 → create_project.tcl 선택 → OK
 ```
 
+<img width="1719" height="459" alt="002" src="https://github.com/user-attachments/assets/e5f9c3f5-bfe5-45ed-9692-065aa6992f69" />
+
+
 #### 3단계: 빌드
 ```
 Flow Navigator (왼쪽 패널) → Generate Bitstream 클릭
