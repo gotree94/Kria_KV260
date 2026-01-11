@@ -103,7 +103,7 @@ set VIVADO_PATH=C:\Xilinx\Vivado\2022.2\bin\vivado.bat
 - Vivado 설치 경로가 다르면 (예: D드라이브) 해당 경로로 변경하세요.
 
 #### 🖥️ 또는 Vivado TCL Console에서 직접 실행(windows)
-### 1. Vivado 프로젝트 빌드
+##### 1. Vivado 프로젝트 빌드
 
 **Windows:**
 ```batch
