@@ -119,6 +119,7 @@ cd C:/path/to/kv260_bram_ila/vivado
 source create_project.tcl
 source build_all.tcl
 ```
+---
 
 ### 2. Vitis 프로젝트 설정
 
@@ -127,6 +128,8 @@ source build_all.tcl
 3. Application Project 생성
 4. `vitis/src/main.c` 파일 import
 5. Build
+
+---
 
 ### 3. 디버깅
 
