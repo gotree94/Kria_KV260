@@ -95,8 +95,8 @@ source create_vitis_project.tcl
    ```
 
 2. **Workspace 선택**
-   ```
-   C:\work\kv260_led_project\03_Vitis_App\workspace
+   ```   
+   C:\work\00.kv260_led_project\03_Vitis_App\workspace
    ```
 
 3. **Platform 프로젝트 생성**
