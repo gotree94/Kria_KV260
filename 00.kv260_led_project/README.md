@@ -110,6 +110,80 @@ build.bat    (메뉴에서 1번 선택)
 
 ## PMOD LED 연결
 
+## KV260 PMOD J2 Connector Pinout
+
+### 커넥터 배치도
+```
+        ┌─────────────────────────────────────┐
+        │         PMOD J2 Connector           │
+        │            (Top View)               │
+        ├─────────────────────────────────────┤
+        │                                     │
+        │   Pin 6 ●  ●  ●  ●  ●  ● Pin 1     │
+        │         5  4  3  2  1               │
+        │                                     │
+        │  Pin 12 ●  ●  ●  ●  ●  ● Pin 7     │
+        │        11 10  9  8  7               │
+        │                                     │
+        └─────────────────────────────────────┘
+```
+
+### 핀 매핑 테이블
+
+| PMOD Pin | Signal Name   | FPGA Pin | Bank | I/O Standard | 용도 |
+|:--------:|:-------------:|:--------:|:----:|:------------:|:----:|
+| 1        | PMOD_HDA11    | H12      | 45   | LVCMOS33     | I/O  |
+| 2        | PMOD_HDA12    | E10      | 45   | LVCMOS33     | I/O  |
+| 3        | PMOD_HDA13    | D10      | 45   | LVCMOS33     | I/O  |
+| 4        | PMOD_HDA14    | C11      | 45   | LVCMOS33     | I/O  |
+| 5        | GND           | -        | -    | -            | 전원 |
+| 6        | VCC (3.3V)    | -        | -    | -            | 전원 |
+| 7        | PMOD_HDA15    | B10      | 45   | LVCMOS33     | I/O  |
+| 8        | PMOD_HDA16_CC | E12      | 45   | LVCMOS33     | I/O  |
+| 9        | PMOD_HDA17    | D11      | 45   | LVCMOS33     | I/O  |
+| 10       | PMOD_HDA18    | B11      | 45   | LVCMOS33     | I/O  |
+| 11       | GND           | -        | -    | -            | 전원 |
+| 12       | VCC (3.3V)    | -        | -    | -            | 전원 |
+
+### XDC 제약 파일 (Vivado)
+```tcl
+# PMOD J2 - Upper Row (Pin 1-4)
+set_property PACKAGE_PIN H12 [get_ports {pmod[0]}]
+set_property PACKAGE_PIN E10 [get_ports {pmod[1]}]
+set_property PACKAGE_PIN D10 [get_ports {pmod[2]}]
+set_property PACKAGE_PIN C11 [get_ports {pmod[3]}]
+
+# PMOD J2 - Lower Row (Pin 7-10)
+set_property PACKAGE_PIN B10 [get_ports {pmod[4]}]
+set_property PACKAGE_PIN E12 [get_ports {pmod[5]}]
+set_property PACKAGE_PIN D11 [get_ports {pmod[6]}]
+set_property PACKAGE_PIN B11 [get_ports {pmod[7]}]
+
+# I/O Standard
+set_property IOSTANDARD LVCMOS33 [get_ports {pmod[*]}]
+```
+
+### 참고사항
+
+- **전압 레벨**: 3.3V LVCMOS
+- **I/O Bank**: Bank 45 (HD Bank)
+- **최대 전류**: 각 핀 12mA 권장
+- **CC 핀**: Pin 8 (E12)은 Clock-Capable 핀으로 클럭 입력에 적합
+
+### Digilent PMOD 모듈 연결
+
+| PMOD LED 모듈 | KV260 J2 Pin | FPGA Pin |
+|:-------------:|:------------:|:--------:|
+| LD0           | Pin 1        | H12      |
+| LD1           | Pin 2        | E10      |
+| LD2           | Pin 3        | D10      |
+| LD3           | Pin 4        | C11      |
+| LD4           | Pin 7        | B10      |
+| LD5           | Pin 8        | E12      |
+| LD6           | Pin 9        | D11      |
+| LD7           | Pin 10       | B11      |
+
+
 J2 커넥터에 PMOD LED 모듈 연결:
 
 | LED | FPGA Pin | PMOD Pin |
