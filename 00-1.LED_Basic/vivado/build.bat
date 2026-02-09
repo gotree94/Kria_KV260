@@ -1,24 +1,9 @@
 @echo off
-REM ==============================================================================
-REM KV260 LED Basic Project - Windows Build Script
-REM 
-REM Description:
-REM   Vivado 빌드 메뉴 및 자동화
-REM
-REM Usage:
-REM   build.bat
-REM
-REM Target: Xilinx KRIA KV260
-REM Tool: Vivado 2022.2
-REM ==============================================================================
-
 setlocal enabledelayedexpansion
 
-REM Vivado 경로 설정 (필요시 수정)
 set VIVADO_PATH=C:\Xilinx\Vivado\2022.2
 set VIVADO_BAT=%VIVADO_PATH%\bin\vivado.bat
 
-REM 현재 디렉토리
 set SCRIPT_DIR=%~dp0
 cd /d %SCRIPT_DIR%
 
@@ -28,8 +13,8 @@ echo ===========================================================================
 echo  KV260 LED Basic Project - Build Menu
 echo ==============================================================================
 echo.
-echo  [1] Create Project (프로젝트 생성)
-echo  [2] Build All (합성 + 구현 + 비트스트림)
+echo  [1] Create Project
+echo  [2] Build All (Synthesis + Implementation + Bitstream)
 echo  [3] Create and Build (1 + 2)
 echo  [4] Open Project in Vivado GUI
 echo  [5] Clean Project
@@ -58,7 +43,7 @@ goto MENU
 
 :BUILD
 echo.
-echo Building project (Synthesis + Implementation + Bitstream)...
+echo Building project...
 call "%VIVADO_BAT%" -mode batch -source build_all.tcl
 pause
 goto MENU
@@ -86,18 +71,9 @@ goto MENU
 :CLEAN
 echo.
 echo Cleaning project files...
-if exist "kv260_led_basic" (
-    rmdir /s /q kv260_led_basic
-    echo Project directory removed.
-)
-if exist "reports" (
-    rmdir /s /q reports
-    echo Reports directory removed.
-)
-if exist ".Xil" (
-    rmdir /s /q .Xil
-    echo .Xil directory removed.
-)
+if exist "kv260_led_basic" rmdir /s /q kv260_led_basic
+if exist "reports" rmdir /s /q reports
+if exist ".Xil" rmdir /s /q .Xil
 del /q *.bit 2>nul
 del /q *.xsa 2>nul
 del /q *.log 2>nul
@@ -112,11 +88,11 @@ echo Opening Hardware Manager...
 echo.
 echo Steps to program FPGA:
 echo   1. Connect KV260 via USB
-echo   2. Open Target ^> Auto Connect
+echo   2. Open Target then Auto Connect
 echo   3. Program Device
 echo   4. Select bitstream file
 echo.
-call "%VIVADO_BAT%" -mode gui -source program_fpga.tcl
+start "" "%VIVADO_BAT%"
 pause
 goto MENU
 
