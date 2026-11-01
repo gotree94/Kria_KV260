@@ -416,23 +416,23 @@ For support resources such as Answers, Documentation, Downloads, and Forums, see
 
 These documents provide supplemental material useful with this guide:
 
-1. Kria SOM GitHub.io documentation
+1. [Kria SOM GitHub.io documentation](https://xilinx.github.io/kria-apps-docs)
 
-2. Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+2. Kria KV260 Vision AI Starter Kit Data Sheet ([DS986](https://docs.amd.com/go/en-US/ds986-kv260-starter-kit))
 
-3. Kria K26 SOM Data Sheet (DS987)
+3. Kria K26 SOM Data Sheet ([DS987](https://docs.amd.com/go/en-US/ds987-k26-som))
 
-4. Kria K26 SOM Thermal Design Guide (UG1090)
+4. Kria K26 SOM Thermal Design Guide ([UG1090](https://docs.amd.com/go/en-US/ug1090-k26-thermal-design))
 
-5. Kria SOM Carrier Card Design Guide (UG1091)
+5. Kria SOM Carrier Card Design Guide ([UG1091](https://docs.amd.com/go/en-US/ug1091-carrier-card-design))
 
-6. Vitis Model Composer User Guide (UG1483)
+6. Vitis Model Composer User Guide ([UG1483](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1483-model-composer-sys-gen-user-guide&ft:locale=en-US))
 
-7. Vivado Design Suite User Guide: System-Level Design Entry (UG895)
+7. Vivado Design Suite User Guide: System-Level Design Entry ([UG895](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug895-vivado-system-level-design-entry&ft:locale=en-US))
 
-8. Embedded Design Development Using Vitis (UG1701)
+8. Embedded Design Development Using Vitis ([UG1701](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1701-vitis-accelerated-embedded&ft:locale=en-US))
 
-9. Vitis Reference Guide (UG1702)
+9. Vitis Reference Guide ([UG1702](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1702-vitis-accelerated-reference&ft:locale=en-US))
 
 
 
