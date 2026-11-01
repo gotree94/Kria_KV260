@@ -120,8 +120,9 @@ Table: Descriptions and Locations for both Rev 1.0 and Rev 2.0
 # Initial Setup (초기 설정)
 
 ### Powering the Starter Kit and Power Budgets (스타터 키트 전원 및 전력 예산)
-* The AMD Kria™ KV260 Vision AI Starter Kit requires a 12V, 3A power supply adapter to power the kit.
-* AMD Kria™ KV260 Vision AI 스타터 키트는 키트를 작동시키기 위해 12V, 3A 전원 어댑터가 필요합니다.
+
+The AMD Kria™ KV260 Vision AI Starter Kit requires a 12V, 3A power supply adapter to power the kit.
+AMD Kria™ KV260 Vision AI 스타터 키트는 키트를 작동시키기 위해 12V, 3A 전원 어댑터가 필요합니다.
 
 > ✎ Note: The power supply adapter is not included in the KV260 Starter Kit. <br>
 > ✎ 참고: 전원 어댑터는 KV260 스타터 키트에 포함되어 있지 않습니다. <br>
@@ -134,69 +135,79 @@ Table: Power Adapters to Purchase for the KV260 Starter Kit
 |:-------:|:-------:|:-------:|
 | CUI Inc. | SMI36-12-V-P6 | +12V, 3A DC adapter using a center-pin positive barrel connector (2.5 mm ID, 5.5 mm OD) | 
 
-* The power supply adapter barrel connector plugs into the DC jack (J12) to supply the +12V power source to KV260 Starter Kit.
+The power supply adapter barrel connector plugs into the DC jack (J12) to supply the +12V power source to KV260 Starter Kit.
 
 ### Powering the K26 SOM (K26 SOM 전원 공급)
 
-* The KV260 Starter Kit carrier card on-board regulator generates a 5V supply and provides power to other voltage regulators.
-* KV260 스타터 키트 캐리어 카드의 내장 레귤레이터가 5V 전원을 생성하고 다른 전압 레귤레이터에도 전원을 제공합니다.
+The KV260 Starter Kit carrier card on-board regulator generates a 5V supply and provides power to other voltage regulators.
+KV260 스타터 키트 캐리어 카드의 내장 레귤레이터가 5V 전원을 생성하고 다른 전압 레귤레이터에도 전원을 제공합니다.
 
-* The SOM power rail (VCC_SOM) is powered by the 5V supply.
-* SOM 전원 레일(VCC_SOM)은 5V 전원으로 구동됩니다.
+The SOM power rail (VCC_SOM) is powered by the 5V supply.
+SOM 전원 레일(VCC_SOM)은 5V 전원으로 구동됩니다.
 
-* Next, the SOM on-board power-on sequencing starts.
-* 다음으로, SOM의 보드 내 전원 켜기 시퀀스가 시작됩니다.
+Next, the SOM on-board power-on sequencing starts.
+다음으로, SOM의 보드 내 전원 켜기 시퀀스가 시작됩니다.
 
-* The carrier card provides the programmable logic (PL) the VCCO voltage rails after the SOM asserts the VCCOEN_S_M2C and VCCOEN_PL_M2C signals
-* 캐리어 카드는 SOM이 VCCOEN_S_M2C와 VCCOEN_PL_M2C 신호를 어설트한 후, 프로그래머블 로직(PL)에 VCCO 전원 레일을 제공합니다.
+The carrier card provides the programmable logic (PL) the VCCO voltage rails after the SOM asserts the VCCOEN_S_M2C and VCCOEN_PL_M2C signals
+캐리어 카드는 SOM이 VCCOEN_S_M2C와 VCCOEN_PL_M2C 신호를 어설트한 후, 프로그래머블 로직(PL)에 VCCO 전원 레일을 제공합니다.
 
 ### Power Telemetry (전력 텔레메트리)
 
-* A power monitor device is available on the SOM power rail (VCC_SOM). You can access the total power consumed by the SOM module through the I2C bus and AMD provided utilities.
-* SOM 전원 레일(VCC_SOM)에서 전력 모니터 장치를 사용할 수 있습니다. I2C 버스와 AMD에서 제공하는 유틸리티를 통해 SOM 모듈이 소비하는 전체 전력을 확인할 수 있습니다.
+A power monitor device is available on the SOM power rail (VCC_SOM). You can access the total power consumed by the SOM module through the I2C bus and AMD provided utilities.
+SOM 전원 레일(VCC_SOM)에서 전력 모니터 장치를 사용할 수 있습니다. I2C 버스와 AMD에서 제공하는 유틸리티를 통해 SOM 모듈이 소비하는 전체 전력을 확인할 수 있습니다.
 
 ### Powering Peripherals (주변기기 전원 공급)
 
-* The KV260 Starter Kit carrier card supplies power to the I/O peripherals as specified by the following interface specifications.
-* KV260 스타터 키트 캐리어 카드에서는 다음 인터페이스 사양에 따라 I/O 주변기기에 전원을 공급합니다.
+The KV260 Starter Kit carrier card supplies power to the I/O peripherals as specified by the following interface specifications.
+KV260 스타터 키트 캐리어 카드에서는 다음 인터페이스 사양에 따라 I/O 주변기기에 전원을 공급합니다.
 
 ### USB3.0
 
-* There are four USB3.0 interface ports available on the KV260 Starter Kit carrier card. Each port can deliver a 5V supply to the attached I/O peripherals with up to 900 mA per port. All ports are protected against an
+There are four USB3.0 interface ports available on the KV260 Starter Kit carrier card. Each port can deliver a 5V supply to the attached I/O peripherals with up to 900 mA per port. All ports are protected against an
 over-current event through individual 900 mA power switches per port.
-* KV260 스타터 키트 캐리어 카드에는 총 4개의 USB3.0 인터페이스 포트가 있습니다. 각 포트는 연결된 I/O 주변기기에 최대 900 mA까지 5V 전원을 공급할 수 있습니다. 모든 포트는 개별 900 mA 전원 스위치를 통해 과전류 상황으로부터 보호됩니다.
+KV260 스타터 키트 캐리어 카드에는 총 4개의 USB3.0 인터페이스 포트가 있습니다. 각 포트는 연결된 I/O 주변기기에 최대 900 mA까지 5V 전원을 공급할 수 있습니다. 모든 포트는 개별 900 mA 전원 스위치를 통해 과전류 상황으로부터 보호됩니다.
 
 > ✎ Note: The total current (across all four ports) is allocated at 2.1A.
 > ✎ 참고: 총 전류(4개 포트 전체)는 2.1A로 할당됩니다.
 
-### Pmod Connector
+### Pmod Connector (Pmod 커넥터)
 
 The Pmod interface (from Digilent Inc.) is supported by the 3.3V, 100 mA capacity on the supply pin.
+Pmod 인터페이스(Digilent Inc. 제공)는 공급 핀에서 3.3V, 100 mA 용량을 지원합니다.
 
-## Raspberry Pi Camera Interface
+## Raspberry Pi Camera Interface (라즈베리 파이 카메라 인터페이스)
 
 The Raspberry Pi camera 15 pin interface connector is supported by the 3.3V supply voltage on the supply pin.
+라즈베리 파이 카메라 15핀 인터페이스 커넥터는 공급 핀에서 3.3V 공급 전압을 지원합니다.
 
-### IAS Module Connector
+### IAS Module Connector (IAS 모듈 커넥터)
 
 The SOM supports two IAS module connectors, as defined by the ON Semiconductor IAS module definition standard. The KV260 Starter Kit carrier card provides 2.75V, 1.8V, and 1.2V supply rails on specified power pins.
+SOM은 ON Semiconductor IAS 모듈 정의 표준에 따라 두 개의 IAS 모듈 커넥터를 지원합니다. KV260 스타터 키트 캐리어 카드에서는 지정된 전원 핀에서 2.75V, 1.8V, 1.2V 전원 레일을 제공합니다.
 
-## Fan and Heat Sink
+## Fan and Heat Sink (팬과 히트 싱크)
 
 The KV260 Starter Kit is built with an integrated active cooling solution (see Figure 2). The integrated fansink allows you to exercise the full 10W AMD Zynq™ UltraScale+™ MPSoC application power budget without any additional accessories.
+KV260 스타터 키트는 통합 액티브 냉각 솔루션이 내장되어 있습니다(그림 2 참조). 통합 팬싱크 덕분에 추가 액세서리 없이도 전체 10W의 AMD Zynq™ UltraScale+™ MPSoC 애플리케이션 전력 예산을 충분히 활용할 수 있습니다.
 
 Out of the box, the 12V fan should already be plugged into the starter kit. If it is not, be sure that the fan is plugged into the connector designated in Table 1. The fan connector is keyed to ensure proper orientation.
+박스에서 꺼내면 12V 팬은 이미 스타터 키트에 연결되어 있어야 합니다. 연결되어 있지 않다면 팬이 표 1에 지정된 커넥터에 연결되어 있는지 확인하세요. 팬 커넥터는 올바른 방향으로 연결되도록 설계되어 있습니다.
 
 By default, the fan runs at a constant speed. Variable fan speed control can be implemented through a FPGA based PWM fan controller. The fan gating signal is connected to a FPGA HD I/O bank pin for control. Consult the
 corresponding KV260 Starter Kit carrier card schematic for specific pin assignment and AMD SOM source code repositories for an RTL implementation that can be integrated with your design.
+기본적으로 팬은 일정한 속도로 작동합니다. 팬 속도 가변 제어는 FPGA 기반 PWM 팬 컨트롤러를 통해 구현할 수 있습니다. 팬 게이팅 신호는 제어를 위해 FPGA HD I/O 뱅크 핀에 연결됩니다. 특정 핀 할당은 KV260 스타터 키트 캐리어 카드 회로도를 참조하고, RTL 구현은 AMD SOM 소스 코드 저장소를 참고하여 디자인에 통합할 수 있습니다.
 
-# Boot Devices and Firmware Overview
+# Boot Devices and Firmware Overview (부트 장치 및 펌웨어 개요)
 
 The AMD Kria™ KV260 Vision AI Starter Kit has a primary and secondary boot device that provides isolation of platform-specific boot firmware from the run-time operating system and application. This allows you to focus on developing and updating your application code within the application image without having to rebuild and flash boot firmware. The primary boot device is a QSPI memory located on the SOM and the secondary boot device is an SD card interface on the carrier card. By default, the KV260 Starter Kit carrier card sets the XCK26 boot mode to QSPI32. The SOM boots up to U-Boot using the QSPI contents and then U-Boot does a hand-off to the secondary boot device.
 
+AMD Kria™ KV260 Vision AI 스타터 키트에는 기본 부트 장치와 보조 부트 장치가 있어 플랫폼별 부트 펌웨어를 런타임 운영체제 및 애플리케이션과 격리할 수 있습니다. 이를 통해 부트 펌웨어를 다시 빌드하고 플래시하지 않고도 애플리케이션 이미지 내에서 애플리케이션 코드를 개발하고 업데이트하는 데 집중할 수 있습니다. 기본 부트 장치는 SOM에 위치한 QSPI 메모리이고, 보조 부트 장치는 캐리어 카드의 SD 카드 인터페이스입니다. 기본적으로 KV260 스타터 키트 캐리어 카드는 XCK26 부트 모드를 QSPI32로 설정합니다. SOM은 QSPI 내용을 사용하여 U-Boot로 부팅한 후, U-Boot는 보조 부트 장치로 핸드오프합니다.
+
 > ✎ Note: You must burn the SD card image and populate the SD card in the carrier card for the kit to successfully boot to Linux.
+> ✎ 참고: 키트가 Linux로 성공적으로 부팅되려면 SD 카드 이미지를 구워 캐리어 카드에 SD 카드를 장착해야 합니다.
 
 The overall boot device definition and firmware contents are outlined in the following figure.
+전체 부트 장치 정의와 펌웨어 내용은 다음 그림에 나와 있습니다.
 
 Figure: Boot Devices
 
@@ -205,48 +216,70 @@ Figure: Boot Devices
 </p>
 
 > ✎ Important: Production SOMs provide both QSPI and eMMC devices on the SOM PCB to support integrated primary and secondary boot configurations.
+> ✎ 중요: 생산용 SOM은 통합된 1차 및 2차 부트 구성을 지원하기 위해 SOM PCB에 QSPI 및 eMMC 장치를 모두 제공합니다.
 
-# Primary Boot Device
+# Primary Boot Device (1차 부트 장치)
 
 The primary boot device is a QSPI device located on the SOM. The necessary elements are packaged in an AMD Zynq™ UltraScale+™ MPSoC specific format  and file captured as BOOT.BIN. The BOOT.BIN file contains the board-specific boot firmware that consists of the following elements:
 
-### FSBL
+### FSBL (FSBL)
    * First-stage boot-loader firmware
+   * 1단계 부트로더 펌웨어
 
 ### PMU
    * Platform management unit firmware
+   * 플랫폼 관리 장치 펌웨어
 
 ### ATF
    * Arm® trusted firmware
+   * Arm® 트러스트 펌웨어
 
 ### U-Boot
    * Second-stage boot loader
+   * 2단계 부트로더
 
 U-Boot provides the functionality for the hand-off between the primary boot device and the secondary boot device. It searches through a U-Boot defined prioritized list of secondary boot devices with priority given to the SD card interface.
 
+U-Boot은 기본 부트 장치와 보조 부트 장치 간의 핸드오프 기능을 제공합니다. U-Boot에서 정의한 우선순위가 매겨진 보조 부트 장치 목록을 검색하며, SD 카드 인터페이스가 가장 높은 우선순위를 가집니다.
+
 The primary boot device provides a redundant copy of boot firmware arranged in an A/B configuration. The A/B configuration provides a dynamic primary and secondary image operation with corresponding update mechanisms. On boot, the system automatically boots from the defined primary  image, and, if boot fails, it falls back to the previously known good boot image.
 
-## Secondary Boot Device
+기본 부트 장치는 A/B 구성으로 배열된 부트 펌웨어의 중복 사본을 제공합니다. A/B 구성은 동적인 기본 및 보조 이미지 운영과 이에 따른 업데이트 메커니즘을 제공합니다. 부팅 시 시스템은 정의된 기본 이미지에서 자동으로 부팅하고, 부팅에 실패하면 이전에 정상적으로 부팅된 이미지로 되돌아갑니다.
+
+## Secondary Boot Device (보조 부트 장치)
 
 The secondary boot device on the KV260 Starter Kit is the SD card. It contains the operating system image and associated application files. The KV260 Starter Kit accelerated application references are built on the Linux operating system. The Getting Started web page provides a pre-built reference image that can be written to a microSD card for out-of-the-box functionality. SOM board support packages (BSPs) are also available if you want to customize your OS.
 
-> ✎ Recommended: The SOM is designed to use SDHC standard microSD cards.
+KV260 스타터 키트의 보조 부트 장치는 SD 카드입니다. 이 카드에는 운영 체제 이미지와 관련 애플리케이션 파일이 들어 있습니다. KV260 스타터 키트 가속화 애플리케이션 참조는 리눅스 운영 체제 기반으로 만들어졌습니다. 시작하기 웹 페이지에서는 미리 만들어진 참조 이미지를 제공하며, 이를 마이크로SD 카드에 기록하면 바로 사용할 수 있습니다. SOM 보드 지원 패키지(BSP)도 제공되므로 OS를 커스터마이징하고 싶다면 사용할 수 있습니다.
 
-# Software Getting Started
+> ✎ Recommended: The SOM is designed to use SDHC standard microSD cards.
+> ✎ 권장: SOM은 SDHC 표준 마이크로SD 카드를 사용하도록 설계되었습니다.
+
+# Software Getting Started (소프트웨어 시작하기)
 
 To get started with the KV260 Starter Kit, prior to powering, booting the board, and running your first application, you need to follow the instructions  on the Getting Started with Kria KV260 Vision AI Starter Kit pages to download and write the Xilinx SOM Starter Linux image to a microSD card. The webpage guides you to power on the KV260, boot Linux, and run a number of pre-built accelerated applications to start evaluation of the capabilities on the platform.
 
-## Platform Management Utility
+KV260 스타터 키트를 시작하려면, 보드에 전원을 켜고 부팅하며 첫 번째 애플리케이션을 실행하기 전에, Kria KV260 Vision AI 스타터 키트 시작하기 페이지의 지침을 따라 Xilinx SOM 스타터 리눅스 이미지를 microSD 카드에 다운로드하고 기록해야 합니다. 웹페이지는 KV260의 전원을 켜고 리눅스를 부팅하며, 미리 빌드된 가속화된 애플리케이션을 실행해 플랫폼의 기능을 평가할 수 있도록 안내합니다.
+
+## Platform Management Utility (플랫폼 관리 유틸리티)
 
 A platform management utility called xmutil is included in the SOM Linux image to help you configure and work with the SOM. Refer to the Kria SOM Wiki page for a list of xmutil functions and their descriptions.
 
-## Accelerated Applications
+SOM Linux 이미지에는 SOM을 구성하고 사용하기 쉽게 도와주는 xmutil이라는 플랫폼 관리 유틸리티가 포함되어 있어요. xmutil 기능과 설명 목록은 Kria SOM 위키 페이지를 참고하세요.
+
+## Accelerated Applications (가속 애플리케이션)
 
 The AMD SOM platforms are enabled with a number of accelerated applications that can be dynamically installed on the SOM platform. The SOM  starter Linux image is application agnostic and provides a set of utilities for pulling the hardware accelerated application examples from the SOM Linux package feeds.
 
+AMD SOM 플랫폼에서는 여러 가속 애플리케이션을 동적으로 설치할 수 있어요. SOM 스타터 Linux 이미지는 특정 애플리케이션에 종속되지 않으며, SOM Linux 패키지 피드에서 하드웨어 가속 애플리케이션 예제를 가져올 수 있는 유틸리티들을 제공합니다.
+
 Accelerated applications are software controllable, application-specific reference designs for AI developers, embedded developers, and system architects to customize and enhance the functionality through software control or updating the AI models. The following table outlines some featured accelerated applications available for the KV260 Starter Kit.
 
+가속화 애플리케이션은 AI 개발자, 임베디드 개발자, 시스템 아키텍트를 위해 소프트웨어 제어를 통해 기능을 맞춤화하고 AI 모델을 업데이트하여 기능을 향상시킬 수 있는 소프트웨어 제어 가능 애플리케이션별 레퍼런스 디자인입니다. 다음 표는 KV260 스타터 키트에서 제공되는 일부 주요 가속화 애플리케이션을 보여줍니다.
+
 Consider this list as a starting point because the SOM Getting Started web page contains the most up-to-date accelerated applications availability.
+
+이 목록은 시작점으로 생각하세요. 최신 가속화 애플리케이션 정보는 SOM 시작하기 웹 페이지에서 확인할 수 있습니다.
 
 Table: KV260 Accelerated Applications
 
