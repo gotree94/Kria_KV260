@@ -293,9 +293,24 @@ CAN ICES-3(A)/NMB-3(A)
 
 # VCCI Class A Statement
 
+<p align="center">
+  <img src="media-DS986/image8.png" width="800">
+</p>
+
+
 # KCC Notice Class A (Republic of Korea Only)
 
+<p align="center">
+  <img src="media-DS986/image9.jpeg" width="800">
+</p>
+
+
 # BSMI Class A Notice (Taiwan)
+
+<p align="center">
+  <img src="media-DS986/image10.jpeg" width="800">
+</p>
+
 
 # EU WEEE Logo
 
