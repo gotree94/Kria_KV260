@@ -1,168 +1,270 @@
-# Kria KV260 Vision AI 스타터 키트
+# Introduction
 
-* https://www.amd.com/ko/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html
+https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/rpi-v3/run.html
 
-* Kria™ K26 SOM의 개발 플랫폼인 KV260 스타터 키트는 복잡한 하드웨어 설계 지식 없이도 고급 비전 애플리케이션을 개발할 수 있도록 지원하기 위해 제작되었습니다.
-* 전원 공급 장치는 별도로 판매됩니다. (12V DC, 3A 이상 필요 36W)
+This document shows how to set up the board and exercise the Raspberry Pi Camera V3.
 
-<img width="691" height="491" alt="001" src="https://github.com/user-attachments/assets/d349cdd4-17a8-447b-a702-3c9bd77eb736" />
+This guide and its prebuilts are targeted for Ubuntu 24.04 and AMD 2024.1 toolchain.
 
-## 제품 기능
-### 비전 지원
-  * 다중 카메라 지원: 최대 8개의 인터페이스
-  * 3개의 MIPI 센서 인터페이스, USB 카메라
-  * 내장 ISP 구성 요소(OnSemi)
-  * HDMI™, DisplayPort™ 출력
-### 유연한 연결성
-  * 1Gb 이더넷
-  * USB 3.0/2.0
-### 확장성
-  * 모든 센서 또는 인터페이스로 확장 가능
-  * Pmod 에코시스템 액세스
-### 간편한 사용
-  * 저렴한 비용으로 설계 탐색 가능
-  * AMD 및 공인 유통업체에서 구매 가능
+## Hardware Requirements¶
 
-## 일반 사양
-| 항목                         | 사양                                                                                 |
-| -------------------------- | ---------------------------------------------------------------------------------- |
-| **장치(Device)**             | Zynq™ UltraScale+™ MPSoC                                                           |
-| **폼 팩터(Form Factor)**      | SOM + 캐리어 카드 + 열 솔루션                                                               |
-| **스타터 키트 크기**              | 119 mm × 140 mm × 36 mm                                                            |
-| **열 냉각 솔루션**               | 활성 냉각 (팬 + 방열판)                                                                    |
-| **시스템 로직 셀**               | 256K                                                                               |
-| **Block RAM (BRAM)**       | 144 블록                                                                             |
-| **UltraRAM**               | 64 블록                                                                              |
-| **DSP 슬라이스**               | 1,200                                                                              |
-| **이더넷 인터페이스**              | 10 / 100 / 1000 Mb/s × 1                                                           |
-| **DDR 메모리**                | 4 GB (4 × 512 Mb × 16-bit, Non-ECC)                                                |
-| **기본 부팅 메모리**              | 512 Mb QSPI                                                                        |
-| **보조 부팅 메모리**              | SDHC 카드                                                                            |
-| **디바이스 보안**                | Zynq UltraScale+ MPSoC 하드웨어 RoT 기반 보안 부팅 지원<br>Infineon TPM 2.0 (Measured Boot 지원) |
-| **이미지 센서 프로세서 (ISP)**      | onsemi AP1302                                                                      |
-| **MIPI 센서 인터페이스**          | IAS MIPI CSI-2 × 2 (자동 초점 지원)                                                      |
-| **Raspberry Pi 카메라 인터페이스** | 1                                                                                  |
-| **Pmod 인터페이스**             | 12-핀 × 1                                                                           |
-| **USB 인터페이스**              | USB® 3.0 / 2.0 × 4                                                                 |
-| **DisplayPort**            | DisplayPort™ 1.2a × 1                                                              |
-| **HDMI**                   | HDMI™ 1.4 × 1                                                                      |
+1. KV260 Vision AI Starter Kit
+2. KV260 Power Supply & Adapter
+3. MicroSD Card
+4. One Raspberry Pi V3 Sensor
+5. 1080P/4K Monitor and Power Supply
+6. DisplayPort/HDMI Cable
 
-## Kria 포트폴리오 비교
-| 항목           | **KV260 Vision AI 스타터 키트** | **KR260 로보틱스 스타터 키트**   | **K26 Commercial SOM**                                             | **K26 Industrial SOM**       |
-| ------------ | -------------------------- | ----------------------- | ------------------------------------------------------------------ | ---------------------------- |
-| **제품 유형**    | 개발 / 평가                    | 개발 / 평가                 | 완전 인증 및 공인된 상업용 등급 생산 모듈                                           | 완전 인증 및 공인된 산업용 등급 생산 모듈     |
-| **작동 온도 범위** | 0 °C ~ 35 °C               | 0 °C ~ 85 °C            | 0 °C ~ 85 °C                                                       | –40 °C ~ 100 °C              |
-| **대상 용도**    | 간편한 애플리케이션 설계 및 데모 실행      | 로보틱스 및 실시간 제어 중심의 개발/평가 | 스마트 시티, 로봇 공학, 머신 비전, 산업용 통신 및 제어 등<br>특정 대상 용도에 맞게 설계된 캐리어 카드와 결합 | 혹독한 산업 환경을 포함한 장기 안정성 요구 시스템 |
-| **품질 보증**    | 90일                        | 90일                     | 2년                                                                 | 3년                           |
-| **예상 제품 수명** | –                          | –                       | 5년                                                                 | 10년                          |
+## Set up the Board¶
 
----
+The test requires the following hardware setup to run Raspberry Pi Camera V3 test successfully on target KV260.
 
-## 🧠 AMD Kria KV260 Vision AI Starter Kit
+* Monitor
 
-* AMD Kria™ KV260 Vision AI Starter Kit은 스마트 시티(Smart City) 및 산업용(Industrial) 애플리케이션을 위한 Out-of-the-box 플랫폼입니다.
-* 복잡한 하드웨어 설계 지식 없이도 사전 빌드된 애플리케이션과 다양한 소프트웨어 도구를 활용하여
-* 머신 비전, AI 추론, 엣지 컴퓨팅 기반의 사용 사례를 빠르게 프로토타이핑할 수 있습니다.
-* KV260 Starter Kit은 개발자가 Kria K26 SOM을 양산(Production Volume Deployment) 단계에서 선택할 경우,
-* 개발 가속 및 Time-to-Market 단축을 위한 명확한 전환 경로를 제공합니다.
+Before booting, connect a 1080P/4K monitor to the board via either Display Port and/or HDMI port.
 
-### 📦 Product Page
-   * Kria KV260 Vision AI Starter Kit : 제품 기능, 상세 사양, 액세서리, 주문 정보를 제공합니다.
+* RaspberryPi Camera V3 Module
 
-### 🚀 Getting Started
-   * Kria KV260 Vision AI Starter Kit Product Brief
-      * KV260 스타터 키트의 주요 기능과 사양을 빠르게 요약한 문서입니다.
-   * Smart Camera Accelerated Application
-      * 키트 개봉 후 바로 실행 가능한 AMD 제공 스마트 카메라 가속 애플리케이션 실행 절차를 단계별로 안내합니다.
-   * Kria SOM Adventure Map
-      * Out-of-the-box 설정부터 고급 평가 및 제품 개발까지 Kria SOM 관련 문서를 체계적으로 안내하는 개발 여정 가이드입니다.
+Connect the Raspberry Pi Camera Module to J9 on the KV260
 
-### 📘 Documentation
+## Tested Artifacts¶
 
-   * Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-      * KV260 Vision AI Starter Kit의 기능 전반을 설명합니다. 
-      * AMD Kria K26 SOM을 대상으로 설계 및 평가 시 참고하는 핵심 가이드입니다.
-   * Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-      * 하드웨어, 소프트웨어, 규정 준수(Compliance) 관련
-      * KV260 스타터 키트의 주요 사양을 정리한 데이터시트입니다.
+Testing was performed with the following artifacts:
 
-### 🧩 Designs & Applications
+## KV260 platform artifacts¶
 
-   * Kria App Store
-      * AMD Kria SOM 제품용 사전 빌드된 애플리케이션 목록을 제공합니다.
-   * Kria KV260 Vision AI Starter Kit Accelerated Applications
-      * KV260 가속 애플리케이션의 Quick Start, 커스터마이징 튜토리얼, HW/SW 아키텍처 설명을 포함합니다.
-   * Kria SOM GitHub Landing Page
-      * 애플리케이션 개발, Ubuntu®, 부트 펌웨어 등 Kria SOM 관련 GitHub 리소스를 모아둔 허브 페이지입니다.
-   * Kria SOM & Starter Kits – Wiki Page
-      * Kria Production SOM 및 Starter Kit에 대한 문서, 사전 빌드 이미지, 펌웨어 업데이트, GitHub 링크를 제공합니다.
+| Component	| Version | 
+| Boot Fiwmare	| K26-BootFW-v1.06.bin | 
+| Linux Kernel	| 6.8.0-1020 | 
+| xlnx-firmware-kv260-bist-imx708	| 1.0-0xlnx1 | 
 
-### 🛠 Board Files (Hardware Design)
+* Please refer to the Kria Wiki to obtain latest linux image and boot firmware.
 
-   * Kria KV260 Starter Kit Carrier Card Schematic (XTP682)
-      * KV260 Vision 캐리어 카드 회로도(PDF) 및 README 포함
-   * Kria KV260 Starter Kit Carrier Card Schematic Source (XTP683)
-      * KV260 Vision 캐리어 카드 회로도 원본 (OrCAD) 및 README 포함
-   * Kria KV260 Starter Kit Carrier Card PCB Layout (XTP681)
-      * KV260 Vision 캐리어 카드 PCB 레이아웃 (Allegro) 및 README 포함
-   * Kria KV260 Starter Kit Carrier Card BOM (XTP713)
-      * KV260 Vision 캐리어 카드 부품 BOM (Excel) 및 README 포함
-   * Kria KV260 Starter Kit Carrier Card 3D CAD Model (XTP679)
-      * 기구 및 열 설계를 위한 KV260 Starter Kit 3D CAD 모델 (.STP)
-   * Kria KV260 Starter Kit Vivado Board File
-      * 최신 KV260 Vivado™ Board File 다운로드를 위한 Xilinx Board Store GitHub 페이지 링크
+## Boot Linux
 
-### 🧑‍💻 Support & Community Resources
+Before continuing with the the test specific instructions, if not yet done so, boot Linux with instructions from:
 
-   * AMD Kria SOM Support Forum
-     * Kria SOM 관련 기술 지원 및 개발자 커뮤니티 포럼
-     * 질문 등록, 답변 검색, 지식 공유가 가능합니다.
-   * AMD Kria SOM Product Selection Guide
-     * 모든 Kria SOM 및 Starter Kit 제품의
-     * 기능과 사양을 비교하여 적합한 제품 선택을 돕는 가이드입니다.
-   * AMD Kria Starter Kit Training Videos & Tutorials
-     * Kria SOM 및 KV260 Vision AI Starter Kit 학습을 위한
+Kria Starter Kit Linux Boot on KV260
 
----
+## Download and Load the BIST PL Firmware¶
 
-## 🎓 Using Accelerated Applications with the Vision AI Starter Kit & Kria SOM
+Install firmware binaries.
 
-### Course Description
-* 이 과정은 Kria™ System-on-Module (SOM) 및 AMD Kria KV260 Vision AI Starter Kit을 처음 접하는 사용자를 대상으로 합니다.
-* 복잡한 설치 과정이나 FPGA 지식 없이, Out-of-the-box 상태에서 바로 Vision AI 가속 애플리케이션을 실행하고 활용할 수 있도록 구성되어 있습니다.
-* 본 과정은 Kria SOM 기반 개발 흐름을 이해하고,
-* KV260 Vision AI Starter Kit을 활용한 스마트 카메라 및 AI Box 가속 애플리케이션을 직접 실행·커스터마이징하며
-* 벤치마킹까지 수행하는 것을 목표로 합니다.
+```
+sudo apt install xlnx-firmware-kv260-bist-imx708
+```
 
-### 🎯 Course Focus
-* 본 교육 과정은 다음 항목에 중점을 둡니다:
-   * Kria SOM 개요 및 Vision AI Starter Kit 시작 방법 이해
-   * Vision AI Starter Kit에서 Smart Camera 가속 애플리케이션 실행
-   * Vision AI Starter Kit에서 AI Box 가속 애플리케이션 실행
-   * AI 모델 커스터마이징 및 성능 벤치마킹 수행
+* List the installed application firmware binaries.
 
-### 📺 Vision AI Starter Kit Training Videos
-#### 1️⃣ Getting Started with the Kria SOM and Vision AI Starter Kit
-   * https://youtu.be/wi88mkQ1ERE
-   * Kria SOM 및 Vision AI Starter Kit 전반에 대한 개요 제공
-   * KV260 Starter Kit을 빠르게 시작하기 위한 기본 가이드
+The firmware consists of bitstream, device tree overlay (dtbo) file. The firmware is loaded dynamically on user request once Linux is fully booted. The xmutil utility can be used for that purpose.
 
-#### 2️⃣ Using the Smart Camera Accelerated Application with the Vision AI Starter Kit
-   * https://youtu.be/-PiFqdjvBg0
-   * Smart Camera 가속 애플리케이션 개요
-   * 개발 환경 설정 및 애플리케이션 실행 방법
-   * AI 모델 커스터마이징 방법
-   * 성능 벤치마킹 데이터 생성 방법
+After installing the FW, execute xmutil listapps to verify that it is captured under the listapps function, and to have dfx-mgrd, re-scan and register all accelerators in the firmware directory tree.
 
-#### 3️⃣ Using the AI Box Accelerated Application with the Vision AI Starter Kit
-   * https://youtu.be/Ga3dbzconDU
-   * AI Box 가속 애플리케이션 개요
-   * 개발 환경 설정 및 애플리케이션 실행 방법
-   * AI 모델 커스터마이징 방법
-   * 성능 벤치마킹 데이터 생성 방법
+```
+sudo xmutil listapps
+```
 
+* Load a new application firmware binary.
 
+When there is already another accelerator/firmware being activated, unload it first, then load the desired BIST firmware.
 
+```
+sudo xmutil unloadapp
+sudo xmutil loadapp kv260-bist-imx708
+```
 
+## Miscellaneous Preparation¶
 
+On target KV260 disable desktop environment before running the docker for the display testing to function as intended.
 
+Check if default target is set to graphical.target
+
+```
+sudo systemctl get-default
+```
+
+If above command returns graphical.target, set default target to multi-user. This step is to ensure that by default we always start without Ubuntu display manager.
+
+```
+sudo systemctl set-default multi-user.target
+```
+
+Reboot the system for the change to take effect.
+
+```
+sudo reboot
+```
+
+## Download and Run the Docker Image¶
+
+Pull the docker image from dockerhub.
+
+```
+docker pull xilinx/kria-bist:1.2-noble-24.04
+```
+
+The storage volume on the SD card can be limited with multiple docker images installed. If there are space issues, use the following command to remove existing docker images.
+
+```
+docker rmi --force <image>
+```
+
+You can find the images installed with the following command:
+
+```
+docker images
+```
+
+Launch the docker container using the following command:
+
+```
+docker run \
+    --env=DISPLAY \
+    --env=XDG_SESSION_TYPE \
+    --net=host \
+    --privileged \
+    --volume=/home/ubuntu/.Xauthority:/root/.Xauthority:rw \
+    -v /tmp:/tmp \
+    -v /dev:/dev \
+    -v /sys:/sys \
+    -v /etc/vart.conf:/etc/vart.conf \
+    -v /lib/firmware/xilinx:/lib/firmware/xilinx \
+    -v /run:/run \
+    -it xilinx/kria-bist:1.2-noble-24.04 bash
+```
+
+It launches the image in a new container and drops the user into a bash shell.
+
+```
+root@xlnx-docker/#
+```
+
+## Run the BIST Test
+Run a set of media-ctl commands to set the media path on IMX708
+
+These commands set the IMX708 sensor resolution to 1536×864 RAW10 and configure the pipeline blocks so the image is demosaiced, converted to RGB, then upscaled in the PL to 1920×1080 and output as a YUV (NV12-type) format.
+```
+root@kria:/# media-ctl -d /dev/media0 -V "\"80050000.csiss\":0 [SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range]"
+root@kria:/# media-ctl -d /dev/media0 -V "\"80050000.csiss\":1 [SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range]"
+root@kria:/# media-ctl -d /dev/media0 -V "\"b0030000.v_demosaic\":0 [SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range]"
+root@kria:/# media-ctl -d /dev/media0 -V "\"b0030000.v_demosaic\":1 [RBG888_1X24/1536x864 field:none colorspace:srgb]"
+root@kria:/# media-ctl -d /dev/media0 -V "\"b0080000.scaler\":0 [RBG888_1X24/1536x864 field:none colorspace:srgb]"
+root@kria:/# media-ctl -d /dev/media0 -V "\"b0080000.scaler\":1 [VYYUYY8_1X24/1920x1080 field:none colorspace:srgb]"
+root@kria:/# media-ctl -d /dev/media0 -V "\"imx708\":0 [fmt:SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range ]"
+```
+
+Run a Live Video Stream on connected Display using gstreamer. You can expect a framerate of ~58-60 fps.
+
+```
+root@kria:/# gst-launch-1.0 v4l2src device=/dev/video1 io-mode=mmap ! "video/x-raw, width=1920, height=1080, framerate=60/1, format=NV12" ! perf ! kmssink fullscreen-overlay=true bus-id=fd4a0000.display -v
+Setting pipeline to PAUSED ...
+Pipeline is live and does not need PREROLL ...
+/GstPipeline:pipeline0/GstKMSSink:kmssink0: display-width = 3840
+/GstPipeline:pipeline0/GstKMSSink:kmssink0: display-height = 2160
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+/GstPipeline:pipeline0/GstV4l2Src:v4l2src0.GstPad:src: caps = video/x-raw, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, format=(string)NV12, interlace-mode=(string)progressive, colorimetry=(string)bt709
+/GstPipeline:pipeline0/GstCapsFilter:capsfilter0.GstPad:src: caps = video/x-raw, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, format=(string)NV12, interlace-mode=(string)progressive, colorimetry=(string)bt709
+/GstPipeline:pipeline0/GstPerf:perf0.GstPad:src: caps = video/x-raw, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, format=(string)NV12, interlace-mode=(string)progressive, colorimetry=(string)bt709
+/GstPipeline:pipeline0/GstKMSSink:kmssink0.GstPad:sink: caps = video/x-raw, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, format=(string)NV12, interlace-mode=(string)progressive, colorimetry=(string)bt709
+/GstPipeline:pipeline0/GstPerf:perf0.GstPad:sink: caps = video/x-raw, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, format=(string)NV12, interlace-mode=(string)progressive, colorimetry=(string)bt709
+/GstPipeline:pipeline0/GstCapsFilter:capsfilter0.GstPad:sink: caps = video/x-raw, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, format=(string)NV12, interlace-mode=(string)progressive, colorimetry=(string)bt709
+INFO:
+perf: perf0; timestamp: 0:04:59.715199759; bps: 0.000; mean_bps: 0.000; fps: 0.000; mean_fps: 0.000
+Redistribute latency...
+INFO:01.3 / 99:99:99.
+perf: perf0; timestamp: 0:05:00.734893375; bps: 821145600.000; mean_bps: 0.000; fps: 57.861; mean_fps: 57.861
+INFO:02.4 / 99:99:99.
+perf: perf0; timestamp: 0:05:01.734973421; bps: 1517875200.000; mean_bps: 1517875200.000; fps: 60.995; mean_fps: 59.428
+INFO:03.3 / 99:99:99.
+perf: perf0; timestamp: 0:05:02.735017514; bps: 1492992000.000; mean_bps: 1505433600.000; fps: 59.997; mean_fps: 59.618
+INFO:04.3 / 99:99:99.
+perf: perf0; timestamp: 0:05:03.735048594; bps: 1492992000.000; mean_bps: 1501286400.000; fps: 59.998; mean_fps: 59.713
+INFO:05.4 / 99:99:99.
+perf: perf0; timestamp: 0:05:04.768339124; bps: 1517875200.000; mean_bps: 1505433600.000; fps: 59.035; mean_fps: 59.577
+INFO:06.4 / 99:99:99.
+perf: perf0; timestamp: 0:05:05.768360919; bps: 1492992000.000; mean_bps: 1502945280.000; fps: 59.999; mean_fps: 59.647
+INFO:07.4 / 99:99:99.
+perf: perf0; timestamp: 0:05:06.801726794; bps: 1492992000.000; mean_bps: 1501286400.000; fps: 59.998; mean_fps: 59.698
+INFO:08.4 / 99:99:99.
+perf: perf0; timestamp: 0:05:07.801783087; bps: 1492992000.000; mean_bps: 1500101485.714; fps: 60.997; mean_fps: 59.860
+INFO:09.4 / 99:99:99.
+perf: perf0; timestamp: 0:05:08.801839559; bps: 1492992000.000; mean_bps: 1499212800.000; fps: 59.997; mean_fps: 59.875
+^Chandling interrupt.
+Interrupt: Stopping pipeline ...
+Execution ended after 0:00:09.792569764
+Setting pipeline to NULL ...
+Freeing pipeline ...
+```
+
+## Debug
+
+The media-ctl path for imx708 should look something like this:
+
+```
+root@kria:/# media-ctl -d /dev/media0 -p
+Media controller API version 6.8.12
+
+Media device information
+------------------------
+driver          xilinx-video
+model           Xilinx Video Composite Device
+serial
+bus info        platform:axi:imx_vcap_csi
+hw revision     0x0
+driver version  6.8.12
+
+Device topology
+- entity 1: imx_vcap_csi output 0 (1 pad, 1 link)
+          type Node subtype V4L flags 0
+          device node name /dev/video1
+      pad0: Sink
+              <- "b0080000.scaler":1 [ENABLED]
+
+- entity 5: b0080000.scaler (2 pads, 2 links, 0 routes)
+          type V4L2 subdev subtype Unknown flags 0
+          device node name /dev/v4l-subdev0
+      pad0: Sink
+              [stream:0 fmt:RBG888_1X24/1536x864 field:none colorspace:srgb]
+              <- "b0030000.v_demosaic":1 [ENABLED]
+      pad1: Source
+              [stream:0 fmt:VYYUYY8_1X24/1920x1080 field:none colorspace:srgb]
+              -> "imx_vcap_csi output 0":0 [ENABLED]
+
+- entity 8: b0030000.v_demosaic (2 pads, 2 links, 0 routes)
+          type V4L2 subdev subtype Unknown flags 0
+          device node name /dev/v4l-subdev1
+      pad0: Sink
+              [stream:0 fmt:SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range]
+              <- "80050000.csiss":1 [ENABLED]
+      pad1: Source
+              [stream:0 fmt:RBG888_1X24/1536x864 field:none colorspace:srgb]
+              -> "b0080000.scaler":0 [ENABLED]
+
+- entity 11: 80050000.csiss (2 pads, 2 links, 0 routes)
+           type V4L2 subdev subtype Unknown flags 0
+           device node name /dev/v4l-subdev2
+      pad0: Sink
+              [stream:0 fmt:SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range]
+              <- "imx708":0 [ENABLED]
+      pad1: Source
+              [stream:0 fmt:SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range]
+              -> "b0030000.v_demosaic":0 [ENABLED]
+
+- entity 14: imx708 (2 pads, 1 link, 0 routes)
+           type V4L2 subdev subtype Sensor flags 0
+           device node name /dev/v4l-subdev3
+      pad0: Source
+              [stream:0 fmt:SRGGB10_1X10/1536x864 field:none colorspace:raw xfer:none ycbcr:601 quantization:full-range
+               crop.bounds:(16,24)/4608x2592
+               crop:(784,456)/3072x1728]
+              -> "80050000.csiss":0 [ENABLED]
+      pad1: Source
+              [stream:0 fmt:unknown/28800x1 field:none
+               crop.bounds:(16,24)/4608x2592
+               crop:(784,456)/3072x1728]
+```
+
+## Known Issue
+The live stream video poor quality and greenish hue is simply an artifact of lacking an ISP.
