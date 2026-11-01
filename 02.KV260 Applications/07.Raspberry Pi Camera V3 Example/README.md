@@ -21,9 +21,18 @@ The test requires the following hardware setup to run Raspberry Pi Camera V3 tes
 
 * Monitor
 
+<p align="center">
+  <img src="KV260-DP_HDMI1.png" width="800">
+</p>
+
 Before booting, connect a 1080P/4K monitor to the board via either Display Port and/or HDMI port.
 
 * RaspberryPi Camera V3 Module
+
+
+<p align="center">
+  <img src="KV260-Rpi.jpeg" width="800">
+</p>
 
 Connect the Raspberry Pi Camera Module to J9 on the KV260
 
