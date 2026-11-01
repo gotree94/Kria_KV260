@@ -70,9 +70,9 @@ each version.
 
 Figure: Interfaces and Connectors Rev. 1.0
 
-![](UG1089-media/image3.png)
+![](UG1089-media/image3.jpeg)
 
-![](UG1089-media/image4.png)
+![](UG1089-media/image4.jpeg)
 
 ![](UG1089-media/image5.png)
 
