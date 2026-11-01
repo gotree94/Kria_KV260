@@ -152,49 +152,49 @@ $ vivado
 Vivado를 시작하면 아래와 같은 화면이 나오므로 Create Project를 선택합시다.
 
 <p align="center">
-  <img src="img/001.png" width="500">
+  <img src="img/001.png" width="700">
 </p>
 
 다음을 선택합니다.
 
 <p align="center">
-  <img src="img/002.png" width="500">
+  <img src="img/002.png" width="700">
 </p>
 
 프로젝트 이름을 입력합니다.
 
 <p align="center">
-  <img src="img/003.png" width="500">
+  <img src="img/003.png" width="700">
 </p>
 
 RTL Project를 선택합니다.
 
 <p align="center">
-  <img src="img/004.png" width="500">
+  <img src="img/004.png" width="700">
 </p>
 
 여기에서는 설정하지 않고 Next로 진행합니다.
 
 <p align="center">
-  <img src="img/005.png" width="500">
+  <img src="img/005.png" width="700">
 </p>
 
 여기에서 보드를 선택합니다.
 
 <p align="center">
-  <img src="img/006.png" width="500">
+  <img src="img/006.png" width="700">
 </p>
 
 여기서 보드를 KV260을 찾아 선택합니다.
 
 <p align="center">
-  <img src="img/007.png" width="500">
+  <img src="img/007.png" width="700">
 </p>
 
 신규 프로젝트가 완성되어 초기 상태가 됩니다.
 
 <p align="center">
-  <img src="img/008.png" width="500">
+  <img src="img/008.png" width="700">
 </p>
 
 ### 블록 디자이너를 사용하여 PS에서 클럭을 추출
