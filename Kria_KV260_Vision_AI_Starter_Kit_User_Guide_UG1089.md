@@ -17,7 +17,7 @@
 * Accelerated Applications (가속 응용 프로그램)
 * Accelerated Application Package Selection (가속 응용 프로그램 패키지 선택)
 * Supported Peripherals (지원되는 주변 장치)
-## Xilinx Tools Integration (자일린스 도구 통합)
+## Xilinx Tools Integration (자일링스 도구 통합)
 * Vitis Platforms (Vitis 플랫폼)
 * Vivado Board Flow (Vivado 보드 플로우)
 ## Board Reset, Firmware Update, and Recovery (보드 리셋, 펌웨어 업데이트 및 복구)
