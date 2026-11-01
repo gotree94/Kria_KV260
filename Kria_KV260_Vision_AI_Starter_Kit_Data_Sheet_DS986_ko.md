@@ -5,7 +5,7 @@ https://docs.amd.com/r/en-US/ds986-kv260-starter-kit/Summary
 ---
 <br>
 
-* 목차
+## 목차
   * 요약
   * 제품 세부 정보
 * 주문 정보
