@@ -7,26 +7,28 @@ The Built-In Self Test (BIST) application tests the interfaces on AMD Kria™ st
 
 The BIST application is based on the pytest framework and designed to be modular and configurable so that it can be used across different starter kits. The tests are grouped into modules based on the interface which allows testing individual interfaces if needed. Some tests are self-validating tests, while others require user input based on observation. Each individual test either verifies the functionality or performance of an interface.
 
-Quick Start
+## Quick Start
 
 Install and Run BIST
-Overview
+
+## Overview
 
 Overview of BIST Application
-Other
+
+## Other
 
 Known Issues
-Repository
+
+## Repository
 
 Software Repository
-Important
 
-Previous releases:
+> Important
+> Previous releases:
+> BIST 1.1
+> BIST 1.2
 
-BIST 1.1
+## Support
 
-BIST 1.2
-
-Support¶
 GitHub issues will be used for tracking requests and bugs. For questions, go to forums.xilinx.com.
 
