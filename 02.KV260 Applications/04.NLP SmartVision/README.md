@@ -1,5 +1,7 @@
 # NLP SmartVision
 
+https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/nlp-smartvision/nlp_smartvision_landing.html
+
 The natural language processing (NLP) SmartVision implements keyword spotting (KWS) on the processing system (PS) and face detection, objectdetect, platedetect running on the programmable logic (PL). It showcases keywords based on dynamic switching between multiple tasks and modifying display properties.
 
 NLP SmartVision
