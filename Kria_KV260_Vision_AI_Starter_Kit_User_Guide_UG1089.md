@@ -68,11 +68,14 @@ each version.
 * CC = Device or interface is located on the carrier card
 * SOM = Device or interface is located on the SOM
 
-Figure: Interfaces and Connectors Rev. 1.0
+Figure: Interfaces and Connectors Rev. 2.0
 
 ![](UG1089-media/image3.jpeg)
 
+Figure: Interfaces and Connectors Rev. 1.0
+
 ![](UG1089-media/image4.jpeg)
+
 
 ![](UG1089-media/image5.png)
 
@@ -82,529 +85,57 @@ Figure: Interfaces and Connectors Rev. 1.0
 Table: Descriptions and Locations for both Rev 1.0 and Rev 2.0
 
 
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-SOM DS34
-
-PS done LED     Y
-
-Y     Lit indicates
-that the PS
-has
-successfully
-loaded a PL
-design.
-
-Page7 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-SOM DS35
-
-Heartbeat      Y
-
-LED
-
-Y     Periodic
-flashing
-green LED
-driven by
-the Zynq
-UltraScale+
-MPSoC APU
-
-processor.
-
-
-SOM DS36
-
-PS status       Y
-
-LED
-
-Y     Status LED,
-when lit
-indicates a
-successful
-application
-load.
-
-
-CC DS1-
-DS6
-
-Power         Y
-
-status LEDs
-
-Y     Indicates
-various
-power
-supply and
-power
-domain
-status.
-
-Green LED
-indicates
-good
-status.
-
-
-CC J2
-
-Pmod
-
-Y         Y     Digilent
-Pmod 2x6
-expansion
-header
-
-Page8 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-CC J3
-
-JTAG
-
-Y         Y     Direct JTAG
-interface,
-bypasses
-the FTDI
-device.
-
-
-CC J20
-
-JTAG boot      N
-mode
-
-selection
-jumper
-
-Y     When J20 is
-populated,
-it sets boot
-mode to
-JTAG
-
-instead of
-QSPI. By
-
-default, the
-header is
-not
-populated.
-
-
-CC J4
-
-FTDI USB2.0     Y
-
-UART and
-JTAG
-
-Y     Integrated
-JTAG and
-device UART
-interface via
-USB2.0
-
-
-CC J6
-
-DisplayPort     Y
-
-Y     DisplayPort
-video
-output
-
-
-CC J5
-
-HDMI
-
-Y         Y     HDMI™
-
-video
-output
-
-Page9 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-CC J7
-
-IAS0
-
-Y         Y     OnSemi
-image
-access
-system (IAS)
-camera
-module
-interface
-supporting
-four MIPI
-lanes.
-
-Connects to
-OnSemi
-AP1302 ISP
-
-device
-sensor 0
-interface.
-
-
-CC J18
-
-IAS0 AF        N
-
-selection
-jumper
-
-Y     Default pin
-1-2 is
-connected.
-When
-jumper
-connects
-the two
-pins, it
-enables the
-auto-focus
-(AF) power
-supply on
-IAS0.
-
-Page10 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-CC J8
-
-IAS1
-
-Y         Y     OnSemi IAS
-camera
-module
-interface
-supporting
-four MIPI
-lanes.
-
-Connected
-directly to
-the Zynq
-UltraScale+
-MPSoC     HPA
-
-bank.
-
-
-CC J19
-
-IAS1 AF        N
-
-selection
-jumper
-
-Y     Header and
-capacitor
-and
-jumpers are
-not
-populated.
-When
-populated,
-it enables
-auto-focus
-power
-supply on
-IAS1.
-
-Page11 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-CC J9
-
-RPi camera      Y
-
-Y     Raspberry Pi
-camera
-module
-interface.
-
-15-pin
-variant
-supporting
-two MIPI
-lanes
-directly
-connected
-directly to
-the Zynq
-UltraScale+
-MPSoC HPA
-
-bank.
-
-
-CC J10
-
-Ethernet       Y
-
-RJ45 jack
-
-Y     1 Gb/s
-
-Ethernet
-interface
-
-
-CC J11
-
-microSD       Y
-
-card
-
-Y     microSD
-card boot
-device
-
-
-CC J12
-
-12V power      Y
-input
-
-Y     12V power
-input jack
-
-
-CC J13
-
-Fan power      Y
-
-Y     12V SOM
-
-fan power
-interface
-
-Page12 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-CC SW1
-
-Firmware       Y
-
-update
-button
-
-Y     Push button
-used during
-the boot
-firmware
-update
-process.
-
-
-CC SW2
-
-Reset
-button
-
-Y        Y     Push button
-that resets
-the SOM via
-the device
-POR_B
-
-signal.
-
-
-CC J21
-
-PMU reset      N
-
-Y     Default is
-for the
-jumper to
-not be
-populated.
-When
-connected
-and
-implemente
-d      by PMU
-firmware, it
-enables a
-PMU-
-
-commanded
-POR_B reset
-of the SOM.
-
-
-CC U44
-
-USB0
-
-Y         Y     Two USB3.0
-or USB2.0
-
-compatible
-connectors
-
-Page13 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-
-Location    Name      Present on
-Rev1.0
-
-Present on
-Rev 2.0
-
-Description
-
-
-CC U46
-
-Initial Setup
-
-USB1
-
-Y         Y     Two USB3.0
-or USB2.0
-
-compatible
-connectors
-
-Powering the Starter Kit and Power Budgets
-
-The AMD Kria™ KV260 Vision AI Starter Kit requires a 12V, 3A power supply
-adapter to power the kit.
-
-✎ Note: The power supply adapter is not included in the KV260 Starter Kit.
-The following table lists the suggested power supply adapter that must be
-purchased separately.
+| Location | Name | Present on Rev1.0 | Present on Rev 2.0 | Description | 
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+| SOM DS34 | PS done LED | Y | Y | Lit indicates that the PS has successfully loaded a PL design. |
+| SOM DS35 | Heartbeat LED | Y | Y | Periodic flashing green LED driven by the Zynq UltraScale+ MPSoC APU processor. | 
+| SOM DS36 | PS status LED | Y|  Y | Status LED, when lit indicates a successful application load. | 
+| CC DS1-DS6 | Power status LEDs | Y | Y | Indicates various power supply and power domain status.  Green LED indicates good status.  | 
+| CC J2  | Pmod  | Y | Y | Digilent Pmod 2x6 expansion header  | 
+| CC J3  | JTAG  | Y | Y | Direct JTAG interface, bypasses the FTDI device.  | 
+| CC J20 | JTAG boot mode selection jumper | N | Y | When J20 is populated, it sets boot mode to JTAG instead of QSPI. By default, the header is not populated. |
+| CC J4 | FTDI USB2.0 UART and JTAG | Y | Y | Integrated JTAG and device UART interface via USB2.0 |
+| CC J6 | DisplayPort | Y | Y | DisplayPort video output |
+| CC J5 | HDMI | Y | Y | HDMI™ video output | 
+| CC J7 | IAS0 | Y | Y | OnSemi image access system (IAS) camera module interface supporting four MIPI lanes. Connects to OnSemi AP1302 ISP device sensor 0 interface. | 
+| CC J18 | IAS0 AF selection jumper | N | Y| Default pin 1-2 is connected. When jumper connects the two pins, it enables the auto-focus (AF) power supply on IAS0. |
+| CC J8 | IAS1 | Y | Y | OnSemi IAS camera module interface supporting four MIPI lanes. Connected directly to the Zynq UltraScale+ MPSoC HPA bank. |
+| CC J19 | IAS1 AF selection jumper | N | Y | Header and capacitor and jumpers are not populated. When populated, it enables auto-focus power supply on IAS1. |
+| CC J9 | RPi camera | Y | Y | Raspberry Pi camera module interface. 15-pin variant supporting two MIPI lanes directly connected directly to the Zynq UltraScale+ MPSoC HPA bank. | 
+| CC J10 | Ethernet RJ45 jack | Y | Y | 1 Gb/s Ethernet interface |
+| CC J11 | microSD card | Y | Y | microSD card boot device |
+| CC J12 | 12V power input | Y |  Y | 12V power | input jack |
+| CC J13 | Fan power | Y | Y | 12V SOM fan power interface |
+| CC SW1 | Firmware update button | Y | Y | Push button used during the boot firmware update process. |
+| CC SW2 | Reset button | Y | Y | Push button that resets the SOM via the device POR_B signal. | 
+| CC J21 | PMU reset | N | Y | Default is for the jumper to not be populated. When connected and implemented by PMU firmware, it enables a PMU-commanded POR_B reset of the SOM. | 
+| CC U44 | USB0 | Y | Y | Two USB3.0 or USB2.0 compatible connectors | 
+| CC U46 | USB1 | Y | Y | Two USB3.0 or USB2.0 compatible connectors | 
+
+## Initial Setup
+
+### Powering the Starter Kit and Power Budgets
+* The AMD Kria™ KV260 Vision AI Starter Kit requires a 12V, 3A power supply adapter to power the kit.
+
+> ✎ Note: The power supply adapter is not included in the KV260 Starter Kit. <br>
+> The following table lists the suggested power supply adapter that must be purchased separately.
 
 Table: Power Adapters to Purchase for the KV260 Starter Kit
-Vendor               Model      Description
 
+| Vendor | Model | Description | 
+|:-------:|:-------:|:-------:|
+| CUI Inc. | SMI36-12-V-P6 | +12V, 3A DC adapter using a center-pin positive barrel connector (2.5 mm ID, 5.5 mm OD) | 
 
-CUI Inc.
+* The power supply adapter barrel connector plugs into the DC jack (J12) to supply the +12V power source to KV260 Starter Kit.
 
-SMI36-12-V-P6
+## Powering the K26 SOM
 
-+12V, 3A DC adapter
-using a center-pin
-positive barrel
-connector (2.5 mm ID,
-5.5 mm OD)
+* The KV260 Starter Kit carrier card on-board regulator generates a 5V supply and provides power to other voltage regulators.
+* The SOM power rail (VCC_SOM) is powered by the 5V supply.
+* Next, the SOM on-board power-on sequencing starts.
+* The carrier card provides the programmable logic (PL) the VCCO voltage rails after the SOM asserts the VCCOEN_S_M2C and VCCOEN_PL_M2C signals Power Telemetry
 
-The power supply adapter barrel connector plugs into the DC jack (J12) to
-supply the +12V power source to KV260 Starter Kit.
-
-Page14 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-Powering the K26 SOM
-
-The KV260 Starter Kit carrier card on-board regulator generates a 5V
-supply and provides power to other voltage regulators.
-
-The SOM power rail (VCC_SOM) is powered by the 5V supply.
-Next, the SOM on-board power-on sequencing starts.
-
-The carrier card provides the programmable logic (PL) the VCCO voltage
-rails after the SOM asserts the VCCOEN_S_M2C and VCCOEN_PL_M2C signals
-
-Power Telemetry
-
-A power monitor device is available on the SOM power rail (VCC_SOM). You
+### A power monitor device is available on the SOM power rail (VCC_SOM). You
 can access the total power consumed by the SOM module through the I2C
 bus and AMD provided utilities.
 
@@ -704,7 +235,7 @@ Kria KV260 Vision AI Starter Kit User Guide (UG1089)
 Page19 of 33
 
 
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+Kria KV260 Vision AI Starter Kit User Guide (UG1089) 
 
 ✎ Important: Production SOMs provide both QSPI and eMMC devices on
 the SOM PCB to support integrated primary and secondary boot
