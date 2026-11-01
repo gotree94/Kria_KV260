@@ -223,6 +223,7 @@ Figure: Boot Devices
 # Primary Boot Device (1차 부트 장치)
 
 The primary boot device is a QSPI device located on the SOM. The necessary elements are packaged in an AMD Zynq™ UltraScale+™ MPSoC specific format  and file captured as BOOT.BIN. The BOOT.BIN file contains the board-specific boot firmware that consists of the following elements:
+주 부팅 장치는 SOM에 위치한 QSPI 장치입니다. 필요한 요소들은 AMD Zynq™ UltraScale+™ MPSoC 전용 형식으로 패키징되어 BOOT.BIN 파일로 캡처됩니다. BOOT.BIN 파일에는 다음 요소들로 구성된 보드 전용 부팅 펌웨어가 포함되어 있습니다:
 
 ### FSBL (FSBL)
    * First-stage boot-loader firmware
@@ -241,17 +242,14 @@ The primary boot device is a QSPI device located on the SOM. The necessary eleme
    * 2단계 부트로더
 
 U-Boot provides the functionality for the hand-off between the primary boot device and the secondary boot device. It searches through a U-Boot defined prioritized list of secondary boot devices with priority given to the SD card interface.
-
 U-Boot은 기본 부트 장치와 보조 부트 장치 간의 핸드오프 기능을 제공합니다. U-Boot에서 정의한 우선순위가 매겨진 보조 부트 장치 목록을 검색하며, SD 카드 인터페이스가 가장 높은 우선순위를 가집니다.
 
 The primary boot device provides a redundant copy of boot firmware arranged in an A/B configuration. The A/B configuration provides a dynamic primary and secondary image operation with corresponding update mechanisms. On boot, the system automatically boots from the defined primary  image, and, if boot fails, it falls back to the previously known good boot image.
-
 기본 부트 장치는 A/B 구성으로 배열된 부트 펌웨어의 중복 사본을 제공합니다. A/B 구성은 동적인 기본 및 보조 이미지 운영과 이에 따른 업데이트 메커니즘을 제공합니다. 부팅 시 시스템은 정의된 기본 이미지에서 자동으로 부팅하고, 부팅에 실패하면 이전에 정상적으로 부팅된 이미지로 되돌아갑니다.
 
 ## Secondary Boot Device (보조 부트 장치)
 
 The secondary boot device on the KV260 Starter Kit is the SD card. It contains the operating system image and associated application files. The KV260 Starter Kit accelerated application references are built on the Linux operating system. The Getting Started web page provides a pre-built reference image that can be written to a microSD card for out-of-the-box functionality. SOM board support packages (BSPs) are also available if you want to customize your OS.
-
 KV260 스타터 키트의 보조 부트 장치는 SD 카드입니다. 이 카드에는 운영 체제 이미지와 관련 애플리케이션 파일이 들어 있습니다. KV260 스타터 키트 가속화 애플리케이션 참조는 리눅스 운영 체제 기반으로 만들어졌습니다. 시작하기 웹 페이지에서는 미리 만들어진 참조 이미지를 제공하며, 이를 마이크로SD 카드에 기록하면 바로 사용할 수 있습니다. SOM 보드 지원 패키지(BSP)도 제공되므로 OS를 커스터마이징하고 싶다면 사용할 수 있습니다.
 
 > ✎ Recommended: The SOM is designed to use SDHC standard microSD cards.
@@ -260,27 +258,22 @@ KV260 스타터 키트의 보조 부트 장치는 SD 카드입니다. 이 카드
 # Software Getting Started (소프트웨어 시작하기)
 
 To get started with the KV260 Starter Kit, prior to powering, booting the board, and running your first application, you need to follow the instructions  on the Getting Started with Kria KV260 Vision AI Starter Kit pages to download and write the Xilinx SOM Starter Linux image to a microSD card. The webpage guides you to power on the KV260, boot Linux, and run a number of pre-built accelerated applications to start evaluation of the capabilities on the platform.
-
 KV260 스타터 키트를 시작하려면, 보드에 전원을 켜고 부팅하며 첫 번째 애플리케이션을 실행하기 전에, Kria KV260 Vision AI 스타터 키트 시작하기 페이지의 지침을 따라 Xilinx SOM 스타터 리눅스 이미지를 microSD 카드에 다운로드하고 기록해야 합니다. 웹페이지는 KV260의 전원을 켜고 리눅스를 부팅하며, 미리 빌드된 가속화된 애플리케이션을 실행해 플랫폼의 기능을 평가할 수 있도록 안내합니다.
 
 ## Platform Management Utility (플랫폼 관리 유틸리티)
 
 A platform management utility called xmutil is included in the SOM Linux image to help you configure and work with the SOM. Refer to the Kria SOM Wiki page for a list of xmutil functions and their descriptions.
-
 SOM Linux 이미지에는 SOM을 구성하고 사용하기 쉽게 도와주는 xmutil이라는 플랫폼 관리 유틸리티가 포함되어 있어요. xmutil 기능과 설명 목록은 Kria SOM 위키 페이지를 참고하세요.
 
 ## Accelerated Applications (가속 애플리케이션)
 
 The AMD SOM platforms are enabled with a number of accelerated applications that can be dynamically installed on the SOM platform. The SOM  starter Linux image is application agnostic and provides a set of utilities for pulling the hardware accelerated application examples from the SOM Linux package feeds.
-
 AMD SOM 플랫폼에서는 여러 가속 애플리케이션을 동적으로 설치할 수 있어요. SOM 스타터 Linux 이미지는 특정 애플리케이션에 종속되지 않으며, SOM Linux 패키지 피드에서 하드웨어 가속 애플리케이션 예제를 가져올 수 있는 유틸리티들을 제공합니다.
 
 Accelerated applications are software controllable, application-specific reference designs for AI developers, embedded developers, and system architects to customize and enhance the functionality through software control or updating the AI models. The following table outlines some featured accelerated applications available for the KV260 Starter Kit.
-
 가속화 애플리케이션은 AI 개발자, 임베디드 개발자, 시스템 아키텍트를 위해 소프트웨어 제어를 통해 기능을 맞춤화하고 AI 모델을 업데이트하여 기능을 향상시킬 수 있는 소프트웨어 제어 가능 애플리케이션별 레퍼런스 디자인입니다. 다음 표는 KV260 스타터 키트에서 제공되는 일부 주요 가속화 애플리케이션을 보여줍니다.
 
 Consider this list as a starting point because the SOM Getting Started web page contains the most up-to-date accelerated applications availability.
-
 이 목록은 시작점으로 생각하세요. 최신 가속화 애플리케이션 정보는 SOM 시작하기 웹 페이지에서 확인할 수 있습니다.
 
 Table: KV260 Accelerated Applications
@@ -291,28 +284,37 @@ Table: KV260 Accelerated Applications
 | AI box-ReID | Multi-stream IP camera RTSP inputs with hardware accelerated ML inference models supporting face detection and re-identification (ReID) models. Outputs are displayed to monitor. | 
 | Defect detection | Hardware accelerated machine vision application as applied in defect detection. | 
 
-# Accelerated Application Package Selection
+# Accelerated Application Package Selection (가속화된 애플리케이션 패키지 선택)
 
 > ✎ Recommended: Public Ethernet connectivity is necessary to dynamically pull down the latest accelerated application designs.
+> ✎ 추천: 최신 가속화된 애플리케이션 디자인을 동적으로 내려받으려면 공용 이더넷 연결이 필요합니다.
 
 1. If you have not already verified Internet connectivity do so before proceeding via ping test or DNS lookup (e.g., nslookup).
+1. 아직 인터넷 연결을 확인하지 않았다면, 진행하기 전에 ping 테스트나 DNS 조회(e.g., nslookup)를 통해 확인하세요.
 
 2. The sudo xmutil getpkgs lists a series of package groups that apply to your platform. The package group naming convention is: packagegroup-kit_name-application_name . For example, the Smart Camera application for the KV260 platform has the following package group name packagegroup-kv260-smartcamera . You can install any number of matching accelerated applications to your platform by executing a DNF install for the chosen application package group. For
 example, to install the smart camera application, run sudo dnf install packagegroup-kv260-smartcamera .
+2. sudo xmutil getpkgs 명령어는 당신의 플랫폼에 적용되는 일련의 패키지 그룹을 보여줘요. 패키지 그룹 명명 규칙은 다음과 같아요: packagegroup-킷_이름-애플리케이션_이름. 예를 들어, KV260 플랫폼용 스마트 카메라 애플리케이션의 패키지 그룹 이름은 packagegroup-kv260-smartcamera예요. 선택한 애플리케이션 패키지 그룹을 DNF로 설치하면 원하는 만큼 동일한 가속 애플리케이션을 플랫폼에 설치할 수 있어요. 예를 들어, 스마트 카메라 애플리케이션을 설치하려면 sudo dnf install packagegroup-kv260-smartcamera를 실행하면 돼요.
 
 > ✎ Note: You should only install package-groups that are compatible with your particular starter kit configuration.
+> ✎ 참고: 사용 중인 스타터 키트 구성과 호환되는 패키지 그룹만 설치해야 해요.
 
 3. For any applications installed on the local file system via the DNF install, the platform can now dynamically load and swap those applications. To see a list of the applications local to the system, execute sudo xmutil listapps . You can also see what applications are local by manually exploring the /opt/xilinx directory.
+3. DNF 설치를 통해 로컬 파일 시스템에 설치된 애플리케이션의 경우, 이제 플랫폼에서 해당 애플리케이션을 동적으로 불러오고 교체할 수 있어요. 시스템에 로컬로 설치된 애플리케이션 목록을 보려면 sudo xmutil listapps 를 실행하면 됩니다. /opt/xilinx 디렉토리를 직접 탐색해서 로컬 애플리케이션을 확인할 수도 있어요.
 
 4. By default, kv260-dp is loaded on boot. From the applications list, check for an active application loaded (active = 1 in the xmutil listapps output). If there is a loaded application, unload it by running the sudo xmutil unloadapp command to unload the current application before proceeding to the next step.
+4. 기본적으로 kv260-dp는 부팅 시 로드됩니다. 애플리케이션 목록에서 활성 애플리케이션이 로드되어 있는지 확인하세요 (xmutil listapps 출력에서 active = 1). 만약 애플리케이션이 로드되어 있다면, 다음 단계로 진행하기 전에 sudo xmutil unloadapp 명령어를 실행해서 현재 애플리케이션을 언로드하세요.
 
 5. From the application list, start the new application by running sudo xmutil loadapp application_name . The platform configuration is automatically handled and starts the application. 
+5. 애플리케이션 목록에서 sudo xmutil loadapp application_name 명령어를 실행해서 새 애플리케이션을 시작하세요. 플랫폼 구성은 자동으로 처리되며 애플리케이션이 시작됩니다.
 
 6. Applications with a Jupyter-based cockpit will start-up automatically. You need to point your web-browser to the associated IP address and port. The associated IP address and port information is printed to the UART at boot. To query your Jupyter lab server URL after the initial boot, run: sudo jupyter notebook list .
+6. Jupyter 기반의 코콕핏을 가진 애플리케이션은 자동으로 시작됩니다. 웹 브라우저를 관련 IP 주소와 포트로 연결해야 합니다. 관련 IP 주소와 포트 정보는 부팅 시 UART에 출력됩니다. 초기 부팅 후 Jupyter 랩 서버 URL을 확인하려면 다음을 실행하세요: sudo jupyter notebook list.
 
-# Supported Peripherals
+# Supported Peripherals (지원되는 주변기기)
 
 The following table outlines external peripherals that are tested with the corresponding accelerated applications. It is recommended that you use a peripheral from the list to ensure that you realize maximum platform performance.
+다음 표는 해당 가속화된 애플리케이션과 함께 테스트된 외부 주변기기를 정리한 것입니다. 최대 플랫폼 성능을 발휘하려면 목록에 있는 주변기기를 사용하는 것이 좋습니다.
 
 Table: Accelerated Application Peripherals
 
@@ -325,6 +327,7 @@ Table: Accelerated Application Peripherals
 | AI-Box-ReID  | IP camera  | Amcrest IP8M-2493EW  | 
 
 The following table outlines external peripherals that are functionally verified with the KV260 Starter Kit.
+다음 표는 KV260 스타터 키트와 기능적으로 검증된 외부 주변기기를 보여줘요.
 
 Table: KV260 Starter Kit Functionally Tested Peripherals
 
@@ -335,22 +338,33 @@ Table: KV260 Starter Kit Functionally Tested Peripherals
 | IAS camera sensor direct interface (J8) | OnSemi AR1335 | 
 | RPi camera interface (J9) | Raspberry Pi camera module v2 | 
 
-# Xilinx Tools Integration
+# Xilinx Tools Integration (자일링스 도구 통합)
 
 The K26LTD SOM and KV260 Starter Kit are integrated with the AMD Vitis™ software development platform and AMD Vivado™ Design Suite for rapid development of your unique applications on the platform.
+K26LTD SOM과 KV260 스타터 키트는 AMD Vitis™ 소프트웨어 개발 플랫폼과 AMD Vivado™ 디자인 스위트와 통합되어 있어 플랫폼에서 나만의 애플리케이션을 빠르게 개발할 수 있습니다.
 
-## Vitis Platforms
+## Vitis Platforms (Vitis 플랫폼)
 
 Vitis base platforms are available in the kv260-vitis GitHub repository. For the KV260 Starter Kit, the following Vitis base platforms are available. Because additional KV260 base platforms are added and updated over time,
 be sure to reference the repository for the most up to date list of platforms before starting your design work.
+Vitis 베이스 플랫폼은 kv260-vitis GitHub 저장소에서 이용할 수 있습니다. KV260 스타터 키트의 경우, 다음과 같은 Vitis 베이스 플랫폼을 사용할 수 있습니다. 추가적인 KV260 베이스 플랫폼이 시간이 지나면서 계속 추가되고 업데이트되므로, 디자인 작업을 시작하기 전에 최신 플랫폼 목록을 저장소에서 확인하는 것이 좋습니다.
 
 ### kv260_ispMipiRx_vcu_DP
 
 * Video capture using the IAS ISP MIPI interface for a AR1335 sensor module configuration
+* AR1335 센서 모듈 설정을 위한 IAS ISP MIPI 인터페이스를 이용한 비디오 캡처
+
 * Display using standard DisplayPort and/or HDMI™
+* 표준 DisplayPort 및/또는 HDMI™를 통한 디스플레이
+
 * Audio transmit and receive (I2S) via PMOD audio codec
+* PMOD 오디오 코덱을 통해 오디오 송수신(I2S)
+
 * Video codec unit (VCU) encode/decode and one stream encode buffer
+* 비디오 코덱 유닛(VCU) 인코드/디코드와 하나의 스트림 인코드 버퍼
+
 * Support for 4k30 and 1080p30 in NV12 video formats
+* NV12 비디오 포맷에서 4k30 및 1080p30 지원
 
 ### kv260_vcuDecode_vmixDP
 
