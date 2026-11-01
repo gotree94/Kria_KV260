@@ -90,6 +90,7 @@ Table: Kria KV260 Vision AI Starter Kit Product Details
 Table: Ordering Information
 
 | Product SKU  |  Device  |  Temperature Grade | Encryption |  Description | 
+|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
 | SK-KV260-G | XCK26-C | Commercial | Enabled | KV260 Starter Kit with encryption enabled | 
 | SK-KV260-G-ED* | XCK26-C | Commercial | Disabled* | KV260 Starter Kit with encryption disabled | 
 
