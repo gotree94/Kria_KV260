@@ -78,7 +78,6 @@ Figure: Interfaces and Connectors Rev. 1.0
 
 Table: Descriptions and Locations for both Rev 1.0 and Rev 2.0
 
-
 | Location | Name | Present on Rev1.0 | Present on Rev 2.0 | Description | 
 |:--------:|:--------:|:--------:|:--------:|--------|
 | SOM DS34 | PS done LED | Y | Y | Lit indicates that the PS has successfully loaded a PL design. |
@@ -106,7 +105,7 @@ Table: Descriptions and Locations for both Rev 1.0 and Rev 2.0
 | CC U44 | USB0 | Y | Y | Two USB3.0 or USB2.0 compatible connectors | 
 | CC U46 | USB1 | Y | Y | Two USB3.0 or USB2.0 compatible connectors | 
 
-## Initial Setup
+# Initial Setup
 
 ### Powering the Starter Kit and Power Budgets
 * The AMD Kria™ KV260 Vision AI Starter Kit requires a 12V, 3A power supply adapter to power the kit.
