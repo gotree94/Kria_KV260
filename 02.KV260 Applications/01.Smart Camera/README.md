@@ -5,7 +5,7 @@ https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/smartcamera
 The Smart camera implements face detection with network and display functionality. It comes with built-in machine learning for applications such as pedestrian detection, face detection, and people counting with local display and RTSP streaming.
 
 <p align="center">
-  <img src="sc_image_landing.jpg" width="800">
+  <img src="sc_image_landing.jpg">
 </p>
 
 ## Overview¶
