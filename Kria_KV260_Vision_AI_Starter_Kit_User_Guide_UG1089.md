@@ -312,153 +312,83 @@ For example, the kv260_ispMipiRx_vcu_DP base platform targets the KV260 Starter 
 
 For additional information about the Vitis tools and Vitis base platform work flows, see the Embedded Design Development Using Vitis ([UG1701](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1701-vitis-accelerated-embedded&ft:locale=en-US)) and the Vitis Reference Guide ([UG1702](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1702-vitis-accelerated-reference&ft:locale=en-US)).
 
-Vivado Board Flow
+# Vivado Board Flow
 
-The K26LTD SOM is enabled in the Vivado Design Suite through the Vivado
-Board Flow functionality. Vivado Board Flow enables a level of hardware
-abstraction that automatically configures peripherals fixed on the SOM card
-(e.g., DDR4), defines associated timing constraints, and presents the
-customizable physical I/O available on the SOM connector(s).
+The K26LTD SOM is enabled in the Vivado Design Suite through the Vivado Board Flow functionality. Vivado Board Flow enables a level of hardware abstraction that automatically configures peripherals fixed on the SOM card (e.g., DDR4), defines associated timing constraints, and presents the customizable physical I/O available on the SOM connector(s).
 
-The Vivado SOM board model is available through the Vivado installation
-process as well as on the Vivado board file GitHub repository. The following
-KV260                                        related Vivado board files are available.
+The Vivado SOM board model is available through the Vivado installation process as well as on the Vivado board file [GitHub](https://github.com/Xilinx/XilinxBoardStore/tree/HEAD/boards/Xilinx) repository. The following KV260 related Vivado board files are available.
 
-KV260 Starter Kit
+### KV260 Starter Kit
 
-Configured K26 SOM with Vision Starter Kit companion card
+* Configured K26 SOM with Vision Starter Kit companion card
 
-SM-K26-XCL2GC
+### SM-K26-XCL2GC
 
-K26 commercial grade production SOM
+* K26 commercial grade production SOM
 
-SM-K26-XCL2GI
+### SM-K26-XCL2GI
 
-K26 industrial grade production SOM
+* K26 industrial grade production SOM
 
-The AMD SOM board flow infrastructure provides starter kit carrier card
-awareness through the Vivado tools companion card mechanism.
+The AMD SOM board flow infrastructure provides starter kit carrier card awareness through the Vivado tools companion card mechanism.
 
-Automation for I/O connection and peripheral IP configuration when
-selecting a SOM and an associated carrier card, such as the KV260 Starter
-Kit,  is used to create a hardware configuration.
+Automation for I/O connection and peripheral IP configuration when selecting a SOM and an associated carrier card, such as the KV260 Starter Kit,  is used to create a hardware configuration.
 
-For additional information on using the Vivado tools and the Vivado board
-flow, refer to the Vivado Design Suite User Guide: System-Level Design
-Entry (UG895).
+For additional information on using the Vivado tools and the Vivado board flow, refer to the Vivado Design Suite User Guide: System-Level Design Entry (UG895).
 
-Board Reset, Firmware Update, and Recovery
+# Board Reset, Firmware Update, and Recovery
 
-This section outlines the update and recovery mechanisms built into the
-KV260 Starter Kit. Two tools are provided for firmware updates. The first is
-a Linux based A/B update tool that supports remote and redundant
-firmware updates to the A/B firmware partitions of the QSPI device with
-custom  or AMD provided updates. The second tool is the Ethernet recovery
+This section outlines the update and recovery mechanisms built into the KV260 Starter Kit. Two tools are provided for firmware updates. The first is a Linux based A/B update tool that supports remote and redundant firmware updates to the A/B firmware partitions of the QSPI device with custom  or AMD provided updates. The second tool is the Ethernet recovery tool that is intended to be used only when recovering a full platform to the original factory firmware.
 
-Page26 of 33
+## Board Reset
 
+### Power-on Reset
 
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+1. The SOM reset signal (PS_POR_L) is held in reset until the CC_PS_PGOOD signal is asserted on the carrier card.
 
-tool that is intended to be used only when recovering a full platform to the
-original factory firmware.
+2. All the PS and PL I/O device reset signals on the carrier card are held in reset until 25 ms after the PS and PL power domain are powered up and stable.
 
-Board Reset
+3. You can perform a hard reset on the KV260 Starter Kit by pressing the reset button (CC SW2) or by commanding a reset through software.
 
-Power-on Reset
-
-1. The SOM reset signal (PS_POR_L) is held in reset until the
-CC_PS_PGOOD signal is asserted on the carrier card.
-
-2. All the PS and PL I/O device reset signals on the carrier card are held in
-reset until 25 ms after the PS and PL power domain are powered up
-and stable.
-
-3. You can perform a hard reset on the KV260 Starter Kit by pressing the
-reset button (CC SW2) or by commanding a reset through software.
-
-The following figure shows the reset functions supported on the KV260
-Starter Kit.
-
-Page27 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+The following figure shows the reset functions supported on the KV260 Starter Kit.
 
 Figure: Device Reset
 
 ![](UG1089-media/image6.png)
 
-Firmware Update
+## Firmware Update 
 
-The firmware update button is the physical SW1/FWUEN push button
-located on the KV260 Starter Kit carrier card. The button is used to support
-two features:
+The firmware update button is the physical SW1/FWUEN push button located on the KV260 Starter Kit carrier card. The button is used to support two features:
 
-Page28 of 33
+1. To force the platform into a recovery mode application during power-on. The recovery application is described in the Boot Image Recovery Tool section of this document.
 
+2. Security mechanism to prevent remote update of the boot firmware, without the user being physically present. 
 
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+## Boot Image Recovery Tool
 
-1. To force the platform into a recovery mode application during power-
-on. The recovery application is described in the Boot Image Recovery
-Tool section of this document.
+The boot image recovery tool is a small application included in the AMD provided Starter Kit QSPI image. It provides a simple Ethernet-based interface  and application for updating the boot firmware if Linux is not functional. If Linux is functional, the recommendation is to update the boot firmware using the xmutil boot firmware update utilities. Refer to the Kria SOM Wiki page for details on how to use the boot image recovery tool.
 
-2. Security mechanism to prevent remote update of the boot firmware,
-without the user being physically present.
+## Boot Firmware A/B Update
 
-Boot Image Recovery Tool
+As outlined in Boot Devices and Firmware Overview, the AMD starter kit and SOM provide two copies of the boot firmware in the QSPI device. This mechanism has a robust update infrastructure through a ping-pong methodology, where the last known good boot image is always kept available in the platform. The AMD starter kit Linux provides a utility for doing these updates entirely on-target. The steps for using the AMD SOM A/B update tool are documented in the Wiki page at: Boot FW Update Process.
 
-The boot image recovery tool is a small application included in the AMD
-provided Starter Kit QSPI image. It provides a simple Ethernet-based
-interface  and application for updating the boot firmware if Linux is not
-functional. If Linux is functional, the recommendation is to update the boot
-firmware using the xmutil boot firmware update utilities. Refer to the Kria
-SOM Wiki page for details on how to use the boot image recovery tool.
+# Additional Resources and Legal Notices
 
-Boot Firmware A/B Update
+## Finding Additional Documentation
 
-As outlined in Boot Devices and Firmware Overview, the AMD starter kit and
-SOM provide two copies of the boot firmware in the QSPI device. This
-mechanism has a robust update infrastructure through a ping-pong
-methodology, where the last known good boot image is always kept
-available      in the platform. The AMD starter kit Linux provides a utility for
-doing these updates entirely on-target. The steps for using the AMD SOM
-A/B update tool are documented in the Wiki page at: Boot FW Update
-Process.
+### Technical Information Portal
 
-Additional Resources and Legal Notices
+The AMD Technical Information Portal is an online tool that provides robust search and navigation for documentation using your web browser. To access  the Technical Information Portal, go to [https://docs.amd.com](https://docs.amd.com/)
 
-Finding Additional Documentation
+### Documentation Navigator
 
-Technical Information Portal
+Documentation Navigator (DocNav) is an installed tool that provides access to AMD Adaptive Computing documents, videos, and support resources, which you can filter and search to find information. To open DocNav:
 
-The AMD Technical Information Portal is an online tool that provides robust
-search and navigation for documentation using your web browser. To
-access  the Technical Information Portal, go to https://docs.amd.com.
+* From the AMD Vivado™ IDE, select Help > Documentation and Tutorials.
+* On Windows, click the Start button and select Xilinx Design Tools > DocNav.
+* At the Linux command prompt, enter docnav.
 
-Page29 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-Documentation Navigator
-
-Documentation Navigator (DocNav) is an installed tool that provides access
-to                                            AMD Adaptive Computing documents, videos, and support 
-resources,
-which you can filter and search to find information. To open DocNav:
-
-From the AMD Vivado™ IDE, select Help > Documentation and
-Tutorials.
-
-On Windows, click the Start button and select Xilinx Design Tools >
-DocNav.
-
-At the Linux command prompt, enter docnav .
-
-✎ Note: For more information on DocNav, refer to the Documentation
-Navigator User Guide (UG968).
+> ✎ Note: For more information on DocNav, refer to the Documentation Navigator User Guide ([UG968](https://docs.amd.com/access/sources/dita/map?isLatest=true&ft:locale=en-US&url=Xilinx-Documentation-Navigator-User-Guide)).
 
 Design Hubs
 
