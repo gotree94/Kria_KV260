@@ -1,5 +1,6 @@
 # Kria KV260 Vision AI 스타터 키트
 
+* https://xilinx-wiki.atlassian.net/wiki/spaces/A/overview?homepageId=18844350
 * https://www.amd.com/ko/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html
 * https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/index.html
 * https://docs.amd.com/r/en-US/ds986-kv260-starter-kit/Summary
