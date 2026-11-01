@@ -46,28 +46,17 @@ Figure: Kria KV260 Vision AI Starter Kit Revision 1.0
   <img src="media-DS986/image3.jpeg" width="800">
 </p>
 
-Product Details
+## Product Details
 
-The Kria KV260 Vision AI Starter Kit is an evaluation platform for the K26
-SOM focused on machine learning (ML) acceleration in vision applications.
-The kit brings together a Zynq UltraScale+ MPSoC based SOM with user
-selectable, vision focused peripherals and a set of pre-built accelerated
-applications. The KV260 and its base K26 SOM are supported for full user
-customization through AMD Vitis™ platforms, customizable acceleration
-overlays,  and AMD Vivado™ tools hardware board files. The integrated
-combination of hardware, platform, and software provides a quick out-of-
-box experience for developers that can then be leveraged for product
-designs.
+The Kria KV260 Vision AI Starter Kit is an evaluation platform for the K26 SOM focused on machine learning (ML) acceleration in vision applications. The kit brings together a Zynq UltraScale+ MPSoC based SOM with user selectable, vision focused peripherals and a set of pre-built accelerated applications. The KV260 and its base K26 SOM are supported for full user customization through AMD Vitis™ platforms, customizable acceleration overlays,  and AMD Vivado™ tools hardware board files. The integrated combination of hardware, platform, and software provides a quick out-of-box experience for developers that can then be leveraged for product designs.
 
-✎ Note: The SOM on the Kria KV260 Vision AI Starter Kit does not populate
-the eMMC.
-
-Page5 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+> ✎ Note: The SOM on the Kria KV260 Vision AI Starter Kit does not populate the eMMC.
 
 Figure: KV260 Starter Kit Block Diagram
+
+<p align="center">
+  <img src="media-DS986/image3.png" width="800">
+</p>
 
 Table: Kria KV260 Vision AI Starter Kit Product Details
 Specification              Description
