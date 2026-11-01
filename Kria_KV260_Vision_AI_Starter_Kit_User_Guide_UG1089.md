@@ -390,21 +390,18 @@ Documentation Navigator (DocNav) is an installed tool that provides access to AM
 
 > ✎ Note: For more information on DocNav, refer to the Documentation Navigator User Guide ([UG968](https://docs.amd.com/access/sources/dita/map?isLatest=true&ft:locale=en-US&url=Xilinx-Documentation-Navigator-User-Guide)).
 
-Design Hubs
+## Design Hubs
 
-AMD Design Hubs provide links to documentation organized by design
-tasks and other topics, which you can use to learn key concepts and
-address frequently asked questions. To access the Design Hubs:
+AMD Design Hubs provide links to documentation organized by design tasks and other topics, which you can use to learn key concepts and address frequently asked questions. To access the Design Hubs:
 
-In DocNav, click the Design Hubs View tab.
-Go to the Design Hubs web page.
+* In DocNav, click the Design Hubs View tab.
+* Go to the [Design Hubs](https://docs.amd.com/p/design-hubs) web page.
 
-Support Resources
+# Support Resources
 
-For support resources such as Answers, Documentation, Downloads, and
-Forums, see Support.
+For support resources such as Answers, Documentation, Downloads, and Forums, see Support.
 
-References
+# References
 
 These documents provide supplemental material useful with this guide:
 
@@ -418,11 +415,6 @@ These documents provide supplemental material useful with this guide:
 
 5. Kria SOM Carrier Card Design Guide (UG1091)
 
-Page30 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
 6. Vitis Model Composer User Guide (UG1483)
 
 7. Vivado Design Suite User Guide: System-Level Design Entry (UG895)
@@ -431,162 +423,7 @@ Kria KV260 Vision AI Starter Kit User Guide (UG1089)
 
 9. Vitis Reference Guide (UG1702)
 
-Revision History
 
-The following table shows the revision history for this document.
-
-Section                  Revision Summary
-
-6/25/2025 Version 1.4
-
-
-Interfaces
-
-Added rev 2.0 information
-including updated locations and
-descriptions of components.
-
-5/14/2024 Version 1.3
-
-
-Platform Management Utility
-
-Removed details and referred to
-Kria SOM Wiki.
-
-Vivado Board Flow            Updated links.
-
-
-Boot Image Recovery Tool
-
-Renamed Ethernet recovery tool to
-boot image recovery tool.
-
-Removed details and referred to
-
-Kria SOM Wiki.
-
-
-Boot Firmware A/B Update
-
-Removed details and referred to
-Kria SOM Wiki.
-
-7/26/2022 Version 1.2
-
-
-Boot Devices and Firmware
-Overview
-
-Updated boot devices figure.
-
-
-Software Getting Started
-
-Updated section to point to
-Getting Started .
-
-
-Loading an SD Card Image
-
-Removed chapter 7, see Getting
-Started .
-
-Page31 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-Section                  Revision Summary
-
-
-Initial Boot
-
-Removed chapter 8, see Getting
-Started .
-
-Boot Firmware A/B Update       Added boot firmware verify step.
-
-3/16/2022 Version 1.1
-
-
-Powering the Starter Kit and Power
-Budgets
-
-Updated the Powering the K26
-SOM, Power Telemetry, and
-Powering Peripherals sections.
-
-
-Board Reset
-
-Updated Figure 1.
-
-4/20/2021 Version 1.0
-
-Initial release.               N/A
-
-Please Read: Important Legal Notices
-
-The information presented in this document is for informational purposes
-only and may contain technical inaccuracies, omissions, and typographical
-errors. The information contained herein is subject to change and may be
-rendered inaccurate for many reasons, including but not limited to product
-and roadmap changes, component and motherboard version changes, new
-model and/or product releases, product differences between differing
-manufacturers, software changes, BIOS flashes, firmware upgrades, or the
-like.     Any computer system has risks of security vulnerabilities that cannot
-be completely prevented or mitigated. AMD assumes no obligation to
-update or otherwise correct or revise this information. However, AMD
-reserves the right to revise this information and to make changes from time
-to time to the content hereof without obligation of AMD to notify any
-person of such revisions or changes. THIS INFORMATION IS PROVIDED "AS
-IS." AMD MAKES NO REPRESENTATIONS OR WARRANTIES WITH RESPECT TO
-THE CONTENTS HEREOF AND ASSUMES NO RESPONSIBILITY FOR ANY
-INACCURACIES, ERRORS, OR OMISSIONS THAT MAY APPEAR IN THIS
-INFORMATION.  AMD SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTIES OF
-NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR
-PURPOSE.     IN NO EVENT WILL AMD BE LIABLE TO ANY PERSON FOR ANY
-RELIANCE, DIRECT, INDIRECT, SPECIAL, OR OTHER CONSEQUENTIAL
-
-Page32 of 33
-
-
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
-
-DAMAGES ARISING FROM THE USE OF ANY INFORMATION CONTAINED
-HEREIN, EVEN IF AMD IS EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH
-DAMAGES.
-
-AUTOMOTIVE APPLICATIONS DISCLAIMER
-
-AUTOMOTIVE PRODUCTS (IDENTIFIED AS "XA" IN THE PART NUMBER) ARE
-NOT WARRANTED FOR USE IN THE DEPLOYMENT OF AIRBAGS OR FOR USE IN
-APPLICATIONS THAT AFFECT CONTROL OF A VEHICLE ("SAFETY
-APPLICATION") UNLESS THERE IS A SAFETY CONCEPT OR REDUNDANCY
-FEATURE CONSISTENT WITH THE ISO 26262 AUTOMOTIVE SAFETY
-STANDARD ("SAFETY DESIGN"). CUSTOMER SHALL, PRIOR TO USING OR
-DISTRIBUTING ANY SYSTEMS THAT INCORPORATE PRODUCTS, THOROUGHLY
-TEST SUCH SYSTEMS FOR SAFETY PURPOSES. USE OF PRODUCTS IN A SAFETY
-APPLICATION WITHOUT A SAFETY DESIGN IS FULLY AT THE RISK OF
-CUSTOMER, SUBJECT ONLY TO APPLICABLE LAWS AND REGULATIONS
-GOVERNING LIMITATIONS ON PRODUCT LIABILITY.
-
-Copyright
-
-© Copyright 2021–2025 Advanced Micro Devices, Inc. AMD, the AMD Arrow
-logo,                                             Kria, UltraScale+, Vitis, Vivado, Zynq, and 
-combinations thereof are
-trademarks of Advanced Micro Devices, Inc. AMBA, AMBA Designer, Arm,
-ARM1176JZ-S, CoreSight, Cortex, PrimeCell, Mali, and MPCore are
-trademarks of Arm Limited in the US and/or elsewhere. The DisplayPort
-Icon is a trademark of the Video Electronics Standards Association,
-registered in the U.S. and other countries. HDMI, HDMI logo, and High-
-Definition Multimedia Interface are trademarks of HDMI Licensing LLC.
-Other product names used in this publication are for identification purposes
-only and may be trademarks of their respective companies.
-
-Page33 of 33
 
 
 
