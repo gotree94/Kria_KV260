@@ -1,5 +1,7 @@
 # Kria KV260 Vision AI Starter Kit User Guide (UG1089)
 
+---
+
 # TOC (목차)
 ## Summary (요약)
 * What's in the Box? (박스 안에는 뭐가 들어 있나요?)
@@ -30,7 +32,7 @@
 * Revision History (개정 이력)
 * Please Read: Important Legal Notices ( 꼭 읽어주세요: 중요한 법적 고지)
 
-
+---
 
 ## Summary (요약)
 
