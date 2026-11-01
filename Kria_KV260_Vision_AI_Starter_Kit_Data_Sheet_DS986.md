@@ -55,7 +55,7 @@ The Kria KV260 Vision AI Starter Kit is an evaluation platform for the K26 SOM f
 Figure: KV260 Starter Kit Block Diagram
 
 <p align="center">
-  <img src="media-DS986/image3.png" width="800">
+  <img src="media-DS986/image4.png" width="800">
 </p>
 
 Table: Kria KV260 Vision AI Starter Kit Product Details
