@@ -105,144 +105,66 @@ Table: KV260 Starter Kit Power Specifications
 | Parameter | Description | 
 |:----------------:|:----------------:|
 | DC input power |  +12V, 3A | 
+| Recommended power adapter | The CUI Inc. SMI36-12-V-P6 adapter connected using a center-pin positive barrel connector (2.5mm ID, 5.5 mm OD) | 
+| SOM supply | +5V, 3A (VCC_SOM) | 
+| SOM power telemetry | Current sense device (INA260) is available through the I2C bus address 0x40 to monitor the current on the VCC_SOM power rail. Refer to the Kria KV260 Vision AI Starter Kit User Guide (UG1089) for the platformstats application that is provided in the AMD pre-built images to read this information. | 
+| USB 3.0 | 5V, 900 mA per port (limited to 2.1A total) | 
+| Pmod interface from Digilent Inc.  |  3.3V, 100 mA | 
+| Raspberry Pi camera interface   |   3.3V | 
+| ON Semiconductor IAS module connector 0 | 2.75V, 1.8V, 1.2V | 
+| ON Semiconductor IAS module connector 1 | 2.75V, 1.8V, 1.2V | 
 
-
-Recommended power adapter
-
-The CUI Inc. SMI36-12-V-P6
-
-adapter connected using a center-
-pin positive barrel connector (2.5
-mm ID, 5.5 mm OD)
-
-
-SOM supply
-
-+5V, 3A (VCC_SOM)
-
-Page8 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-
-Parameter                Description
-
-
-SOM power telemetry
-
-Current sense device (INA260) is
-available through the I2C bus
-address 0x40 to monitor the
-current on the VCC_SOM power rail.
-Refer to the Kria KV260 Vision AI
-Starter Kit User Guide (UG1089) for
-the platformstats application that
-is provided in the AMD pre-built
-images to read this information.
-
-
-USB 3.0
-
-5V, 900 mA per port (limited to
-2.1A total)
-
-Pmod interface from Digilent Inc.   3.3V, 100 mA
-
-Raspberry Pi camera interface     3.3V
-
-
-ON Semiconductor IAS module
-connector 0
-
-2.75V, 1.8V, 1.2V
-
-
-ON Semiconductor IAS module
-connector 1
-
-2.75V, 1.8V, 1.2V
-
-KV260 Starter Kit Power On Sequence
+# KV260 Starter Kit Power On Sequence
 
 1. External power adapter supplies 12V power
 
-2. On-board regulator generates 5V supply and provides power to other
-voltage regulators
+2. On-board regulator generates 5V supply and provides power to other voltage regulators
 
 3. SOM power rail (VCC_SOM) is powered by a 5V supply
 
-4. When the 5V regulator output voltage level is within the specified
-range and a power-good signal is asserted and the POWER_OFF_C2M_L
-signal is deasserted by the carrier card
+4. When the 5V regulator output voltage level is within the specified range and a power-good signal is asserted and the POWER_OFF_C2M_L signal is deasserted by the carrier card
 
 5. SOM on board power on sequencing starts
 
-6. Carrier card provides PS and PL VCCO voltage rails after the SOM
-asserts the VCCOEN_PS_M2C and VCCOEN_PL_M2C signals
+6. Carrier card provides PS and PL VCCO voltage rails after the SOM asserts the VCCOEN_PS_M2C and VCCOEN_PL_M2C signals
 
-Page9 of 25
+# KV260 Starter Kit Power On Reset
 
+1. The SOM reset signal ( PS_POR_L ) is held in reset until the PS_PGOOD signal is asserted.
 
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+2. To perform a hard reset on the SOM, use the reset push-button on the carrier card to assert the PS_POR_L signal.
 
-KV260 Starter Kit Power On Reset
+3. All the PS and PL I/O device reset signals on the carrier card are held in reset until 25 ms after the PS and PL power domain are powered up and stable.
 
-1. The SOM reset signal ( PS_POR_L ) is held in reset until the PS_PGOOD
+# Mechanical
 
-signal is asserted.
-
-2. To perform a hard reset on the SOM, use the reset push-button on the
-carrier card to assert the PS_POR_L signal.
-
-3. All the PS and PL I/O device reset signals on the carrier card are held in
-reset until 25 ms after the PS and PL power domain are powered up
-and stable.
-
-Mechanical
-
-This section outlines the mechanical specifications of the Kria KV260 Vision
-AI Starter Kit. The KV260 revision 1 and KV260 revision 2 have identical
-mechanical measurements.
+This section outlines the mechanical specifications of the Kria KV260 Vision AI Starter Kit. The KV260 revision 1 and KV260 revision 2 have identical mechanical measurements.
 
 Table: Kria KV260 Vision AI Starter Kit Mechanical Details
-Specification              Dimensions
 
+| Specification |  Dimensions | 
+| Dimensions of the KV260 Starter Kit | 123 mm x 140 mm x 36 mm | 
+| Dimensions of the SOM with thermal solution | 60 mm x 77 mm x 27 mm | 
+| Dimensions of the carrier card | 123 mm x 140 mm x 23 mm | 
 
-Dimensions of the KV260 Starter
-Kit
+Figure: K26 SOM on the Kria KV260 Vision AI Starter Kit Mechanical Dimensions
 
-123 mm x 140 mm x 36 mm
-
-
-Dimensions of the SOM with
-thermal solution
-
-60 mm x 77 mm x 27 mm
-
-Dimensions of the carrier card     123 mm x 140 mm x 23 mm
-
-Page10 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-
-Figure: K26 SOM on the Kria KV260 Vision AI Starter Kit Mechanical
-Dimensions
-
-Page11 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+<p align="center">
+  <img src="media-DS986/image5.jpeg" width="800">
+</p>
 
 Figure: Kria KV260 Vision AI Starter Kit Mechanical Dimensions
 
-Page12 of 25
+<p align="center">
+  <img src="media-DS986/image6.jpeg" width="800">
+</p>
 
 
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+Figure: Kria KV260 Vision AI Starter Kit Carrier Card Mechanical Dimensions
 
-Figure: Kria KV260 Vision AI Starter Kit Carrier Card Mechanical
-Dimensions
+<p align="center">
+  <img src="media-DS986/image7.jpeg" width="800">
+</p>
 
 Starter Kit Firmware and Software
 
