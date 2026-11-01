@@ -4,6 +4,9 @@ https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/aibox/aibox
 
 The AIBox Distribution accelerated application performs distributed, scalable, multi-stream cross tracking, and Re-Identification. The application leverages machine learning for pedestrian tracking and decoding multiple camera streams and performs pedestrian detection and tracking across camera feeds. Common applications include smart cities, retail analytics, and video analytics.
 
+<p align="center">
+  <img src="aibox-dist-landing.png">
+</p>
 
 ## Overview
 
