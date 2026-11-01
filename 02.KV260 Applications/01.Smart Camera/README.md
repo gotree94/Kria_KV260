@@ -8,10 +8,10 @@ The Smart camera implements face detection with network and display functionalit
   <img src="sc_image_landing.jpg">
 </p>
 
-## Overview¶
+## Overview
 Introduction
 
-## Features¶
+## Features
 * 4K at 30 fps images from a sensor
 * H.264/H.265 encode/decode
 * HDMI or DisplayPort or RTSP out
@@ -20,7 +20,7 @@ Introduction
 ## Quick Start
 * Setting Up the Board and Application Deployment
 
-## Tutorials¶
+## Tutorials
 * Customizing AI Models Used in the Application
 * Building the Design Components
 * Building the Hardware Design Using Vivado
