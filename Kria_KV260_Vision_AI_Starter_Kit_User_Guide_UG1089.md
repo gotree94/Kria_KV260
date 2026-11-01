@@ -181,7 +181,9 @@ The overall boot device definition and firmware contents are outlined in the fol
 
 Figure: Boot Devices
 
-![](UG1089-media/image5.png)
+<p align="center">
+  <img src="UG1089-media/image5.png" width="800">
+</p>
 
 > ✎ Important: Production SOMs provide both QSPI and eMMC devices on the SOM PCB to support integrated primary and secondary boot configurations.
 
@@ -361,7 +363,9 @@ The following figure shows the reset functions supported on the KV260 Starter Ki
 
 Figure: Device Reset
 
-![](UG1089-media/image6.png)
+<p align="center">
+  <img src="UG1089-media/image6.png" width="800">
+</p>
 
 ## Firmware Update 
 
