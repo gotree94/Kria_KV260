@@ -86,7 +86,7 @@ Table: Descriptions and Locations for both Rev 1.0 and Rev 2.0
 
 
 | Location | Name | Present on Rev1.0 | Present on Rev 2.0 | Description | 
-|:--------:|:--------:|:--------:|:--------:|:--------:|
+|:--------:|:--------:|:--------:|:--------:|--------|
 | SOM DS34 | PS done LED | Y | Y | Lit indicates that the PS has successfully loaded a PL design. |
 | SOM DS35 | Heartbeat LED | Y | Y | Periodic flashing green LED driven by the Zynq UltraScale+ MPSoC APU processor. | 
 | SOM DS36 | PS status LED | Y|  Y | Status LED, when lit indicates a successful application load. | 
