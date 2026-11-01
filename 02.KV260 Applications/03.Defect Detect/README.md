@@ -7,6 +7,11 @@ The Defect Detection accelerated application is a machine vision application tha
 > Note
 > The test mango image is taken from the COFILAB site.
 
+<p align="center">
+  <img src="dd_image_landing.png">
+</p>
+
+
 ## Overview
 
 * Introduction
