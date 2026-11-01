@@ -476,7 +476,7 @@ kv260_led_blinking.runs/impl_1/top.bit
 
 <br><br>
 
-## LED 출력의 배선 확인
+### LED 출력의 배선 확인
 
 그런데, 방금전, 「H12」, I/O Std 에 「LVCMOS33」이라고 하는 설정을 했습니다만 어떤 일입니까?
 
