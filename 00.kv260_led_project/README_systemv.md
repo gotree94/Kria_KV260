@@ -221,35 +221,49 @@ PL은 LSI의 일부일 뿐이지만, PL의 프로그래밍상의 개념으로서
 
 먼저 SystemVerilog에서 프로그래밍을 시작하기 전에 Create Block Design을 선택합니다.
 
-Create Block Design
+<p align="center">
+  <img src="img/011.png" width="700">
+</p>
 
 Diagram이 열리므로 + 버튼을 눌러 Zynq UltraScale MPSoC를 선택합니다.
 
-추가 IP
+<p align="center">
+  <img src="img/012.png" width="700">
+</p>
 
 Run Block Automation을 선택합니다.
 
-Run Block Automation
+<p align="center">
+  <img src="img/013.png" width="700">
+</p>
 
 여기에서 Apply Board Preset에 체크가 되어 있는지 확인합니다.
 PS는 여러가지 설정이 있습니다만, 프로젝트 작성시에 KV260을 선택하고 있기 때문에, 적절한 설정이 행해집니다.
 
-Apply Board Preset
+<p align="center">
+  <img src="img/014.png" width="700">
+</p>
 
 pl_clk0 이라는 클럭이 나오고 있는 단자가 있으므로, 오른쪽 클릭하고 「Make External」을 선택합니다.
 
-시계 서랍
+<p align="center">
+  <img src="img/015.png" width="700">
+</p>
 
 그러면 Block Design 밖으로 신호가 추출됩니다.
 
-클럭 포트 완성도
+<p align="center">
+  <img src="img/016.png" width="700">
+</p>
 
 또, 이대로의 상태라면, 이번은 미사용이지만 PS 에서 PL 에 AXI 버스로 액세스로서 초기 설정되어 있는 M_AXI_HPM0_FPD 와 M_AXI_HPM1_FPD 의 클락인 maxihpm0_aclk 와 maxihpm1_aclk 에 클락이 공급되고 있지 않습니다.
 마우스로 드래그하면 연결할 수 있습니다.
 
 Block Design은 이것으로 완성됩니다.
 
-AXI 마스터에 시계 연결
+<p align="center">
+  <img src="img/017.png" width="700">
+</p>
 
 드디어 SystemVerilog로 프로그램 작성
 프로그램을 작성하려면 소스 코드를 새로 작성해야 합니다.
@@ -259,33 +273,47 @@ AXI 마스터에 시계 연결
 
 Sources 탭으로 전환하고 Design Source를 마우스 오른쪽 버튼으로 클릭하고 Add Source...를 선택합니다.
 
-소스 코드 추가
+<p align="center">
+  <img src="img/017.png" width="700">
+</p>
 
 다이얼로그가 나오므로 「Add or create design source」에 체크를 하고 Next를 누릅니다.
 
-소스 추가 대화 상자 1
+<p align="center">
+  <img src="img/018.png" width="700">
+</p>
 
 이번에는 새로 만들기 때문에 "Create File"을 누릅니다.
 
-소스 추가 대화상자 2
+<p align="center">
+  <img src="img/019.png" width="700">
+</p>
 
 새로 작성할 소스 코드의 유형과 파일 이름을 지정합니다.
 여기에서는 SystemVerilog 를 설정해, top.sv 라고 하는 이름으로 하고 있습니다.
 Verilog는 알고 있지만 SystemVerilog는 모른다는 분도 기본적으로는 거의 상위 호환이므로 SystemVerilog를 선택해 두는 것을 추천해 둡니다.
 
-파일명 지정
+<p align="center">
+  <img src="img/020.png" width="700">
+</p>
 
 Finsh를 누릅니다.
 
-소스 추가 대화상자 3
+<p align="center">
+  <img src="img/021.png" width="700">
+</p>
 
 여기서, 소스 코드의 초기 상태로서 포트 선언등을 할 수 있습니다. 여기에서는 아무것도 하지 않고 OK를 눌러 계속합니다.
 
-포트 선언
+<p align="center">
+  <img src="img/022.png" width="700">
+</p>
 
 새로운 소스 코드가 추가됩니다.
 
-새로운 소스 코드
+<p align="center">
+  <img src="img/023.png" width="700">
+</p>
 
 히나형으로서 소스 코드가 완성됩니다.
 이대로 여기에 작성해도 좋고, 한 번 모두 삭제하고 새하얗게 한 다음 다시 작성해도 상관 없습니다.
@@ -357,79 +385,104 @@ C/C++ 에서의 임베디드 프로그램 개발로, 메모리 맵(링커 스크
 
 논리 합성 (Synthesis)을 수행하려면 F11을 누르거나 툴바에서 Run Synthesis를 선택하십시오.
 
-Run Synthesis
+<p align="center">
+  <img src="img/024.png" width="700">
+</p>
 
 합성에는 그다지 시간이 걸립니다만, 에러가 되지 않으면, 잠시 기다리면 합성이 완료해 아래와 같은 다이얼로그가 나온다고 생각합니다.
 
-Synthesis Completed
+<p align="center">
+  <img src="img/025.png" width="700">
+</p>
 
 Open Systhesized Design을 선택하여 논리적으로 합성된 디자인을 엽니다.
 
 이 대화 상자에서 열리지 않아도 Vivado 창의 왼쪽에있는 Flow Navigator에서 Open Systhesized Design을 선택하면 열 수 있습니다.
 
-LED 출력 연결
+## LED 출력 연결
+
 이제 논리 합성 (Synthesis) 결과를 열 수 있다면 배치 배선의 제약으로 LED를 설정하십시오.
 
 화면 하에서 「I/O Ports」라고 하는 탭을 선택하면, 아래와 같이 작성한 프로그램의 포트를 실제의 I/O 핀에 접속하는 화면이 나옵니다.
 
 여기서는 I / O 핀에 "H12", I / O Std에 "LVCMOS33", Drive Strength에 16mA를 지정합니다. 이것이 어떻게 이런 일이 일어나는지에 대해 설명합니다.
 
-I/O Ports
+<p align="center">
+  <img src="img/026.png" width="700">
+</p>
 
 설정하고 저장하려고하면 제약 파일의 이름을 듣습니다. 여기서는 top.xdc라는 이름으로 저장합니다.
 xdc는 Xilinx 제약 파일 확장자의 관례와 같습니다.
 
-xdc 저장
+<p align="center">
+  <img src="img/027.png" width="700">
+</p>
 
 top.xdc라는 파일 이름으로 아래와 같은 파일이 완성되었다고 생각합니다.
 
+```
 set_property DRIVE 16 [get_ports {led[0]}]
 set_property PACKAGE_PIN H12 [get_ports {led[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
+```
 
 GUI를 사용하지 않고 처음부터 xdc 파일을 텍스트 편집기로 직접 쓸 수도 있습니다.
 
 그 후에는 Generate Bitstream 버튼을 눌러 bitstream을 생성할 때까지 단번에 해 버립니다.
 
-Generate Bitstream
+<p align="center">
+  <img src="img/028.png" width="700">
+</p>
 
 완료되면 이러한 대화 상자가 나타납니다.
 
-사진 46
+<p align="center">
+  <img src="img/029.png" width="700">
+</p>
 
 OK를 눌러 닫을 수 있습니다.
 
 프로젝트 파일 아래
 
-kv260_led_blinking.runs/impl_1/top.bit 
+```
+kv260_led_blinking.runs/impl_1/top.bit
+```
 
 라는 파일이 생성되어야 합니다.
 
-LED 출력의 배선 확인
+## LED 출력의 배선 확인
+
 그런데, 방금전, 「H12」, I/O Std 에 「LVCMOS33」이라고 하는 설정을 했습니다만 어떤 일입니까?
 
 먼저 자일링스 사이트에서 KV260 회로도를 다운로드 할 수 있으므로 살펴 보겠습니다.
 
 이번에는 KV260의 PMOD(J2)의 1번 핀과 GND인 5번 핀 사이에 LED와 저항을 직렬로 연결되도록 브레드보드를 ​​결선하고 있습니다.
 
-PMOD 회로도
+<p align="center">
+  <img src="img/030.png" width="700">
+</p>
 
 회로도를 보면 J2의 1번 핀은 PMOD_HDA11이라는 신호명입니다.
 쫓아 가면 R276을 통해 HDA11이라는 신호 이름으로 바뀐 후 SOM240_1의 A17 핀에 연결되어 있음을 알 수 있습니다.
 
-SOM240_1 회로도
+<p align="center">
+  <img src="img/031.png" width="700">
+</p>
 
 여기부터 K26 SOM 모듈이지만, 현재로서는
 
-K26 SOM 모듈 회로도는 공개되지 않음
-Vivado 도구는 K26 SOM 핀이 아닌 모듈의 ZynqMP LSI 핀을 지정합니다.
+* K26 SOM 모듈 회로도는 공개되지 않음
+* Vivado 도구는 K26 SOM 핀이 아닌 모듈의 ZynqMP LSI 핀을 지정합니다.
+
 라는, 조금 귀찮게 되어 있습니다.
 
 AMD(Xilinx)로서는, K26 SOM 을 모듈로서 상품으로 하고 싶은 것 같습니다.
 
 그러므로 이 문서에서 XTP685 - Kria K26 SOM XDC File (v1.0)을 찾아서 유명한 뒤 다운로드해 옵니다.
 
-XPT68 사진 31
+<p align="center">
+  <img src="img/032.png" width="700">
+</p>
 
 그리고 다운로드 한 xdc를 검색하면 som240_1_a17이 H12 핀임을 마침내 알 수 있습니다.
 
@@ -439,7 +492,9 @@ XPT68 사진 31
 
 그리고 다시 회로도로 돌아오는 것으로 PL_3V3(3.3V)가 공급되고 있는 것을 알 수 있군요.
 
-회로도 B13
+<p align="center">
+  <img src="img/033.png" width="700">
+</p>
 
 I/O 핀의 설정은 VCCO의 전압에 따라 선택할 수 있는 것이 정해져 옵니다만, LED의 점멸을 시키면 단순한 디지털 레벨로 H/L의 제어를 할 수 있으면 되므로 LVCMOS33을 설정하고 있습니다.
 
@@ -458,14 +513,16 @@ scp가 되고 Samba를 사용하는 여러가지 방법이 있다고 생각하�
 
 파일을 복사한 후에는 터미널에서 아래와 같이 실행하면 움직입니다.
 
+```
 sudo sh -c "echo 0 > /sys/class/fpga_manager/fpga0/flags"
 sudo mkdir -p /lib/firmware
 sudo cp top.bit /lib/firmware/
 sudo sh -c "echo top.bit > /sys/class/fpga_manager/fpga0/firmware"
+```
 
 아래와 같은 느낌으로 점멸하면 OK입니다.
 
-
+https://youtu.be/VMd0Uxcs9sM
 
 갑자기 팬이 번거로워졌는지 생각합니다만, 원래부터 있던 팬 제어의 회로가, L치카 회로에 덧쓰기되었기 때문입니다.
 
@@ -475,15 +532,25 @@ sudo sh -c "echo top.bit > /sys/class/fpga_manager/fpga0/firmware"
 마지막으로 여담입니다만, 이번 회로 안을 들여다 보겠습니다.
 프로그래밍 언어로 선언한 변수가 실제 플립플롭에 할당되어 배선이 외부 핀에 연결되어 있는 곳까지 비주얼로 볼 수 있어 매우 즐겁습니다.
 
-사진 40
+<p align="center">
+  <img src="img/034.png" width="700">
+</p>
 
-사진 38
+<p align="center">
+  <img src="img/035.png" width="700">
+</p>
 
-사진 37
+<p align="center">
+  <img src="img/036.png" width="700">
+</p>
 
-사진 36
+<p align="center">
+  <img src="img/037.png" width="700">
+</p>
 
-사진 39
+<p align="center">
+  <img src="img/038.png" width="700">
+</p>
 
 결론
 여력이 있으면 xsim에서의 시뮬레이션이나 ILA를 사용한 실기 디버그의 이야기도 쓰고 싶었습니다만, 힘이 다했으므로 이번은 여기까지입니다.
