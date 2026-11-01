@@ -59,141 +59,51 @@ Figure: KV260 Starter Kit Block Diagram
 </p>
 
 Table: Kria KV260 Vision AI Starter Kit Product Details
-Specification              Description
 
-Thermal cooling solution        Active
+| Specification | Description | 
+|:----------------:|:----------------:|
+| Thermal cooling solution | Active | 
+| Weight | 205g | 
+| Form factor | SOM + Carrier Card | 
+| Dimensions of the KV260 Starter Kit | 123 mm x 140 mm x 36 mm | 
+| Dimensions of the SOM with thermal solution | 60 mm x 77 mm x 27 mm | 
+| Dimensions of the carrier card | 123 mm x 140 mm x 23 mm | 
+| System logic cells | 256K | 
+| Block RAM blocks | 144 | 
+| UltraRAM blocks | 64 | 
+| DSP slices | 1.2K | 
+| Ethernet interface | One 10/100/1000 Mb/s | 
+| DDR memory | 4 GB (4 x 512 Mb x 16 bit) [non-ECC] DDR4 | 
+| Primary boot memory | 512 Mb QSPI | 
+| Secondary boot memory | microSD card | 
+| Device Security | Zynq UltraScale+ MPSoC hardware root of trust (RoT) in support of secure boot. Infineon TPM2.0 in support of measured boot. | 
+| Image sensor processor | OnSemi AP1302 13MP ISP | 
+| IAS MIPI sensor interfaces | x2 |
+| Raspberry Pi camera interface | x1 |
+| PMOD 12-pin interface | x1 |
+| USB3.0 interface | x4 |
+| DisplayPort 1.2a | x1 |
+| HDMI 1.4 | x1 |
 
-Weight                   205g
-
-Form factor                SOM + Carrier Card
-
-
-Dimensions of the KV260 Starter
-Kit
-
-123 mm x 140 mm x 36 mm
-
-Page6 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-
-Specification              Description
-
-
-Dimensions of the SOM with
-thermal solution
-
-60 mm x 77 mm x 27 mm
-
-Dimensions of the carrier card     123 mm x 140 mm x 23 mm
-
-System logic cells            256K
-
-Block RAM blocks              144
-
-UltraRAM blocks               64
-
-DSP slices                 1.2K
-
-Ethernet interface            One 10/100/1000 Mb/s
-
-
-DDR memory
-
-4 GB (4 x 512 Mb x 16 bit) [non-
-ECC] DDR4
-
-Primary boot memory          512 Mb QSPI
-
-Secondary boot memory        microSD card
-
-
-Device Security
-
-Zynq UltraScale+ MPSoC hardware
-root of trust (RoT) in support of
-secure boot.
-
-Infineon TPM2.0 in support of
-measured boot.
-
-Image sensor processor         OnSemi AP1302 13MP ISP
-
-IAS MIPI sensor interfaces       x2
-
-Raspberry Pi camera interface     x1
-
-PMOD 12-pin interface         x1
-
-USB3.0 interface             x4
-
-DisplayPort 1.2a             x1
-
-HDMI 1.4                 x1
-
-Page7 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-
-Ordering Information
+## Ordering Information
 
 Table: Ordering Information
 
+| Product SKU  |  Device  |  Temperature Grade | Encryption |  Description | 
+| SK-KV260-G | XCK26-C | Commercial | Enabled | KV260 Starter Kit with encryption enabled | 
+| SK-KV260-G-ED* | XCK26-C | Commercial | Disabled* | KV260 Starter Kit with encryption disabled | 
 
-Product SKU   Device   Temperatur
+* Encryption disabled (-ED) versions of the KV260 Starter Kit are discontinued.
 
-e Grade
+## Power and Electrical
 
-Encryption  Description
-
-
-SK-KV260-
-G
-
-XCK26-C
-
-Commercial
-
-Enabled
-
-KV260
-
-Starter Kit
-with
-encryption
-enabled
-
-
-SK-KV260-
-G-ED 1
-
-XCK26-C
-
-Commercial
-
-Disabled 1
-
-KV260
-
-Starter Kit
-with
-encryption
-disabled
-
-1. Encryption disabled (-ED) versions of the KV260 Starter Kit are
-discontinued.
-
-Power and Electrical
-
-This section describes the power requirements, power-on sequence,
-power-on reset sequence, and power management functions.
+This section describes the power requirements, power-on sequence, power-on reset sequence, and power management functions.
 
 Table: KV260 Starter Kit Power Specifications
-Parameter            Description
 
-DC input power              +12V, 3A
+| Parameter | Description | 
+|:----------------:|:----------------:|
+| DC input power |  +12V, 3A | 
 
 
 Recommended power adapter
