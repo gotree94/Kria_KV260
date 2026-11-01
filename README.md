@@ -233,7 +233,7 @@ complex hardware design. The KV260 Starter Kit offers you a path to accelerate d
 
 [Kria KV260 Starter Kit Carrier Card Schematic (XTP682)](https://www.xilinx.com/member/forms/download/design-license.html?cid=3eb7e365-5378-461f-b8b0-bb3dad84eb4e&filename=xtp682-kria-k26-carrier-card-schematic.zip)
 * Includes KV260 vision carrier card schematic PDF and readme file.
-kv260-BoardFiles/xtp682-kria-k26-carrier-card-schematic/KV260_v1/038-05058-01-X-MLCC_REVB05_SKIT.pdf
+(kv260-BoardFiles/xtp682-kria-k26-carrier-card-schematic/KV260_v1/038-05058-01-X-MLCC_REVB05_SKIT.pdf)
 
 [Kria KV260 Starter Kit Carrier Card Schematic Source (XTP683)](https://www.xilinx.com/member/forms/download/design-license.html?cid=1d3cd6fe-8f53-4acd-a319-bc7207d53357&filename=xtp683-kria-k26-carrier-card-schematic-orcad.zip)
 * Includes KV260 vision carrier card schematic source (OrCAD) and readme file.
