@@ -139,42 +139,28 @@ Table: Power Adapters to Purchase for the KV260 Starter Kit
 can access the total power consumed by the SOM module through the I2C
 bus and AMD provided utilities.
 
-Powering Peripherals
+## Powering Peripherals
 
-The KV260 Starter Kit carrier card supplies power to the I/O peripherals as
-specified by the following interface specifications.
+The KV260 Starter Kit carrier card supplies power to the I/O peripherals as specified by the following interface specifications.
 
-USB3.0
+## USB3.0
 
-There are four USB3.0 interface ports available on the KV260 Starter Kit
-carrier card. Each port can deliver a 5V supply to the attached I/O
-peripherals with up to 900 mA per port. All ports are protected against an
+There are four USB3.0 interface ports available on the KV260 Starter Kit carrier card. Each port can deliver a 5V supply to the attached I/O peripherals with up to 900 mA per port. All ports are protected against an
 over-current event through individual 900 mA power switches per port.
 
-✎ Note: The total current (across all four ports) is allocated at 2.1A.
+> ✎ Note: The total current (across all four ports) is allocated at 2.1A.
 
-Pmod Connector
+## Pmod Connector
 
-The Pmod interface (from Digilent Inc.) is supported by the 3.3V, 100 mA
-capacity on the supply pin.
+The Pmod interface (from Digilent Inc.) is supported by the 3.3V, 100 mA capacity on the supply pin.
 
-Page15 of 33
+## Raspberry Pi Camera Interface
 
+The Raspberry Pi camera 15 pin interface connector is supported by the 3.3V supply voltage on the supply pin.
 
-Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+## IAS Module Connector
 
-Raspberry Pi Camera Interface
-
-The Raspberry Pi camera 15 pin interface connector is supported by the
-
-3.3V supply voltage on the supply pin.
-
-IAS Module Connector
-
-The SOM supports two IAS module connectors, as defined by the ON
-Semiconductor IAS module definition standard. The KV260 Starter Kit
-carrier      card provides 2.75V, 1.8V, and 1.2V supply rails on specified power
-pins.
+The SOM supports two IAS module connectors, as defined by the ON Semiconductor IAS module definition standard. The KV260 Starter Kit carrier card provides 2.75V, 1.8V, and 1.2V supply rails on specified power pins.
 
 Fan and Heat Sink
 
