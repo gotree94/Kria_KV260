@@ -279,6 +279,7 @@ Finsh를 누릅니다.
 
 여기서 처음으로 「Verilog의 책으로 공부한 세계」가 됩니다. 교과서에 쓰여 있는 것을 교과서대로 하려고 하면, 그 전 단계에 여러 가지 있는 것입니다.
 
+```verilog
 `timescale 1ns / 1ps
 
 module top(
@@ -299,6 +300,30 @@ module top(
     assign led = counter[25];
 
 endmodule
+```
+
+```
+`timescale 1ns / 1ps
+
+module top(
+        output  var logic   [0:0]   led     // LED용으로 1비트 출력 정의
+    );
+
+    // 블록 디자인에서 클록을 가져옴
+    logic   clk;
+    design_1 i_design1(.pl_clk0_0(clk));
+
+    // 클록에 맞춰 동작하는 26비트 카운터 생성
+    logic   [25:0]  counter = 0;
+    always_ff @(posedge clk) begin
+        counter <= counter + 1;
+    end
+
+    // 카운터의 25번째 비트를 LED로 출력
+    assign led = counter[25];
+
+endmodule
+```
 
 조금, 해설해 두면. 방금 블록 디자이너에서 만든 블록을 design_1이라는 이름으로 이용하고 있습니다. 방금 만든 pl_clk0_0이라는 포트에서 시계를 검색했습니다. 초기 상태에서 100MHz가 공급됩니다.
 그 후, 26bit의 카운터 변수를 정의해, 클럭의 상승의 정도로 인크리먼트 하고 있습니다. 마지막으로 led 포트에 카운터의 25bit째의 0 or 1 을 출력하고 있습니다. 카운터가 오버플로되면 0으로 돌아가므로 led는 깜박임을 반복해야합니다.
