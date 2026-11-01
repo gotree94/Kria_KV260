@@ -1,5 +1,7 @@
 # Kria KV260 Vision AI 스타터 키트 데이터 시트 (DS986)
 
+https://docs.amd.com/r/en-US/ds986-kv260-starter-kit/Summary
+
 # 목차
 ## 요약
 ## 제품 세부 정보
