@@ -6,7 +6,7 @@ This document shows how to set up the board and exercise the Raspberry Pi Camera
 
 This guide and its prebuilts are targeted for Ubuntu 24.04 and AMD 2024.1 toolchain.
 
-## Hardware Requirements¶
+## Hardware Requirements
 
 1. KV260 Vision AI Starter Kit
 2. KV260 Power Supply & Adapter
@@ -15,7 +15,7 @@ This guide and its prebuilts are targeted for Ubuntu 24.04 and AMD 2024.1 toolch
 5. 1080P/4K Monitor and Power Supply
 6. DisplayPort/HDMI Cable
 
-## Set up the Board¶
+## Set up the Board
 
 The test requires the following hardware setup to run Raspberry Pi Camera V3 test successfully on target KV260.
 
@@ -40,7 +40,7 @@ Connect the Raspberry Pi Camera Module to J9 on the KV260
 
 Testing was performed with the following artifacts:
 
-## KV260 platform artifacts¶
+## KV260 platform artifacts
 
 | Component	| Version | 
 | Boot Fiwmare	| K26-BootFW-v1.06.bin | 
@@ -55,11 +55,11 @@ Before continuing with the the test specific instructions, if not yet done so, b
 
 Kria Starter Kit Linux Boot on KV260
 
-## Download and Load the BIST PL Firmware¶
+## Download and Load the BIST PL Firmware
 
 Install firmware binaries.
 
-```
+```bash
 sudo apt install xlnx-firmware-kv260-bist-imx708
 ```
 
@@ -69,7 +69,7 @@ The firmware consists of bitstream, device tree overlay (dtbo) file. The firmwar
 
 After installing the FW, execute xmutil listapps to verify that it is captured under the listapps function, and to have dfx-mgrd, re-scan and register all accelerators in the firmware directory tree.
 
-```
+```bash
 sudo xmutil listapps
 ```
 
@@ -77,7 +77,7 @@ sudo xmutil listapps
 
 When there is already another accelerator/firmware being activated, unload it first, then load the desired BIST firmware.
 
-```
+```bash
 sudo xmutil unloadapp
 sudo xmutil loadapp kv260-bist-imx708
 ```
@@ -88,19 +88,19 @@ On target KV260 disable desktop environment before running the docker for the di
 
 Check if default target is set to graphical.target
 
-```
+```bash
 sudo systemctl get-default
 ```
 
 If above command returns graphical.target, set default target to multi-user. This step is to ensure that by default we always start without Ubuntu display manager.
 
-```
+```bash
 sudo systemctl set-default multi-user.target
 ```
 
 Reboot the system for the change to take effect.
 
-```
+```bash
 sudo reboot
 ```
 
@@ -108,25 +108,25 @@ sudo reboot
 
 Pull the docker image from dockerhub.
 
-```
+```bash
 docker pull xilinx/kria-bist:1.2-noble-24.04
 ```
 
 The storage volume on the SD card can be limited with multiple docker images installed. If there are space issues, use the following command to remove existing docker images.
 
-```
+```bash
 docker rmi --force <image>
 ```
 
 You can find the images installed with the following command:
 
-```
+```bash
 docker images
 ```
 
 Launch the docker container using the following command:
 
-```
+```bash
 docker run \
     --env=DISPLAY \
     --env=XDG_SESSION_TYPE \
@@ -144,7 +144,7 @@ docker run \
 
 It launches the image in a new container and drops the user into a bash shell.
 
-```
+```bash
 root@xlnx-docker/#
 ```
 
@@ -164,7 +164,7 @@ root@kria:/# media-ctl -d /dev/media0 -V "\"imx708\":0 [fmt:SRGGB10_1X10/1536x86
 
 Run a Live Video Stream on connected Display using gstreamer. You can expect a framerate of ~58-60 fps.
 
-```
+```bash
 root@kria:/# gst-launch-1.0 v4l2src device=/dev/video1 io-mode=mmap ! "video/x-raw, width=1920, height=1080, framerate=60/1, format=NV12" ! perf ! kmssink fullscreen-overlay=true bus-id=fd4a0000.display -v
 Setting pipeline to PAUSED ...
 Pipeline is live and does not need PREROLL ...
@@ -211,7 +211,7 @@ Freeing pipeline ...
 
 The media-ctl path for imx708 should look something like this:
 
-```
+```bash
 root@kria:/# media-ctl -d /dev/media0 -p
 Media controller API version 6.8.12
 
