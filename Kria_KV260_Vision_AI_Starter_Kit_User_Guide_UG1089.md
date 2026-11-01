@@ -1,5 +1,6 @@
 # Kria KV260 Vision AI Starter Kit User Guide (UG1089)
 
+https://docs.amd.com/r/en-US/ug1089-kv260-starter-kit/Summary
 ---
 
 # TOC (목차)
