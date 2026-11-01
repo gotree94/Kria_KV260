@@ -318,22 +318,22 @@ EN 62368-1, 2판, 2014/A11:2017, 정보 기술 장비 – 안전, 파트 1: 일�
 
 2. 이 디바이스는 원치 않는 작동을 유발할 수 있는 간섭을 포함하여 수신되는 모든 간섭을 수용해야 합니다.
 
-> ⚠ 주의!
+> ⚠ 주의!<br>
 > 이 장비는 FCC 규칙 Part 15에 따라 클래스 A 디지털 디바이스의 제한을 준수하는 것으로 테스트되고 확인되었습니다. 이러한 제한은 장비가 상업적 환경에서 작동될 때 유해한 간섭에 대해 합리적인 보호를 제공하도록 설계되었습니다. 이 장비는 무선 주파수 에너지를 생성, 사용 및 방출할 수 있으며, 지침에 따라 설치 및 사용하지 않을 경우 무선 통신에 유해한 간섭을 일으킬 수 있습니다. 주거 지역에서 이 장비를 작동하면 유해한 간섭을 일으킬 가능성이 있으며, 이 경우 사용자는 자비로 간섭을 수정해야 합니다.
 
-> ⚠ 주의!
+> ⚠ 주의!<br>
 > Cet équipement a été testé et jugé conforme à la Class A digital device, conformément à la règle 15 du standard FCC. Ces limites sont conçues pour fournir des protections contre des interférences nuisibles lorsque l'équipement est utilisé dans un environnement commercial. Cet équipement génère, utilise et peut émettre des énergies de radio-fréquence et, s'il n'est pas installé et utilisé conformément aux instructions, peut nuire aux communications radio. L'exploitation de cet équipement dans une zone résidentielle est susceptible de causer des interférences nuisibles, auquel cas l'utilisateur peut être tenu de prendre des mesures adéquates à ses propres frais.
 
-> ⚠ 주의!
+> ⚠ 주의!<br>
 > Dieses Gerät wurde getestet und entspricht den Grenzwerten für digitale Geräte der Klasse A gemäß Teil 15 der FCC-Bestimmungen. Diese Grenzwerte bieten einen angemessenen Schutz gegen schädliche Interferenzen, wenn das Gerät in einer gewerblichen Umgebung betrieben wird. Dieses Gerät erzeugt und verwendet Hochfrequenzenergie und kann diese abstrahlen. Wenn es nicht gemäß den Anweisungen installiert und verwendet wird, kann dies Funkstörungen verursachen. Der Betrieb dieses Geräts in einem Wohngebiet kann schädliche Interferenzen verursachen. In diesem Fall muss der Benutzer die Interferenz auf eigene Kosten beheben.
 
-> ⚠ 주의!
+> ⚠ 주의!<br>
 > AMD의 허가 없이 디바이스를 변경하거나 수정하면 사용자의 장비 작동 권한이 무효화될 수 있습니다.
 
-> ⚠ 주의!
+> ⚠ 주의!<br>
 > Si l'appareil est modifié sans l'autorisation d'AMD, l'utilisateur peut annuler son abilité à utiliser l'équipement.
 
-> ⚠ 주의!
+> ⚠ 주의!<br>
 > Wenn das Gerät ohne Erlaubnis von AMD geändert wird, kann der Benutzer seine Berechtigung zum Betrieb des Geräts verlieren.
 
 ---
@@ -449,13 +449,13 @@ Denna produkt har tillverkats i enlighet med EG-direktiv 2014/53/EU.
 * EN 62368-1, 2판, 2014/A11:2017 정보 기술 장비 – 안전, 파트 1: 일반 요구 사항
 * EN 50581:2012 - 유해 물질 제한과 관련된 전기 및 전자 제품 평가를 위한 기술 문서.
 
-> ⚠ 주의!
+> ⚠ 주의! <br>
 > 가정 환경에서 클래스 A 제품은 무선 간섭을 일으킬 수 있으며, 이 경우 사용자는 적절한 조치를 취해야 할 수 있습니다.
 
-> ⚠ 주의!
+> ⚠ 주의! <br>
 > Dans un environnement domestique, les produits de Classe A peuvent causer des interférences radio, auquel cas l'utilisateur peut être tenu de prendre des mesures adéquates.
 
-> ⚠ 주의!
+> ⚠ 주의! <br>
 > In einer häuslichen Umgebung können Produkte der Klasse A Funkstörungen verursachen. In diesem Fall muss der Benutzer möglicherweise geeignete Maßnahmen ergreifen.
 
 ### 책임 당사자
