@@ -185,81 +185,81 @@ complex hardware design. The KV260 Starter Kit offers you a path to accelerate d
 
 ## Product Page
 [Kria KV260 Vision AI Starter Kit](https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html)
-Provides product features, specifications, accessories, and ordering information.
+* Provides product features, specifications, accessories, and ordering information.
 
 ---
 
 ## Getting Started
 
 [Kria KV260 Vision AI Starter Kit Product Brief](https://www.amd.com/content/dam/amd/en/documents/products/som/kria/k26/kv260-product-brief.pdf)
-Provides a quick summary of the Kria KV260 Starter Kit, including a list of features and specifications.
+* Provides a quick summary of the Kria KV260 Starter Kit, including a list of features and specifications.
 
 [Smart Camera Accelerated Application](https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/linux_boot.html)
-Gives step-by-step instructions to launch the out-of-the-box-ready smart camera accelerated application from AMD after unboxing your kit.
+* Gives step-by-step instructions to launch the out-of-the-box-ready smart camera accelerated application from AMD after unboxing your kit.
 
 [Kria SOM Adventure Map](https://xilinx.github.io/kria-apps-docs/Kria_doc_map/map.htm)
-Guides you through AMD Kria SOM documentation, from out-of-the-box setup to advanced evaluation and product development—helping you stay oriented throughout your development journey.
+* Guides you through AMD Kria SOM documentation, from out-of-the-box setup to advanced evaluation and product development—helping you stay oriented throughout your development journey.
 
 ---
 
 ## Documentation
 
 [Kria KV260 Vision AI Starter Kit User Guide (UG1089)](https://docs.amd.com/r/en-US/ug1089-kv260-starter-kit)
-Describes the features of the KV260 Vision AI Starter Kit. Use this guide for developing and evaluating designs targeting the AMD Kria K26 SOM on the KV260 Starter Kit.
+* Describes the features of the KV260 Vision AI Starter Kit. Use this guide for developing and evaluating designs targeting the AMD Kria K26 SOM on the KV260 Starter Kit.
 
 [Kria KV260 Vision AI Starter Kit Data Sheet (DS986)](https://docs.amd.com/r/en-US/ds986-kv260-starter-kit)
-Describes key specifications of the KV260 Vision AI Starter Kit. Use this document for understanding hardware, software, and compliance-related details of the KV260 Starter Kit.
+* Describes key specifications of the KV260 Vision AI Starter Kit. Use this document for understanding hardware, software, and compliance-related details of the KV260 Starter Kit.
 
 ---
 
 ## Designs
 
 [Kria App Store](https://www.amd.com/en/developer/resources/kria-apps.html)
-Lists all pre-built applications for AMD Kria SOM products.
+* Lists all pre-built applications for AMD Kria SOM products.
 
 [Kria KV260 Vision AI Starter Kit Accelerated Applications](https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/index.html)
-Provides detailed instructions on KV260 accelerated applications. Covers the quick start steps, tutorials for customizing, and architecture of the HW & SW platform.
+* Provides detailed instructions on KV260 accelerated applications. Covers the quick start steps, tutorials for customizing, and architecture of the HW & SW platform.
 
 [Kria SOM GitHub Landing Page](https://xilinx.github.io/kria-apps-docs/home/build/html/index.html)
-Contains resources for Kria SOM products on GitHub that covers details related to application development, Ubuntu®, Boot Firmware, and much more.
+* Contains resources for Kria SOM products on GitHub that covers details related to application development, Ubuntu®, Boot Firmware, and much more.
 
 [Kria SOM & Starter Kits - Wiki Page](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+SOMs+Starter+Kits)
-Provides information and links to collateral available for the Kria Production SOMs and Starter Kits, including documentation, pre-built images, firmware updates, and GitHub repositories.
+* Provides information and links to collateral available for the Kria Production SOMs and Starter Kits, including documentation, pre-built images, firmware updates, and GitHub repositories.
 
 ---
 
 ## Board Files
 
 [Kria KV260 Starter Kit Carrier Card Schematic (XTP682)](https://www.xilinx.com/member/forms/download/design-license.html?cid=3eb7e365-5378-461f-b8b0-bb3dad84eb4e&filename=xtp682-kria-k26-carrier-card-schematic.zip)
-Includes KV260 vision carrier card schematic PDF and readme file.
+* Includes KV260 vision carrier card schematic PDF and readme file.
 
 [Kria KV260 Starter Kit Carrier Card Schematic Source (XTP683)](https://www.xilinx.com/member/forms/download/design-license.html?cid=1d3cd6fe-8f53-4acd-a319-bc7207d53357&filename=xtp683-kria-k26-carrier-card-schematic-orcad.zip)
-Includes KV260 vision carrier card schematic source (OrCAD) and readme file.
+* Includes KV260 vision carrier card schematic source (OrCAD) and readme file.
 
 [Kria KV260 Starter Kit Carrier Card PCB Layout (XTP681)](https://www.xilinx.com/member/forms/download/design-license.html?cid=941bc95f-da3a-4f59-8e18-1ea174cc9cdb&filename=xtp681-kria-k26-carrier-card-layout.zip)
-Includes KV260 vision carrier card PCB layout (Allegro) and readme file.
+* Includes KV260 vision carrier card PCB layout (Allegro) and readme file.
 
 [Kria KV260 Starter Kit Carrier Card BOM (XTP713)](https://www.xilinx.com/member/forms/download/design-license.html?cid=be482139-48ac-4884-b53f-cabc7ae834a4&filename=xtp713-kria-k26-carrier-card-bom.zip)
-Includes KV260 vision carrier card component BOM (Excel Sheet) and readme file.
+* Includes KV260 vision carrier card component BOM (Excel Sheet) and readme file.
 
 [Kria KV260 Starter Kit Carrier Card 3D CAD Model (XTP679)](https://www.xilinx.com/member/forms/download/design-license.html?cid=a9998c7a-87df-4e61-8dc7-54f3411feb01&filename=xtp679-kria-k26-carrier-card-3d-cad-model.zip)
-Includes KV260 Starter Kit 3D CAD models (.STP file) for mechanical and thermal design purposes.
+* Includes KV260 Starter Kit 3D CAD models (.STP file) for mechanical and thermal design purposes.
 
 [Kria KV260 Starter Kit Vivado Board File](https://github.com/Xilinx/XilinxBoardStore/wiki/Xilinx-Board-Store-Home)
-Links to the Xilinx Board Store Home page on GitHub to get the latest KV260 Vivado™ Board File.
+* Links to the Xilinx Board Store Home page on GitHub to get the latest KV260 Vivado™ Board File.
 
 ---
 
 ## Support and Resources
 
 [AMD Kria SOM Support Forum](https://adaptivesupport.amd.com/s/topic/0TO2E000000YKXxWAO/kria-soms?language=en_US)
-Provides a resource for all support questions and developer community discussions around Kria SOM products. Ask community experts and super users. Post your questions, find answers, and share your expertise with other developers.
+* Provides a resource for all support questions and developer community discussions around Kria SOM products. Ask community experts and super users. Post your questions, find answers, and share your expertise with other developers.
 
 [AMD Kria SOM Product Selection Guide](https://docs.amd.com/v/u/en-US/kria-som-psg)
-Compares features and specifications of all available Kria SOM and Starter Kit products to help you choose the right product for your target application.
+* Compares features and specifications of all available Kria SOM and Starter Kit products to help you choose the right product for your target application.
 
 [AMD Kria Starter Kit Training Videos & Tutorials](https://www.amd.com/en/training/customer/adaptive-computing/customer-training/using-accelerated-applications-vision-ai-starter-kit-som.html)
-Provides training courses enabling you to learn more about the Kria SOM and KV260 Vision AI Starter Kit.
+* Provides training courses enabling you to learn more about the Kria SOM and KV260 Vision AI Starter Kit.
 
 
 
