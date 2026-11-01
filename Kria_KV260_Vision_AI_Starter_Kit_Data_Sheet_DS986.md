@@ -1,99 +1,50 @@
-$author-display-name
+# Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
 
-11/01/2026
+# TOC
+## Summary
+## Product Details
+* Ordering Information
+## Power and Electrical
+## Mechanical
+## Starter Kit Firmware and Software
+## Thermal
+## Supported Tools
+## Reliability
+## Regulatory Compliance Statements
+* Safety
+* FCC Class A Products
+* EMC Compliance
+* FCC Class A User Information
+* Canadian Compliance (Industry Canada)
+* RoHS Compliance
+* VCCI Class A Statement
+* KCC Notice Class A (Republic of Korea Only)
+* BSMI Class A Notice (Taiwan)
+* EU WEEE Logo
+* Manufacturer Declaration European Community
+## References
+## Revision History
+## Please Read: Important Legal Notices
 
-Kria KV260 Vision AI Starter Kit Data Sheet
-(DS986)
+## Summary
 
-$author-display-name
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-
-Summary
-Product Details
-
-Ordering Information
-
-Power and Electrical
-Mechanical
-
-Starter Kit Firmware and Software
-Thermal
-
-Supported Tools
-Reliability
-
-Regulatory Compliance Statements
-
-Safety
-
-FCC Class A Products
-EMC Compliance
-
-FCC Class A User Information
-
-Canadian Compliance (Industry Canada)
-RoHS Compliance
-
-VCCI Class A Statement
-
-KCC Notice Class A (Republic of Korea Only)
-BSMI Class A Notice (Taiwan)
-
-EU WEEE Logo
-
-Manufacturer Declaration European Community
-
-References
-Revision History
-
-Please Read: Important Legal Notices
-
-Page2 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
-
-Kria KV260 Vision AI Starter Kit Data
-
-Sheet (DS986)
-
-Summary
-
-The AMD Kria™ KV260 Vision AI Starter Kit is comprised of a non-
-production version of the K26 system-on-module (SOM), carrier card, and
-thermal solution. The SOM is very compact and only includes key
-components such as an AMD Zynq™ UltraScale+™ MPSoC based silicon
-device, memory, boot, and security module. The carrier card allows various
-interfacing options and includes a power solution and network connectors
-for camera, display, and microSD card. The thermal solution has a heat
-sink, heat sink cover, and fan. The Kria KV260 Vision AI Starter Kit is
-designed to provide customers a platform to evaluate their target
-applications  and ultimately design their own carrier card with AMD K26
-SOMs.   While the SOM itself has broad AI/ML applicability across markets
-and applications, target applications for the Kria KV260 Vision AI Starter Kit
-include smart city and machine vision, security cameras, retail analytics,
+The AMD Kria™ KV260 Vision AI Starter Kit is comprised of a non-production version of the K26 system-on-module (SOM), carrier card, and thermal solution. The SOM is very compact and only includes key components such as an AMD Zynq™ UltraScale+™ MPSoC based silicon device, memory, boot, and security module. The carrier card allows various interfacing options and includes a power solution and network connectors for camera, display, and microSD card. The thermal solution has a heat sink, heat sink cover, and fan. The Kria KV260 Vision AI Starter Kit is designed to provide customers a platform to evaluate their target applications  and ultimately design their own carrier card with AMD K26
+SOMs.   While the SOM itself has broad AI/ML applicability across markets and applications, target applications for the Kria KV260 Vision AI Starter Kit include smart city and machine vision, security cameras, retail analytics,
 and other industrial applications.
 
-There are two versions of the KV260 carrier card (rev. 1.0 and rev. 2.0).
-Some of the features are only available on the 2.0 version. For further
-details, refer Kria KV260 Vision AI Starter Kit User Guide (UG1089) and to
-the schematics of each version.
-
-Page3 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+There are two versions of the KV260 carrier card (rev. 1.0 and rev. 2.0). Some of the features are only available on the 2.0 version. For further details, refer Kria KV260 Vision AI Starter Kit User Guide (UG1089) and to the schematics of each version.
 
 Figure: Kria KV260 Vision AI Starter Kit Revision 2.0
 
+<p align="center">
+  <img src="media-DS986/image2.jpeg" width="800">
+</p>
+
 Figure: Kria KV260 Vision AI Starter Kit Revision 1.0
 
-Page4 of 25
-
-
-Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+<p align="center">
+  <img src="media-DS986/image3.jpeg" width="800">
+</p>
 
 Product Details
 
