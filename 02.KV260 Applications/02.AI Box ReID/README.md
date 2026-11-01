@@ -2,6 +2,11 @@
 
 The AI Box with ReID accelerated application performs distributed, scalable, multi-stream tracking, and Re-Identification. The application leverages machine learning for pedestrian tracking and decoding multiple camera streams and performs pedestrian detection and tracking across camera feeds. Common applications include smart cities, retail analytics, and video analytics.
 
+<p align="center">
+  <img src="aibox-dist-landing.png">
+</p>
+
+
 ## Overview
 
 * Introduction
