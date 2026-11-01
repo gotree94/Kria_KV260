@@ -1,5 +1,6 @@
 # Kria KV260 Vision AI 스타터 키트
 
+* https://xilinx-wiki.atlassian.net/wiki/spaces/A/overview?homepageId=18844350
 * https://www.amd.com/ko/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html
 
 * Kria™ K26 SOM의 개발 플랫폼인 KV260 스타터 키트는 복잡한 하드웨어 설계 지식 없이도 고급 비전 애플리케이션을 개발할 수 있도록 지원하기 위해 제작되었습니다.
