@@ -364,7 +364,7 @@ The following figure shows the reset functions supported on the KV260 Starter Ki
 Figure: Device Reset
 
 <p align="center">
-  <img src="UG1089-media/image6.png" width="800">
+  <img src="UG1089-media/image6.png" width="400">
 </p>
 
 ## Firmware Update 
