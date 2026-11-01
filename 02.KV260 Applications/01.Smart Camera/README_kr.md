@@ -4,6 +4,11 @@ https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/smartcamera
 
 스마트 카메라는 얼굴 감지 기능과 네트워크 및 디스플레이 기능을 구현합니다. 보행자 감지, 얼굴 감지, 사람 수 계산과 같은 애플리케이션을 위한 머신 러닝 기능이 내장되어 있으며, 로컬 디스플레이 출력 및 RTSP 스트리밍을 지원합니다.
 
+<p align="center">
+  <img src="sc_image_landing.jpg">
+</p>
+
+
 ## 개요
 소개
 
