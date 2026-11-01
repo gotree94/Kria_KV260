@@ -4,45 +4,55 @@ https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/docs/aibox/aibox
 
 The AIBox Distribution accelerated application performs distributed, scalable, multi-stream cross tracking, and Re-Identification. The application leverages machine learning for pedestrian tracking and decoding multiple camera streams and performs pedestrian detection and tracking across camera feeds. Common applications include smart cities, retail analytics, and video analytics.
 
-AI Box Distributed ReID
-Overview¶
-Introduction
-Next Steps
-References
-Features¶
-Up to four input streams from IP cameras
 
-H.264/H.265 decoding capability at 1080p resolution
+## Overview
 
-Pedestrian detection and tracking on individual streams
+* Introduction
+* Next Steps
+* References
 
-HDMI or DisplayPort out
+## Features
 
-User programmable Deep Learning Models
+* Up to four input streams from IP cameras
+* H.264/H.265 decoding capability at 1080p resolution
+* Pedestrian detection and tracking on individual streams
+* HDMI or DisplayPort out
+* User programmable Deep Learning Models
 
-Quick Start¶
-Setting Up the Board and Application Deployment
-Tutorials¶
-Customizing AI Models Used in the Application
-Building the Design Components
-Building the Hardware Design using Vivado
-Creating a Vitis Platform
-Integrating an Overlay into the Platform
-Generating Custom Firmware
-Kria Starter Kit Linux Boot
-Rebuilding Application Docker Containers
-Architecture¶
-Software Architecture - Platform
-Software Architecture - Accelerator
-Hardware Architecture - Platform
-Hardware Architecture - Accelerator
-Repository¶
-Software Repository for aibox-reid
-Software Repository for aibox-dist
-Other¶
-Debugging
-Known Issues
-AMD Support¶
+## Quick Start
+
+* Setting Up the Board and Application Deployment
+
+## Tutorials
+
+* Customizing AI Models Used in the Application
+* Building the Design Components
+* Building the Hardware Design using Vivado
+* Creating a Vitis Platform
+* Integrating an Overlay into the Platform
+* Generating Custom Firmware
+* Kria Starter Kit Linux Boot
+* Rebuilding Application Docker Containers
+
+## Architecture
+
+* Software Architecture - Platform
+* Software Architecture - Accelerator
+* Hardware Architecture - Platform
+* Hardware Architecture - Accelerator
+
+## Repository
+
+* Software Repository for aibox-reid
+* Software Repository for aibox-dist
+
+## Other
+
+* Debugging
+* Known Issues
+
+## AMD Support
+
 GitHub issues will be used for tracking requests and bugs. For questions, go to forums.xilinx.com.
 
 License¶
