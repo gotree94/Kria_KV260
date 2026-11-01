@@ -1,71 +1,41 @@
 # Kria KV260 Vision AI Starter Kit User Guide (UG1089)
 
-# TOC
-## Summary
-* What's in the Box?
-* Interfaces
-## Initial Setup
-* Powering the Starter Kit and Power Budgets
-* Fan and Heat Sink
-## Boot Devices and Firmware Overview
-* Primary Boot Device
-* Secondary Boot Device
-## Software Getting Started
-* Platform Management Utility
-* Accelerated Applications
-* Accelerated Application Package Selection
-* Supported Peripherals
-## Xilinx Tools Integration
-* Vitis Platforms
-* Vivado Board Flow
-## Board Reset, Firmware Update, and Recovery
-* Board Reset
-* Firmware Update
-* Boot Image Recovery Tool
-* Boot Firmware A/B Update
-## Additional Resources and Legal Notices
-* Finding Additional Documentation
-* Support Resources
-* References
-* Revision History
-* Please Read: Important Legal Notices
+# TOC (목차)
+## Summary (요약)
+* What's in the Box? (박스 안에는 뭐가 들어 있나요?)
+* Interfaces (인터페이스)
+## Initial Setup (초기 설정)
+* Powering the Starter Kit and Power Budgets (스타터 키트 전원 공급 및 전력 예산)
+* Fan and Heat Sink (팬과 히트 싱크)
+## Boot Devices and Firmware Overview (부팅 장치 및 펌웨어 개요)
+* Primary Boot Device (주요 부팅 장치)
+* Secondary Boot Device (보조 부팅 장치)
+## Software Getting Started (소프트웨어 시작하기)
+* Platform Management Utility (플랫폼 관리 유틸리티)
+* Accelerated Applications (가속 응용 프로그램)
+* Accelerated Application Package Selection (가속 응용 프로그램 패키지 선택)
+* Supported Peripherals (지원되는 주변 장치)
+## Xilinx Tools Integration (자일린스 도구 통합)
+* Vitis Platforms (Vitis 플랫폼)
+* Vivado Board Flow (Vivado 보드 플로우)
+## Board Reset, Firmware Update, and Recovery (보드 리셋, 펌웨어 업데이트 및 복구)
+* Board Reset (보드 리셋)
+* Firmware Update (펌웨어 업데이트)
+* Boot Image Recovery Tool (부팅 이미지 복구 도구)
+* Boot Firmware A/B Update (부팅 펌웨어 A/B 업데이트)
+## Additional Resources and Legal Notices (추가 자료 및 법적 고지)
+* Finding Additional Documentation (추가 문서 찾기)
+* Support Resources (지원 자료)
+* References (참고 문헌)
+* Revision History (개정 이력)
+* Please Read: Important Legal Notices ( 꼭 읽어주세요: 중요한 법적 고지)
 
-## 목차
-## 요약
-* 박스 안에는 뭐가 들어 있나요?
-* 인터페이스
-## 초기 설정
-* 스타터 키트 전원 공급 및 전력 예산
-* 팬과 히트 싱크
-## 부팅 장치 및 펌웨어 개요
-* 주요 부팅 장치
-* 보조 부팅 장치
-## 소프트웨어 시작하기
-* 플랫폼 관리 유틸리티
-* 가속 응용 프로그램
-* 가속 응용 프로그램 패키지 선택
-* 지원되는 주변 장치
-## 자일린스 도구 통합
-* Vitis 플랫폼
-* Vivado 보드 플로우
-## 보드 리셋, 펌웨어 업데이트 및 복구
-* 보드 리셋
-* 펌웨어 업데이트
-* 부팅 이미지 복구 도구
-* 부팅 펌웨어 A/B 업데이트
-## 추가 자료 및 법적 고지
-* 추가 문서 찾기
-* 지원 자료
-* 참고 문헌
-* 개정 이력
-* 꼭 읽어주세요: 중요한 법적 고지
 
-## Summary
+
+## Summary (요약)
 
 The AMD Kria™ KV260 Vision AI Starter Kit is comprised of a non-production version of the K26 system-on-module (SOM), carrier card, and thermal solution. The SOM integrates core digital hardware components including an AMD Zynq™ UltraScale+™ MPSoC, run-time memory, non-volatile boot devices, an integrated power solution, and a security module. 
 The vision-focused KV carrier card provides various application peripheral options including a variety of camera/sensor inputs, video display outputs, USB, SD card, and Ethernet physical interfaces. The thermal solution includes a heat sink, heat sink cover, and fan. The Kria KV260 Vision AI Starter  Kit is designed to provide customers a platform to evaluate their target applications and ultimately design their own carrier card with K26 SOMs. Key target applications include smart city, AI/ML computing, security, and future retail.
-
-## 요약
 
 AMD Kria™ KV260 Vision AI 스타터 키트는 K26 시스템 온 모듈(SOM)의 비생산 버전, 캐리어 카드, 그리고 열 솔루션으로 구성되어 있어요. 이 SOM에는 AMD Zynq™ UltraScale+™ MPSoC, 런타임 메모리, 비휘발성 부트 장치, 통합 전원 솔루션, 그리고 보안 모듈 등 핵심 디지털 하드웨어가 들어 있어요. 
 비전 중심의 KV 캐리어 카드는 다양한 카메라/센서 입력, 비디오 디스플레이 출력, USB, SD 카드, 이더넷 물리적 인터페이스 등 여러 애플리케이션 주변기기 옵션을 제공해요. 열 솔루션에는 히트 싱크, 히트 싱크 커버, 팬이 포함되어 있죠. Kria KV260 Vision AI 스타터 키트는 고객이 목표 애플리케이션을 평가하고 나중에 K26 SOM으로 자신의 캐리어 카드를 설계할 수 있는 플랫폼을 제공하도록 설계되었어요. 주요 목표 애플리케이션에는 스마트 시티, AI/ML 컴퓨팅, 보안, 미래형 리테일 등이 있어요.
@@ -74,13 +44,16 @@ AMD Kria™ KV260 Vision AI 스타터 키트는 K26 시스템 온 모듈(SOM)의
   <img src="UG1089-media/image2.png" width="800">
 </p>
 
-
-## What's in the Box?
+## What's in the Box? (상자 안에는 무엇이 들어있나요?)
 
 The Kria KV260 Vision AI Starter Kit includes a K26 SOM, integrated thermal solution, and carrier card. The kit is only meant for SOM platform evaluation with the carrier card providing a variety of interfaces for integrating
 different peripherals. The box also includes a Getting Started card that directs  you to the getting started web page and product page. Developer stickers are also included in the box. The KV260 Starter Kit does not include a power supply, SD card, peripherals, or additional accessories.
 
+Kria KV260 Vision AI Starter Kit에는 K26 SOM, 통합 열 솔루션, 그리고 캐리어 카드가 포함되어 있습니다. 이 키트는 캐리어 카드를 통해 다양한 주변 장치를 연결할 수 있도록 SOM 플랫폼 평가용으로만 제공됩니다. 상자에는 시작 안내 카드도 들어있어 시작 웹페이지와 제품 페이지로 안내해 줍니다. 개발자용 스티커도 상자에 포함되어 있습니다. KV260 스타터 키트에는 전원 공급 장치, SD 카드, 주변 장치, 추가 액세서리는 포함되어 있지 않습니다.
+
 However, this guide lists Power Adapters and Supported Peripherals you can purchase separately.
+
+하지만, 이 가이드에는 별도로 구매할 수 있는 전원 어댑터와 지원되는 주변 장치가 나와 있습니다.
 
 * Table: Summary of Box Contents *
 
@@ -91,36 +64,17 @@ However, this guide lists Power Adapters and Supported Peripherals you can purch
 | 3 | Getting Started card | 1 | 
 | 4 | Developer stickers | 1 | 
 
-## 상자 안에는 무엇이 들어있나요?
 
-Kria KV260 Vision AI Starter Kit에는 K26 SOM, 통합 열 솔루션, 그리고 캐리어 카드가 포함되어 있습니다. 이 키트는 캐리어 카드를 통해 다양한 주변 장치를 연결할 수 있도록 SOM 플랫폼 평가용으로만 제공됩니다. 상자에는 시작 안내 카드도 들어있어 시작 웹페이지와 제품 페이지로 안내해 줍니다. 개발자용 스티커도 상자에 포함되어 있습니다. KV260 스타터 키트에는 전원 공급 장치, SD 카드, 주변 장치, 추가 액세서리는 포함되어 있지 않습니다.
-
-하지만, 이 가이드에는 별도로 구매할 수 있는 전원 어댑터와 지원되는 주변 장치가 나와 있습니다.
-
-* 상자 내용 요약표 *
-
-| 항목 | 내용물 | 수량 |
-|:------:|:------:|:------:|
-| 1 | 팬싱크 열 솔루션이 포함된 스타터 키트 SOM | 1 |
-| 2 | 스타터 키트 캐리어 카드 | 1 |
-| 3 | 시작 가이드 카드 | 1 |
-| 4 | 개발자 스티커 | 1 |
-
-## Interfaces
+## Interfaces (인터페이스)
 
 The following figure and table provide an overview of the physical connections, their designators, and relative position on the starter kit. The table  uses the following abbreviations to indicate if a specific designator is
 located on the carrier card or on the SOM. There are two versions of the KV260 carrier card (rev. 1.0 and rev. 2.0). Some of the features are only available on the 2.0 version. For further details, refer to the schematics of
 each version.
 
-* CC = Device or interface is located on the carrier card
-* SOM = Device or interface is located on the SOM
-
-## 인터페이스
-
 다음 그림과 표는 스타터 킷에서 물리적 연결, 설계자, 그리고 상대적 위치를 보여줍니다. 표에서는 특정 설계자가 캐리어 카드에 있는지 SOM에 있는지를 나타내기 위해 다음 약어를 사용합니다. KV260 캐리어 카드는 두 가지 버전(rev. 1.0과 rev. 2.0)이 있습니다. 일부 기능은 2.0 버전에서만 이용 가능합니다. 자세한 내용은 각 버전의 회로도를 참고하세요.
 
-* CC = 장치 또는 인터페이스가 캐리어 카드에 있음
-* SOM = 장치 또는 인터페이스가 SOM에 있음
+* CC = Device or interface is located on the carrier card (장치 또는 인터페이스가 캐리어 카드에 있음)
+* SOM = Device or interface is located on the SOM (장치 또는 인터페이스가 SOM에 있음)
 
 Figure: Interfaces and Connectors Rev. 2.0
 
@@ -129,7 +83,6 @@ Figure: Interfaces and Connectors Rev. 2.0
 </p>
 
 Figure: Interfaces and Connectors Rev. 1.0
-
 
 <p align="center">
   <img src="UG1089-media/image4.jpeg" width="800">
@@ -164,20 +117,15 @@ Table: Descriptions and Locations for both Rev 1.0 and Rev 2.0
 | CC U44 | USB0 | Y | Y | Two USB3.0 or USB2.0 compatible connectors | 
 | CC U46 | USB1 | Y | Y | Two USB3.0 or USB2.0 compatible connectors | 
 
-# Initial Setup
+# Initial Setup (초기 설정)
 
-### Powering the Starter Kit and Power Budgets
+### Powering the Starter Kit and Power Budgets (스타터 키트 전원 및 전력 예산)
 * The AMD Kria™ KV260 Vision AI Starter Kit requires a 12V, 3A power supply adapter to power the kit.
-
-> ✎ Note: The power supply adapter is not included in the KV260 Starter Kit. <br>
-> The following table lists the suggested power supply adapter that must be purchased separately.
-
-# 초기 설정
-
-### 스타터 키트 전원 및 전력 예산
 * AMD Kria™ KV260 Vision AI 스타터 키트는 키트를 작동시키기 위해 12V, 3A 전원 어댑터가 필요합니다.
 
+> ✎ Note: The power supply adapter is not included in the KV260 Starter Kit. <br>
 > ✎ 참고: 전원 어댑터는 KV260 스타터 키트에 포함되어 있지 않습니다. <br>
+> The following table lists the suggested power supply adapter that must be purchased separately.
 > 아래 표에는 별도로 구입해야 하는 권장 전원 어댑터가 나와 있습니다.
 
 Table: Power Adapters to Purchase for the KV260 Starter Kit
@@ -188,47 +136,37 @@ Table: Power Adapters to Purchase for the KV260 Starter Kit
 
 * The power supply adapter barrel connector plugs into the DC jack (J12) to supply the +12V power source to KV260 Starter Kit.
 
-### Powering the K26 SOM
+### Powering the K26 SOM (K26 SOM 전원 공급)
 
 * The KV260 Starter Kit carrier card on-board regulator generates a 5V supply and provides power to other voltage regulators.
-* The SOM power rail (VCC_SOM) is powered by the 5V supply.
-* Next, the SOM on-board power-on sequencing starts.
-* The carrier card provides the programmable logic (PL) the VCCO voltage rails after the SOM asserts the VCCOEN_S_M2C and VCCOEN_PL_M2C signals
-
-### K26 SOM 전원 공급
-
 * KV260 스타터 키트 캐리어 카드의 내장 레귤레이터가 5V 전원을 생성하고 다른 전압 레귤레이터에도 전원을 제공합니다.
+
+* The SOM power rail (VCC_SOM) is powered by the 5V supply.
 * SOM 전원 레일(VCC_SOM)은 5V 전원으로 구동됩니다.
+
+* Next, the SOM on-board power-on sequencing starts.
 * 다음으로, SOM의 보드 내 전원 켜기 시퀀스가 시작됩니다.
+
+* The carrier card provides the programmable logic (PL) the VCCO voltage rails after the SOM asserts the VCCOEN_S_M2C and VCCOEN_PL_M2C signals
 * 캐리어 카드는 SOM이 VCCOEN_S_M2C와 VCCOEN_PL_M2C 신호를 어설트한 후, 프로그래머블 로직(PL)에 VCCO 전원 레일을 제공합니다.
 
-### Power Telemetry
+### Power Telemetry (전력 텔레메트리)
 
-A power monitor device is available on the SOM power rail (VCC_SOM). You can access the total power consumed by the SOM module through the I2C bus and AMD provided utilities.
+* A power monitor device is available on the SOM power rail (VCC_SOM). You can access the total power consumed by the SOM module through the I2C bus and AMD provided utilities.
+* SOM 전원 레일(VCC_SOM)에서 전력 모니터 장치를 사용할 수 있습니다. I2C 버스와 AMD에서 제공하는 유틸리티를 통해 SOM 모듈이 소비하는 전체 전력을 확인할 수 있습니다.
 
-### 전력 텔레메트리
+### Powering Peripherals (주변기기 전원 공급)
 
-SOM 전원 레일(VCC_SOM)에서 전력 모니터 장치를 사용할 수 있습니다. I2C 버스와 AMD에서 제공하는 유틸리티를 통해 SOM 모듈이 소비하는 전체 전력을 확인할 수 있습니다.
-
-### Powering Peripherals
-
-The KV260 Starter Kit carrier card supplies power to the I/O peripherals as specified by the following interface specifications.
-
-### 주변기기 전원 공급
-
-KV260 스타터 키트 캐리어 카드에서는 다음 인터페이스 사양에 따라 I/O 주변기기에 전원을 공급합니다.
+* The KV260 Starter Kit carrier card supplies power to the I/O peripherals as specified by the following interface specifications.
+* KV260 스타터 키트 캐리어 카드에서는 다음 인터페이스 사양에 따라 I/O 주변기기에 전원을 공급합니다.
 
 ### USB3.0
 
-There are four USB3.0 interface ports available on the KV260 Starter Kit carrier card. Each port can deliver a 5V supply to the attached I/O peripherals with up to 900 mA per port. All ports are protected against an
+* There are four USB3.0 interface ports available on the KV260 Starter Kit carrier card. Each port can deliver a 5V supply to the attached I/O peripherals with up to 900 mA per port. All ports are protected against an
 over-current event through individual 900 mA power switches per port.
-
-### USB3.0
-
-KV260 스타터 키트 캐리어 카드에는 총 4개의 USB3.0 인터페이스 포트가 있습니다. 각 포트는 연결된 I/O 주변기기에 최대 900 mA까지 5V 전원을 공급할 수 있습니다. 모든 포트는 개별 900 mA 전원 스위치를 통해 과전류 상황으로부터 보호됩니다.
+* KV260 스타터 키트 캐리어 카드에는 총 4개의 USB3.0 인터페이스 포트가 있습니다. 각 포트는 연결된 I/O 주변기기에 최대 900 mA까지 5V 전원을 공급할 수 있습니다. 모든 포트는 개별 900 mA 전원 스위치를 통해 과전류 상황으로부터 보호됩니다.
 
 > ✎ Note: The total current (across all four ports) is allocated at 2.1A.
-
 > ✎ 참고: 총 전류(4개 포트 전체)는 2.1A로 할당됩니다.
 
 ### Pmod Connector
