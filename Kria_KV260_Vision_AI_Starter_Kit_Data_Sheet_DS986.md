@@ -314,7 +314,21 @@ CAN ICES-3(A)/NMB-3(A)
 
 # EU WEEE Logo
 
+<p align="center">
+  <img src="media-DS986/image11.jpeg" width="100">
+</p>
+
 # Manufacturer Declaration European Community
+
+<p align="center">
+  <img src="media-DS986/image12.jpeg" width="100">
+</p>
+
+<p align="center">
+  <img src="media-DS986/image13.jpeg" width="100">
+</p>
+
+
 
 ## Manufacturer Declaration
 
