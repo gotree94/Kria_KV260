@@ -410,7 +410,7 @@ AMD Design Hubs provide links to documentation organized by design tasks and oth
 
 # Support Resources
 
-For support resources such as Answers, Documentation, Downloads, and Forums, see Support.
+For support resources such as Answers, Documentation, Downloads, and Forums, see [Support](https://adaptivesupport.amd.com/).
 
 # References
 
@@ -435,6 +435,6 @@ These documents provide supplemental material useful with this guide:
 9. Vitis Reference Guide ([UG1702](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1702-vitis-accelerated-reference&ft:locale=en-US))
 
 
-
+* https://xilinx-wiki.atlassian.net/wiki/spaces/A/overview?homepageId=18844350
 
 
