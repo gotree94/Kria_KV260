@@ -172,6 +172,94 @@
    * 성능 벤치마킹 데이터 생성 방법
 
 
+---
+
+
+# AMD Kria KV260 Vision AI Starter Kit
+
+* The AMD Kria™ KV260 Vision AI Starter Kit is an out-of-the-box platform for smart city and industrial applications. You can leverage pre-built applications and various software tools to prototype use cases without needing to know 
+complex hardware design. The KV260 Starter Kit offers you a path to accelerate development and reduce time to market when choosing Kria K26 SOM for production volume deployment.
+
+---
+
+## Product Page
+Kria KV260 Vision AI Starter Kit
+Provides product features, specifications, accessories, and ordering information.
+
+---
+
+## Getting Started
+
+Kria KV260 Vision AI Starter Kit Product Brief
+Provides a quick summary of the Kria KV260 Starter Kit, including a list of features and specifications.
+
+Smart Camera Accelerated Application
+Gives step-by-step instructions to launch the out-of-the-box-ready smart camera accelerated application from AMD after unboxing your kit.
+
+Kria SOM Adventure Map
+Guides you through AMD Kria SOM documentation, from out-of-the-box setup to advanced evaluation and product development—helping you stay oriented throughout your development journey.
+
+---
+
+## Documentation
+
+Kria KV260 Vision AI Starter Kit User Guide (UG1089)
+Describes the features of the KV260 Vision AI Starter Kit. Use this guide for developing and evaluating designs targeting the AMD Kria K26 SOM on the KV260 Starter Kit.
+
+Kria KV260 Vision AI Starter Kit Data Sheet (DS986)
+Describes key specifications of the KV260 Vision AI Starter Kit. Use this document for understanding hardware, software, and compliance-related details of the KV260 Starter Kit.
+
+---
+
+## Designs
+
+Kria App Store
+Lists all pre-built applications for AMD Kria SOM products.
+
+Kria KV260 Vision AI Starter Kit Accelerated Applications
+Provides detailed instructions on KV260 accelerated applications. Covers the quick start steps, tutorials for customizing, and architecture of the HW & SW platform.
+
+Kria SOM GitHub Landing Page
+Contains resources for Kria SOM products on GitHub that covers details related to application development, Ubuntu®, Boot Firmware, and much more.
+
+Kria SOM & Starter Kits - Wiki Page
+Provides information and links to collateral available for the Kria Production SOMs and Starter Kits, including documentation, pre-built images, firmware updates, and GitHub repositories.
+
+---
+
+## Board Files
+
+Kria KV260 Starter Kit Carrier Card Schematic (XTP682)
+Includes KV260 vision carrier card schematic PDF and readme file.
+
+Kria KV260 Starter Kit Carrier Card Schematic Source (XTP683)
+Includes KV260 vision carrier card schematic source (OrCAD) and readme file.
+
+Kria KV260 Starter Kit Carrier Card PCB Layout (XTP681)
+Includes KV260 vision carrier card PCB layout (Allegro) and readme file.
+
+Kria KV260 Starter Kit Carrier Card BOM (XTP713)
+Includes KV260 vision carrier card component BOM (Excel Sheet) and readme file.
+
+Kria KV260 Starter Kit Carrier Card 3D CAD Model (XTP679)
+Includes KV260 Starter Kit 3D CAD models (.STP file) for mechanical and thermal design purposes.
+
+Kria KV260 Starter Kit Vivado Board File
+Links to the Xilinx Board Store Home page on GitHub to get the latest KV260 Vivado™ Board File.
+
+---
+
+## Support and Resources
+
+AMD Kria SOM Support Forum
+Provides a resource for all support questions and developer community discussions around Kria SOM products. Ask community experts and super users. Post your questions, find answers, and share your expertise with other developers.
+
+AMD Kria SOM Product Selection Guide
+Compares features and specifications of all available Kria SOM and Starter Kit products to help you choose the right product for your target application.
+
+AMD Kria Starter Kit Training Videos & Tutorials
+Provides training courses enabling you to learn more about the Kria SOM and KV260 Vision AI Starter Kit.
+
 
 
 
