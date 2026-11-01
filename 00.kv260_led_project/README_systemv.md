@@ -222,38 +222,38 @@ PL은 LSI의 일부일 뿐이지만, PL의 프로그래밍상의 개념으로서
 먼저 SystemVerilog에서 프로그래밍을 시작하기 전에 Create Block Design을 선택합니다.
 
 <p align="center">
-  <img src="img/011.png" width="700">
+  <img src="img/009.png" width="700">
 </p>
 
 Diagram이 열리므로 + 버튼을 눌러 Zynq UltraScale MPSoC를 선택합니다.
 
 <p align="center">
-  <img src="img/012.png" width="700">
+  <img src="img/010.png" width="700">
 </p>
 
 Run Block Automation을 선택합니다.
 
 <p align="center">
-  <img src="img/013.png" width="700">
+  <img src="img/012.png" width="700">
 </p>
 
 여기에서 Apply Board Preset에 체크가 되어 있는지 확인합니다.
 PS는 여러가지 설정이 있습니다만, 프로젝트 작성시에 KV260을 선택하고 있기 때문에, 적절한 설정이 행해집니다.
 
 <p align="center">
-  <img src="img/014.png" width="700">
+  <img src="img/013.png" width="700">
 </p>
 
 pl_clk0 이라는 클럭이 나오고 있는 단자가 있으므로, 오른쪽 클릭하고 「Make External」을 선택합니다.
 
 <p align="center">
-  <img src="img/015.png" width="700">
+  <img src="img/014.png" width="700">
 </p>
 
 그러면 Block Design 밖으로 신호가 추출됩니다.
 
 <p align="center">
-  <img src="img/016.png" width="700">
+  <img src="img/015.png" width="700">
 </p>
 
 또, 이대로의 상태라면, 이번은 미사용이지만 PS 에서 PL 에 AXI 버스로 액세스로서 초기 설정되어 있는 M_AXI_HPM0_FPD 와 M_AXI_HPM1_FPD 의 클락인 maxihpm0_aclk 와 maxihpm1_aclk 에 클락이 공급되고 있지 않습니다.
@@ -262,7 +262,7 @@ pl_clk0 이라는 클럭이 나오고 있는 단자가 있으므로, 오른쪽 �
 Block Design은 이것으로 완성됩니다.
 
 <p align="center">
-  <img src="img/017.png" width="700">
+  <img src="img/016.png" width="700">
 </p>
 
 드디어 SystemVerilog로 프로그램 작성
