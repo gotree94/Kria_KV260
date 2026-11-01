@@ -369,16 +369,29 @@ Vitis 베이스 플랫폼은 kv260-vitis GitHub 저장소에서 이용할 수 �
 ### kv260_vcuDecode_vmixDP
 
 * VCU decode of four input streams
+* 네 개의 입력 스트림을 VCU로 디코딩
+
 * Display using video mixer (VMIX) to DisplayPort and/or HDMI for 2x2 display configuration
+* 비디오 믹서(VMIX)를 사용해 DisplayPort 및/또는 HDMI로 2x2 디스플레이 구성 출력
+
 * Resolution support for 1080p30 for each stream
+* 각 스트림에 대해 1080p30 해상도 지원
 
 ### kv260_ispMipiRx_vmixDP
 
 * Video capture using the IAS ISP MIPI interface for a AR0144 sensor module configuration
+* AR0144 센서 모듈 구성을 위한 IAS ISP MIPI 인터페이스를 이용한 비디오 캡처
+
 * VCU decoding of four streams
+* 네 개 스트림의 VCU 디코딩
+
 * Display using video mixer (VMIX) to DisplayPort and/or HDMI for 2x2 display configuration
 
+* 비디오 믹서(VMIX)를 이용해 DisplayPort 및/또는 HDMI로 2x2 디스플레이 구성
+
 Vitis base platforms are built within the context of a specific hardware target and the physical peripheral interfaces they enable.
+
+Vitis 기본 플랫폼은 특정 하드웨어 대상과 그것이 지원하는 실제 주변 장치 인터페이스를 기준으로 구축됩니다.
 
 ```
 starter-kit-name_interface1_interface2
@@ -387,47 +400,67 @@ starter-kit-name_interface1_interface2
 
 For example, the kv260_ispMipiRx_vcu_DP base platform targets the KV260 Starter Kit and enables a MIPI receive interface to the ISP on the carrier card and a standard single video stream to the DisplayPort.
 
+예를 들어, kv260_ispMipiRx_vcu_DP 기본 플랫폼은 KV260 스타터 키트를 대상으로 하며, 캐리어 카드의 ISP로 MIPI 수신 인터페이스를 제공하고 표준 단일 비디오 스트림을 디스플레이포트로 보낼 수 있습니다.
+
 For additional information about the Vitis tools and Vitis base platform work flows, see the Embedded Design Development Using Vitis ([UG1701](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1701-vitis-accelerated-embedded&ft:locale=en-US)) and the Vitis Reference Guide ([UG1702](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1702-vitis-accelerated-reference&ft:locale=en-US)).
 
-# Vivado Board Flow
+Vitis 도구와 Vitis 기본 플랫폼 워크플로에 대한 추가 정보는 Embeded Design Development Using Vitis ([UG1701](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1701-vitis-accelerated-embedded&ft:locale=ko-KR))와 Vitis Reference Guide ([UG1702](https://docs.amd.com/access/sources/dita/map?isLatest=true&url=ug1702-vitis-accelerated-reference&ft:locale=ko-KR))를 참고하세요.
+
+# Vivado Board Flow (비바도 보드 플로우)
 
 The K26LTD SOM is enabled in the Vivado Design Suite through the Vivado Board Flow functionality. Vivado Board Flow enables a level of hardware abstraction that automatically configures peripherals fixed on the SOM card (e.g., DDR4), defines associated timing constraints, and presents the customizable physical I/O available on the SOM connector(s).
 
+K26LTD SOM은 비바도 디자인 스위트에서 비바도 보드 플로우 기능을 통해 활성화됩니다. 비바도 보드 플로우는 SOM 카드에 고정된 주변 장치(예: DDR4)를 자동으로 구성하고, 관련 타이밍 제약을 정의하며, SOM 커넥터에서 사용할 수 있는 맞춤형 물리적 I/O를 제공합니다.
+
 The Vivado SOM board model is available through the Vivado installation process as well as on the Vivado board file [GitHub](https://github.com/Xilinx/XilinxBoardStore/tree/HEAD/boards/Xilinx) repository. The following KV260 related Vivado board files are available.
+
+비바도 SOM 보드 모델은 비바도 설치 과정에서뿐만 아니라 비바도 보드 파일 [GitHub](https://github.com/Xilinx/XilinxBoardStore/tree/HEAD/boards/Xilinx) 저장소에서도 제공됩니다. 다음은 KV260 관련 비바도 보드 파일들입니다.
 
 ### KV260 Starter Kit
 
 * Configured K26 SOM with Vision Starter Kit companion card
+* Vision Starter Kit 동반 카드가 장착된 K26 SOM
 
 ### SM-K26-XCL2GC
 
 * K26 commercial grade production SOM
+* K26 상업용 등급 생산 SOM
 
 ### SM-K26-XCL2GI
 
 * K26 industrial grade production SOM
+* K26 산업용 등급 생산 SOM
 
 The AMD SOM board flow infrastructure provides starter kit carrier card awareness through the Vivado tools companion card mechanism.
+AMD SOM 보드 플로우 인프라는 Vivado 도구의 컴패니언 카드 메커니즘을 통해 스타터 키트 캐리어 카드 인지를 제공합니다.
 
 Automation for I/O connection and peripheral IP configuration when selecting a SOM and an associated carrier card, such as the KV260 Starter Kit,  is used to create a hardware configuration.
+SOM과 관련 캐리어 카드(예: KV260 Starter Kit)를 선택할 때 I/O 연결 및 주변 장치 IP 구성을 자동으로 처리하여 하드웨어 구성을 생성합니다.
 
 For additional information on using the Vivado tools and the Vivado board flow, refer to the Vivado Design Suite User Guide: System-Level Design Entry (UG895).
+Vivado 도구와 Vivado 보드 플로우 사용에 대한 추가 정보는 Vivado Design Suite 사용자 가이드: 시스템 수준 디자인 입력(UG895)을 참고하세요.
 
-# Board Reset, Firmware Update, and Recovery
+# Board Reset, Firmware Update, and Recovery (보드 초기화, 펌웨어 업데이트 및 복구)
 
 This section outlines the update and recovery mechanisms built into the KV260 Starter Kit. Two tools are provided for firmware updates. The first is a Linux based A/B update tool that supports remote and redundant firmware updates to the A/B firmware partitions of the QSPI device with custom  or AMD provided updates. The second tool is the Ethernet recovery tool that is intended to be used only when recovering a full platform to the original factory firmware.
 
-## Board Reset
+이 섹션에서는 KV260 스타터 킷에 내장된 업데이트 및 복구 메커니즘에 대해 설명합니다. 펌웨어 업데이트를 위해 두 가지 도구가 제공됩니다. 첫 번째는 Linux 기반의 A/B 업데이트 도구로, QSPI 장치의 A/B 펌웨어 파티션에 사용자 지정 또는 AMD에서 제공하는 업데이트를 원격 및 이중화 방식으로 지원합니다. 두 번째 도구는 이더넷 복구 도구로, 전체 플랫폼을 원래 공장 펌웨어로 복구할 때만 사용하도록 설계되었습니다.
 
-### Power-on Reset
+## Board Reset (보드 리셋)
+
+### Power-on Reset (전원 켜기 리셋)
 
 1. The SOM reset signal (PS_POR_L) is held in reset until the CC_PS_PGOOD signal is asserted on the carrier card.
+1. SOM 리셋 신호(PS_POR_L)는 캐리어 카드에서 CC_PS_PGOOD 신호가 활성화될 때까지 리셋 상태로 유지됩니다.
 
 2. All the PS and PL I/O device reset signals on the carrier card are held in reset until 25 ms after the PS and PL power domain are powered up and stable.
+2. 캐리어 카드의 모든 PS 및 PL I/O 장치 리셋 신호는 PS와 PL 전원 영역이 켜지고 안정된 후 25ms가 지나야 리셋이 해제됩니다.
 
 3. You can perform a hard reset on the KV260 Starter Kit by pressing the reset button (CC SW2) or by commanding a reset through software.
+3. KV260 스타터 키트에서 리셋 버튼(CC SW2)을 누르거나 소프트웨어를 통해 리셋 명령을 내리면 하드 리셋을 수행할 수 있습니다.
 
 The following figure shows the reset functions supported on the KV260 Starter Kit.
+다음 그림은 KV260 스타터 키트에서 지원하는 리셋 기능을 보여줘요.
 
 Figure: Device Reset
 
@@ -435,21 +468,28 @@ Figure: Device Reset
   <img src="UG1089-media/image6.png" width="600">
 </p>
 
-## Firmware Update 
+## Firmware Update (펌웨어 업데이트)
 
 The firmware update button is the physical SW1/FWUEN push button located on the KV260 Starter Kit carrier card. The button is used to support two features:
+펌웨어 업데이트 버튼은 KV260 스타터 키트 캐리어 카드에 있는 물리적 SW1/FWUEN 푸시 버튼이에요. 이 버튼은 두 가지 기능을 지원합니다:
 
 1. To force the platform into a recovery mode application during power-on. The recovery application is described in the Boot Image Recovery Tool section of this document.
+1. 전원 켜기 시 플랫폼을 복구 모드 애플리케이션으로 강제로 진입하게 하기 위해 사용합니다. 복구 애플리케이션은 이 문서의 부트 이미지 복구 도구 섹션에 설명되어 있어요.
 
 2. Security mechanism to prevent remote update of the boot firmware, without the user being physically present. 
+2. 사용자가 실제로 없을 때 원격으로 부트 펌웨어를 업데이트하는 것을 방지하는 보안 메커니즘.
 
-## Boot Image Recovery Tool
+## Boot Image Recovery Tool (부트 이미지 복구 도구)
 
 The boot image recovery tool is a small application included in the AMD provided Starter Kit QSPI image. It provides a simple Ethernet-based interface  and application for updating the boot firmware if Linux is not functional. If Linux is functional, the recommendation is to update the boot firmware using the xmutil boot firmware update utilities. Refer to the Kria SOM Wiki page for details on how to use the boot image recovery tool.
 
-## Boot Firmware A/B Update
+부트 이미지 복구 도구는 AMD에서 제공하는 스타터 키트 QSPI 이미지에 포함된 작은 애플리케이션이에요. Linux가 작동하지 않을 때 부트 펌웨어를 업데이트할 수 있는 간단한 이더넷 기반 인터페이스와 애플리케이션을 제공해요. Linux가 정상적으로 작동한다면, xmutil 부트 펌웨어 업데이트 유틸리티를 사용해서 부트 펌웨어를 업데이트하는 것이 추천돼요. 부트 이미지 복구 도구를 사용하는 방법에 대해서는 Kria SOM 위키 페이지를 참고하세요.
+
+## Boot Firmware A/B Update (부트 펌웨어 A/B 업데이트)
 
 As outlined in Boot Devices and Firmware Overview, the AMD starter kit and SOM provide two copies of the boot firmware in the QSPI device. This mechanism has a robust update infrastructure through a ping-pong methodology, where the last known good boot image is always kept available in the platform. The AMD starter kit Linux provides a utility for doing these updates entirely on-target. The steps for using the AMD SOM A/B update tool are documented in the Wiki page at: Boot FW Update Process.
+
+부트 디바이스와 펌웨어 개요에서 설명된 것처럼, AMD 스타터 키트와 SOM은 QSPI 장치에 두 개의 부트 펌웨어 복사본을 제공합니다. 이 메커니즘은 핑퐁 방식으로 강력한 업데이트 인프라를 갖추고 있어, 항상 마지막으로 확인된 정상 부트 이미지를 플랫폼에서 사용할 수 있습니다. AMD 스타터 키트 리눅스는 이러한 업데이트를 완전히 현장에서 수행할 수 있는 유틸리티를 제공합니다. AMD SOM A/B 업데이트 도구를 사용하는 단계는 위키 페이지 '부트 펌웨어 업데이트 과정(Boot FW Update Process)'에 문서화되어 있습니다.
 
 # Additional Resources and Legal Notices
 
